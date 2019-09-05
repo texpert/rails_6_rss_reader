@@ -1,11 +1,8 @@
 - if flash.present?
   - flash.each do |name, item|
-    = content_tag :div, item['messages'], class: name
+    = content_tag :div, item, class: name
 
 = form_for @feed do |f|
-  .field
-    = f.label :title
-    = f.text_field :title
   .field
     = f.label :url
     = f.text_field :url
