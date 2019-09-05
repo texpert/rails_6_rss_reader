@@ -1,9 +1,9 @@
-- if flash.present?
-  - flash.each do |name, item|
-    = content_tag :div, item, class: name
-
 = form_for @feed do |f|
   .field
-    = f.label :url
-    = f.text_field :url
+    .row
+      .col-1
+        = f.label :url
+      .col-11
+        = f.text_field :url
+  hr
   .actions = f.submit
