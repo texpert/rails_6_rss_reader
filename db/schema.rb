@@ -14,9 +14,11 @@ ActiveRecord::Schema.define(version: 2019_08_31_005357) do
 
   create_table "feeds", force: :cascade do |t|
     t.string "title"
-    t.string "url"
+    t.string "url", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["title"], name: "index_feeds_on_title", unique: true
+    t.index ["url"], name: "index_feeds_on_url", unique: true
   end
 
 end

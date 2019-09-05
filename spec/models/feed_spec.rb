@@ -1,5 +1,29 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Feed, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { is_expected.to have_db_column(:title) }
+  it { is_expected.to have_db_column(:url).with_options(null: false) }
+
+  it { is_expected.to have_db_index(:title).unique(true) }
+  it { is_expected.to have_db_index(:url).unique(true) }
+
+  it { is_expected.to have_readonly_attribute(:title) }
+  it { is_expected.to have_readonly_attribute(:url) }
+
+  context 'when validations' do
+    subject(:feed) { create(:feed) }
+
+    it { is_expected.to validate_presence_of(:url) }
+
+    it { is_expected.to validate_uniqueness_of(:title).case_insensitive }
+    it { is_expected.to validate_uniqueness_of(:url).case_insensitive }
+
+    it 'validates url format' do
+      feed.url = 'invalid url'
+
+      expect(feed).not_to be_valid
+    end
+  end
 end

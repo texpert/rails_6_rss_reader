@@ -20,10 +20,10 @@ class FeedCreator
     response = HTTPX.get(@url)
     (errors.messages[:feed_request] = response.to_s) && (return self) if response.status > 205
 
-    feed = Feedjira.parse(response.to_s)
+    fetched_feed = Feedjira.parse(response.to_s)
 
     @feed = Feed.new(@params)
-    @feed.title = feed.title
+    @feed.title = fetched_feed.title
 
     @feed.save
     @feed
