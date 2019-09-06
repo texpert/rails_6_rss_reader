@@ -1,11 +1,15 @@
 # frozen_string_literal: true
 
 class FeedsController < ApplicationController
-  before_action :set_feed, only: [:show, :edit, :update, :destroy]
+  include Pagy::Backend
+
+  helper Pagy::Frontend
+
+  before_action :set_feed, only: %i[show edit update destroy]
 
   # GET /feeds
   def index
-    @feeds = Feed.all
+    @pagy, @feeds = pagy(Feed.all)
   end
 
   # GET /feeds/1
