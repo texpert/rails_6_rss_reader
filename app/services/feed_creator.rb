@@ -18,7 +18,7 @@ class FeedCreator
     return self unless params_valid?
 
     response = HTTPX.get(@url)
-    if response.status > 200
+    if response.status != 200
       errors.messages[:feed_request] = { response: response.to_s, status: response.status }
       return self
     end
