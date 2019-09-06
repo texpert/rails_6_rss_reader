@@ -1,12 +1,14 @@
-p#notice = notice
-
-p
-  strong Title:
-  = @feed.title
-p
-  strong Url:
-  = @feed.url
-
+.row
+  .col-1
+    strong Title:
+  .col-11
+    = @feed.title
+.row
+  .col-1
+    strong Url:
+  .col-11
+    = @feed.url
+hr
 => link_to 'Edit', edit_feed_path(@feed)
 '|
 =< link_to 'Back', feeds_path
