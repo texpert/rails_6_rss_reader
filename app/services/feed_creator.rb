@@ -28,7 +28,7 @@ class FeedCreator
     @feed = Feed.new(@params)
     @feed.title = fetched_feed.title
 
-    @feed.save! if @feed.valid?
+    @feed.save!(validate: false) if @feed.valid?
     @feed
   rescue StandardError => e
     errors.messages[:exception] = e
