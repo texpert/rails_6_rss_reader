@@ -10,7 +10,6 @@ RSpec.describe Feed, type: :model do
   it { is_expected.to have_db_index(:url).unique(true) }
 
   it { is_expected.to have_readonly_attribute(:title) }
-  it { is_expected.to have_readonly_attribute(:url) }
 
   context 'when validations' do
     subject(:feed) { create(:feed) }
