@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Feed < ApplicationRecord
-  attr_readonly :title, :url
+  attr_readonly :title
 
   validates :url, presence: true
   validates :title, :url, uniqueness: { case_sensitive: false }

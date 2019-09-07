@@ -29,7 +29,7 @@ class FeedsController < ApplicationController
   def create
     result = FeedCreator.run(feed_params)
 
-    return (redirect_to result, notice: 'Feed was successfully created.') if result.errors.blank?
+    return redirect_to result, notice: 'Feed was successfully created' if result.errors.blank?
 
     redirect_to :new_feed, alert: result.errors
   end
@@ -37,7 +37,7 @@ class FeedsController < ApplicationController
   # PATCH/PUT /feeds/1
   def update
     if @feed.update(feed_params)
-      redirect_to @feed, notice: 'Feed was successfully updated.'
+      redirect_to @feed, notice: 'Feed was successfully updated'
     else
       render :edit
     end
