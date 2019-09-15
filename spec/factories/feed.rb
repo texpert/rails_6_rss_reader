@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :feed do
     title { 'Interesting Feed' }
-    url { 'http://example.com' }
+    url { Faker::Internet.url }
   end
 end
