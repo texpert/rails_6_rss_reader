@@ -1,16 +1,18 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "feeds/show", type: :view do
-  before(:each) do
-    @feed = assign(:feed, Feed.create!(
-      :title => "Title",
-      :url => "Url"
-    ))
+RSpec.describe 'feeds/show', type: :view do
+  before do
+    @feed = assign(:feed, Feed.create!(title: 'Feed Title', url: 'http://www.example.com'))
   end
 
-  it "renders attributes in <p>" do
+  it 'renders attributes in <p>' do
     render
-    expect(rendered).to match(/Title/)
-    expect(rendered).to match(/Url/)
+
+    assert_select '.col-1', 'Title:'
+    assert_select '.col-1', 'Url:'
+    assert_select '.col-11', 'Feed Title'
+    assert_select '.col-11', 'http://www.example.com'
   end
 end
