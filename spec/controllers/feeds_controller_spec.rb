@@ -29,7 +29,7 @@ RSpec.describe FeedsController, type: :controller do
   # This should return the minimal set of attributes required to create a valid
   # Feed. As you add validations to Feed, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { url: 'http://www.example.com' } }
+  let(:valid_attributes) { { url: Faker::Internet.url } }
 
   let(:invalid_attributes) { { url: 'bad url' } }
 
@@ -119,7 +119,7 @@ RSpec.describe FeedsController, type: :controller do
 
   describe 'PUT #update' do
     context 'with valid params' do
-      let(:new_attributes) { { url: 'www.other_example.com' } }
+      let(:new_attributes) { { url: Faker::Internet.url } }
 
       it 'updates the requested feed' do
         feed = Feed.create! valid_attributes

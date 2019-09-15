@@ -17,7 +17,7 @@ RSpec.describe 'Posts', type: :request do
       expect(PostsAggregator).to have_received(:run)
     end
 
-    it 'redirects to the created feed' do
+    it 'returns  a successful response' do
       expect(response).to be_successful
     end
 
