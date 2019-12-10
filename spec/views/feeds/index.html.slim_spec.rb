@@ -8,7 +8,7 @@ RSpec.describe 'feeds/index', type: :view do
   helper Pagy::Frontend
 
   let!(:feed1) { create :feed, title: 'Title' }
-  let!(:feed2) { create :feed, title: 'Title1'}
+  let!(:feed2) { create :feed, title: 'Title1' }
 
   before do
     assign(:feeds, pagy(Feed.all)[1])

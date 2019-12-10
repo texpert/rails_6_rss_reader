@@ -13,8 +13,7 @@ class FeedsController < ApplicationController
   end
 
   # GET /feeds/1
-  def show
-  end
+  def show; end
 
   # GET /feeds/new
   def new
@@ -22,8 +21,7 @@ class FeedsController < ApplicationController
   end
 
   # GET /feeds/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /feeds
   def create

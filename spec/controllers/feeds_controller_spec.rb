@@ -94,7 +94,7 @@ RSpec.describe FeedsController, type: :controller do
         expect(response).to redirect_to(feed)
       end
 
-      it { should set_flash[:notice].to('Feed was successfully created') }
+      it { is_expected.to set_flash[:notice].to('Feed was successfully created') }
     end
 
     context 'with invalid params' do
@@ -109,7 +109,7 @@ RSpec.describe FeedsController, type: :controller do
         expect(response).to redirect_to(new_feed_url)
       end
 
-      it { should set_flash[:alert].to(feed.errors) }
+      it { is_expected.to set_flash[:alert].to(feed.errors) }
     end
   end
 
