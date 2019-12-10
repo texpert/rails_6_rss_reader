@@ -18,6 +18,6 @@ Style/StringMethods:
   Description: 'Checks if configured preferred methods are used over non-preferred.'
   Enabled: true
 
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedColonStyle: table
   EnforcedHashRocketStyle: table
