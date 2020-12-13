@@ -5,13 +5,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby File.read('.ruby-version').strip
 
-gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootsnap', '>= 1.4.4', require: false
 gem 'feedjira'
 gem 'httpx'
 gem 'pagy'
-gem 'public_suffix', '~> 3.0.1'
-gem 'puma', '~> 4.3'
-gem 'rails', '~> 6.0.0'
+gem 'public_suffix'
+gem 'puma', '~> 5.0'
+gem 'rails', '~> 6.0'
 gem 'sassc-rails'
 gem 'slim-rails'
 gem 'sqlite3', '~> 1.4'
@@ -32,13 +32,12 @@ group :development, :test do
 end
 
 group :development do
-  gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'rubocop', '~> 0.88', require: false
+  gem 'listen', '~> 3.3'
+  gem 'rubocop', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
 end
 
