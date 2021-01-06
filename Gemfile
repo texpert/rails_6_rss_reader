@@ -48,6 +48,7 @@ group :test do
   gem 'faker'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
+  gem 'simplecov', require: false
   gem 'webdrivers'
 end
 
