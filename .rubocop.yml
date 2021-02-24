@@ -25,15 +25,14 @@ AllCops:
   # behavior by overriding ExtraDetails, or by giving the
   # -E/--extra-details option.
   ExtraDetails: true
+  NewCops: enable
   # Additional cops that do not reference a style guide rule may be enabled by
   # default. Change behavior by overriding StyleGuideCopsOnly, or by giving
   # the --only-guide-cops option.
   TargetRubyVersion: 2.6
 
-Style/StringLiterals:
-  ConsistentQuotesInMultiline: true
-
-##################### Metrics ##################################
+Layout/LineLength:
+  Max: 120
 
 Metrics/AbcSize:
   # The ABC size is a calculated magnitude, so this number can be a Fixnum or
@@ -52,9 +51,6 @@ Metrics/ModuleLength:
 Metrics/CyclomaticComplexity:
   Max: 10
 
-Layout/LineLength:
-  Max: 120
-
 Metrics/MethodLength:
   CountComments: false  # count full line comments?
   Max: 25
@@ -70,3 +66,6 @@ Metrics/BlockLength:
     - '**/*.rake'
     - 'spec/**/*.rb'
     - 'db/**/*.rb'
+
+Style/StringLiterals:
+  ConsistentQuotesInMultiline: true
