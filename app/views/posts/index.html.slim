@@ -1,9 +1,0 @@
-h3 Posts List
-
-table.table
-  tbody
-    - @posts.each do |post|
-      tr
-        td = link_to post.title, post.url, target: "_blank"
-
-== pagy_bootstrap_nav(@pagy)

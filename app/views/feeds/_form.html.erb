@@ -1,0 +1,14 @@
+<%= form_for @feed do |f| %>
+  <div class="field">
+    <div class="row">
+      <div class="col-1">
+        <%= f.label :url %>
+      </div>
+      <div class="col-11">
+        <%= f.text_field :url %>
+      </div></div></div>
+  <hr />
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

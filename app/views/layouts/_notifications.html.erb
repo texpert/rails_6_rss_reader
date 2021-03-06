@@ -1,0 +1,9 @@
+<% if notice %>
+  <div class="alert alert-success">
+    <p><%= notice %></p>
+  </div>
+<% end; if alert %>
+  <div class="alert alert-danger">
+    <p><%= ::Temple::Utils.escape_html((alert)) %></p>
+  </div>
+<% end %>

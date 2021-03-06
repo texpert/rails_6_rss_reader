@@ -1,0 +1,31 @@
+<h3>Feed List</h3>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @feeds.each do |feed| %>
+    <tr>
+      <td><%= feed.title %></td>
+      <td><%= feed.url %></td>
+      <td><%= link_to 'Show', feed %></td>
+      <td><%= link_to 'Edit', edit_feed_path(feed) %></td>
+      <td><%= link_to 'Destroy', feed, data: { confirm: 'Are you sure?' }, method: :delete %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<hr />
+
+<%= link_to 'New Feed', new_feed_path %>
+
+<hr />
+
+<%== pagy_bootstrap_nav(@pagy) %>
