@@ -8,6 +8,7 @@ ruby File.read('.ruby-version').strip
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'feedjira'
 gem 'httpx'
+gem 'oj'
 gem 'pagy'
 gem 'public_suffix'
 gem 'puma', '~> 5.2'
