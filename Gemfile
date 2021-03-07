@@ -17,7 +17,7 @@ gem 'sassc-rails'
 gem 'sqlite3', '~> 1.4'
 gem 'turbolinks', '~> 5'
 gem 'twingly-url'
-gem 'webpacker'
+gem 'webpacker', git: 'https://github.com/rails/webpacker'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
