@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "^6.0.0-beta.5",
+    "@rails/webpacker": "^6.0.0-beta.6",
     "bootstrap": "^4.3.1",
     "css-loader": "^5.1.1",
     "css-minimizer-webpack-plugin": "^1.2.0",
