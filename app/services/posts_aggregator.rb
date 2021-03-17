@@ -24,7 +24,7 @@ class PostsAggregator
       next if r.status != 200
 
       fetched_feed = Feedjira.parse(r.to_s)
-      posts << fetched_feed.entries.first
+      fetched_feed.entries.each { |e| posts << e }
     end
 
     posts.sort_by(&:published).reverse
