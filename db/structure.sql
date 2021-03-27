@@ -236,7 +236,8 @@ CREATE TABLE public.feeds (
     title character varying,
     url character varying NOT NULL,
     created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    updated_at timestamp(6) without time zone NOT NULL,
+    logo_data text
 );
 
 
@@ -435,6 +436,7 @@ SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
 ('20190831005357'),
-('20210326233837');
+('20210326233837'),
+('20210327142311');
 
 
