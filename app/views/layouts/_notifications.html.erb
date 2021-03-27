@@ -4,6 +4,6 @@
   </div>
 <% end; if alert %>
   <div class="alert alert-danger">
-    <p><%= ::Temple::Utils.escape_html((alert)) %></p>
+    <p><%= ERB::Util.html_escape(alert) %></p>
   </div>
 <% end %>
