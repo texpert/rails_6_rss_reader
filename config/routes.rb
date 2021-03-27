@@ -6,4 +6,6 @@ Rails.application.routes.draw do
     resources :posts
   end
   get '/posts', to: 'posts#index'
+
+  mount Shrine.presign_endpoint(:cache) => '/presign'
 end
