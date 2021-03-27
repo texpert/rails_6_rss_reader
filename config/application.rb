@@ -25,9 +25,16 @@ module Rails6RssReader
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+    config.active_record.schema_format = :sql
     config.generators do |g|
       g.assets false
     end
+    config.action_mailer.deliver_later_queue_name = :default
+    # config.action_mailbox.queues.incineration = :default
+    # config.action_mailbox.queues.routing = :default
+    # config.active_storage.queues.analysis = :default
+    # config.active_storage.queues.purge = :default
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
