@@ -1,1 +1,1 @@
-require('dropzone')
+import '../src/js/dropzone_helper'
