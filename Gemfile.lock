@@ -80,7 +80,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.2)
     aws-eventstream (1.1.1)
-    aws-partitions (1.437.0)
+    aws-partitions (1.443.0)
     aws-sdk-core (3.113.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
@@ -269,7 +269,7 @@ GEM
     shrine (2.19.4)
       content_disposition (~> 1.0)
       down (>= 4.1, < 6)
-    shrine-lambda (0.1.0)
+    shrine-lambda (0.1.1)
       aws-sdk-lambda (~> 1.0)
       aws-sdk-s3 (~> 1.2)
       shrine (~> 2.6)
@@ -342,7 +342,7 @@ DEPENDENCIES
   sassc-rails
   selenium-webdriver
   shoulda-matchers
-  shrine-lambda
+  shrine-lambda (= 0.1.1)
   simplecov
   spring
   turbolinks (~> 5)
