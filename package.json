@@ -2,7 +2,7 @@
   "name": "rails_6_rss_reader",
   "private": true,
   "scripts": {
-    "dev": "webpack-dashboard -p 3035 -- webpack serve --port 3035 --config ./config/webpack/development.js"
+    "dev": "webpack-dashboard -p 3001 -- webpack serve --port 3035 --config ./config/webpack/development.js"
   },
   "dependencies": {
     "@rails/ujs": "^6.0.0",
