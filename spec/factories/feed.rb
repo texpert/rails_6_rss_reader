@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :feed do
-    title { 'Interesting Feed' }
-    url { Faker::Internet.url }
+    title { Faker::Lorem.unique.sentence }
+    url { Faker::Internet.unique.url }
   end
 end
