@@ -28,4 +28,6 @@
 
 <hr />
 
-<%== pagy_bootstrap_nav(@pagy) %>
+<% if @feeds.size > Pagy::VARS[:items] %>
+  <%== pagy_bootstrap_nav(@pagy) %>
+<% end %>
