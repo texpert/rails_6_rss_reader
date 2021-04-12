@@ -67,5 +67,11 @@ Metrics/BlockLength:
     - 'spec/**/*.rb'
     - 'db/**/*.rb'
 
+RSpec/MultipleExpectations:
+  Max: 13
+
+RSpec/NestedGroups:
+  Max: 7
+
 Style/StringLiterals:
   ConsistentQuotesInMultiline: true
