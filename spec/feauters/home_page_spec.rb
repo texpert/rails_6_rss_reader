@@ -10,15 +10,9 @@ RSpec.describe 'Home page', type: :feature do
       it 'has certain links' do
         expect(page).to have_title('Rails6RssReader')
         within(:xpath, './/body') do
-          within('.container') do
-            within('.navbar') do
-              within('.navbar-nav-scroll') do
-                within('.navbar-nav') do
-                  find_link('Feeds', visible: :all).visible?
-                  find_link('Posts', visible: :all).visible?
-                end
-              end
-            end
+          within('.container .navbar .navbar-nav-scroll .navbar-nav') do
+            find_link('Feeds', visible: :all, exact: true).visible?
+            find_link('Posts', visible: :all, exact: true).visible?
           end
         end
       end
@@ -31,14 +25,14 @@ RSpec.describe 'Home page', type: :feature do
         it 'has only headers, no rows, no pagination widget, and a `New Feed` link' do
           within(:xpath, './/body') do
             within('.container') do
-              expect(find(:xpath, './/table/caption').text).to eql('Feeds List')
-              within(:xpath, './/table/thead/tr') do
-                headers = find(:xpath, '.').all('th').map(&:text)
+              expect(find('table/caption').text).to eql('Feeds List')
+              within('.table/thead/tr') do
+                headers = all('th').map(&:text)
                 expect(headers[0]).to eql('Title')
                 expect(headers[1]).to eql('Url')
               end
-              within(:xpath, './/table/tbody') do
-                table_rows = find(:xpath, '.').all('tr')
+              within('.table/tbody') do
+                table_rows = all('tr')
                 expect(table_rows.size).to be(0)
               end
               find_link('New Feed', exact: true)
@@ -57,14 +51,14 @@ RSpec.describe 'Home page', type: :feature do
         it 'has headers, feeds list rows, no pagination widget, and a `New Feed` link' do
           within(:xpath, './/body') do
             within('.container') do
-              expect(find(:xpath, './/table/caption').text).to eql('Feeds List')
-              within(:xpath, './/table/thead/tr') do
-                headers = find(:xpath, '.').all('th').map(&:text)
+              expect(find('caption').text).to eql('Feeds List')
+              within('.table/thead/tr') do
+                headers = all('th').map(&:text)
                 expect(headers[0]).to eql('Title')
                 expect(headers[1]).to eql('Url')
               end
-              within(:xpath, './/table/tbody') do
-                table_rows = find(:xpath, '.').all('tr')
+              within('.table/tbody') do
+                table_rows = all('tr')
                 expect(table_rows.size).to eql(feeds_number)
               end
               find_link('New Feed', exact: true)
@@ -83,18 +77,17 @@ RSpec.describe 'Home page', type: :feature do
         it 'has headers, feeds list rows qty equal to Pagy::VARS[:items], pagination widget, and a `New Feed` link' do
           within(:xpath, './/body') do
             within('.container') do
-              expect(find(:xpath, './/table/caption').text).to eql('Feeds List')
-              within(:xpath, './/table/thead/tr') do
-                headers = find(:xpath, '.').all('th').map(&:text)
+              expect(find('.table/caption').text).to eql('Feeds List')
+              within('.table/thead/tr') do
+                headers = all('th').map(&:text)
                 expect(headers[0]).to eql('Title')
                 expect(headers[1]).to eql('Url')
               end
               within(:xpath, './/table/tbody') do
-                table_rows = find(:xpath, '.').all('tr')
+                table_rows = all('tr')
                 expect(table_rows.size).to eql(Pagy::VARS[:items])
               end
               find_link('New Feed', exact: true)
-              find_css('.pagy-bootstrap-nav')
               expect(has_css?('.pagy-bootstrap-nav')).to be_truthy
             end
           end
