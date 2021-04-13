@@ -9,11 +9,9 @@ RSpec.describe 'Home page', type: :feature do
 
       it 'has certain links' do
         expect(page).to have_title('Rails6RssReader')
-        within(:xpath, './/body') do
-          within('.container .navbar .navbar-nav-scroll .navbar-nav') do
-            find_link('Feeds', visible: :all, exact: true).visible?
-            find_link('Posts', visible: :all, exact: true).visible?
-          end
+        within('body .container .navbar .navbar-nav-scroll .navbar-nav') do
+          expect(page).to have_link('Feeds', exact: true)
+          expect(page).to have_link('Posts', exact: true)
         end
       end
     end
@@ -23,21 +21,14 @@ RSpec.describe 'Home page', type: :feature do
         before { visit '/' }
 
         it 'has only headers, no rows, no pagination widget, and a `New Feed` link' do
-          within(:xpath, './/body') do
-            within('.container') do
-              expect(find('table/caption').text).to eql('Feeds List')
-              within('.table/thead/tr') do
-                headers = all('th').map(&:text)
-                expect(headers[0]).to eql('Title')
-                expect(headers[1]).to eql('Url')
-              end
-              within('.table/tbody') do
-                table_rows = all('tr')
-                expect(table_rows.size).to be(0)
-              end
-              find_link('New Feed', exact: true)
-              expect(has_css?('.pagy-bootstrap-nav')).to be_falsey
+          within('body .container') do
+            expect(find('table caption').text).to eql('Feeds List')
+            expect(page).to have_css('table thead tr th') do |headers|
+              headers.map(&:text) == %w[Title Url]
             end
+            expect(page).to have_css('tbody tr', count: 0)
+            expect(page).to have_link('New Feed', exact: true)
+            expect(page).not_to have_css('.pagy-bootstrap-nav')
           end
         end
       end
@@ -49,21 +40,14 @@ RSpec.describe 'Home page', type: :feature do
         before { visit '/' }
 
         it 'has headers, feeds list rows, no pagination widget, and a `New Feed` link' do
-          within(:xpath, './/body') do
-            within('.container') do
-              expect(find('caption').text).to eql('Feeds List')
-              within('.table/thead/tr') do
-                headers = all('th').map(&:text)
-                expect(headers[0]).to eql('Title')
-                expect(headers[1]).to eql('Url')
-              end
-              within('.table/tbody') do
-                table_rows = all('tr')
-                expect(table_rows.size).to eql(feeds_number)
-              end
-              find_link('New Feed', exact: true)
-              expect(has_css?('.pagy-bootstrap-nav')).to be_falsey
+          within('body .container') do
+            expect(find('table caption').text).to eql('Feeds List')
+            expect(page).to have_css('table thead tr th') do |headers|
+              headers.map(&:text) == %w[Title Url]
             end
+            expect(page).to have_css('tbody tr', count: feeds_number)
+            expect(page).to have_link('New Feed', exact: true)
+            expect(page).not_to have_css('.pagy-bootstrap-nav')
           end
         end
       end
@@ -75,21 +59,14 @@ RSpec.describe 'Home page', type: :feature do
         before { visit '/' }
 
         it 'has headers, feeds list rows qty equal to Pagy::VARS[:items], pagination widget, and a `New Feed` link' do
-          within(:xpath, './/body') do
-            within('.container') do
-              expect(find('.table/caption').text).to eql('Feeds List')
-              within('.table/thead/tr') do
-                headers = all('th').map(&:text)
-                expect(headers[0]).to eql('Title')
-                expect(headers[1]).to eql('Url')
-              end
-              within(:xpath, './/table/tbody') do
-                table_rows = all('tr')
-                expect(table_rows.size).to eql(Pagy::VARS[:items])
-              end
-              find_link('New Feed', exact: true)
-              expect(has_css?('.pagy-bootstrap-nav')).to be_truthy
+          within('body .container') do
+            expect(find('table caption').text).to eql('Feeds List')
+            expect(page).to have_css('table thead tr th') do |headers|
+              headers.map(&:text) == %w[Title Url]
             end
+            expect(page).to have_css('tbody tr', count: Pagy::VARS[:items])
+            expect(page).to have_link('New Feed', exact: true)
+            expect(page).to have_css('.pagy-bootstrap-nav')
           end
         end
       end
