@@ -1,32 +1,22 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
+require './spec/shared_examples/navbar'
+require './spec/shared_examples/feeds_list_table'
 
 RSpec.describe 'Home page', type: :feature do
   describe 'Layout' do
-    describe 'navbar' do
-      before { visit '/' }
-
-      it 'has certain links' do
-        expect(page).to have_title('Rails6RssReader')
-        within('body .container .navbar .navbar-nav-scroll .navbar-nav') do
-          expect(page).to have_link('Feeds', exact: true)
-          expect(page).to have_link('Posts', exact: true)
-        end
-      end
-    end
-
     describe 'table' do
       context 'when no feeds are defined yet' do
+        let(:feed_list_number) { 0 }
+
         before { visit '/' }
 
-        it 'has only headers, no rows, no pagination widget, and a `New Feed` link' do
+        it_has_layout_elements 'navbar'
+        it_has_layout_elements 'feeds list table'
+
+        it 'has no pagination widget, and a `New Feed` link' do
           within('body .container') do
-            expect(find('table caption').text).to eql('Feeds List')
-            expect(page).to have_css('table thead tr th') do |headers|
-              headers.map(&:text) == %w[Title Url]
-            end
-            expect(page).to have_css('tbody tr', count: 0)
             expect(page).to have_link('New Feed', exact: true)
             expect(page).not_to have_css('.pagy-bootstrap-nav')
           end
@@ -35,17 +25,18 @@ RSpec.describe 'Home page', type: :feature do
 
       context 'when there a number of feeds defined, but less than Pagy::VARS[:items]' do
         let(:feeds_number) { rand(1..Pagy::VARS[:items]) }
+        let(:feed_list_number) { feeds_number }
         let!(:feed_list) { create_list(:feed, feeds_number) } # rubocop:disable RSpec/LetSetup
 
-        before { visit '/' }
+        before do
+          visit '/'
+        end
 
-        it 'has headers, feeds list rows, no pagination widget, and a `New Feed` link' do
+        it_has_layout_elements 'navbar'
+        it_has_layout_elements 'feeds list table'
+
+        it 'has no pagination widget, and a `New Feed` link' do
           within('body .container') do
-            expect(find('table caption').text).to eql('Feeds List')
-            expect(page).to have_css('table thead tr th') do |headers|
-              headers.map(&:text) == %w[Title Url]
-            end
-            expect(page).to have_css('tbody tr', count: feeds_number)
             expect(page).to have_link('New Feed', exact: true)
             expect(page).not_to have_css('.pagy-bootstrap-nav')
           end
@@ -54,17 +45,16 @@ RSpec.describe 'Home page', type: :feature do
 
       context 'when there a number of feeds defined, more than Pagy::VARS[:items]' do
         let(:feeds_number) { rand(Pagy::VARS[:items] + 1..Pagy::VARS[:items] + 5) }
+        let(:feed_list_number) { Pagy::VARS[:items] }
         let!(:feed_list) { create_list(:feed, feeds_number) } # rubocop:disable RSpec/LetSetup
 
         before { visit '/' }
 
-        it 'has headers, feeds list rows qty equal to Pagy::VARS[:items], pagination widget, and a `New Feed` link' do
+        it_has_layout_elements 'navbar'
+        it_has_layout_elements 'feeds list table'
+
+        it 'has a pagination widget, and a `New Feed` link' do
           within('body .container') do
-            expect(find('table caption').text).to eql('Feeds List')
-            expect(page).to have_css('table thead tr th') do |headers|
-              headers.map(&:text) == %w[Title Url]
-            end
-            expect(page).to have_css('tbody tr', count: Pagy::VARS[:items])
             expect(page).to have_link('New Feed', exact: true)
             expect(page).to have_css('.pagy-bootstrap-nav')
           end
