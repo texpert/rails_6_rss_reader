@@ -29,7 +29,7 @@ AllCops:
   # Additional cops that do not reference a style guide rule may be enabled by
   # default. Change behavior by overriding StyleGuideCopsOnly, or by giving
   # the --only-guide-cops option.
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 2.7
 
 Layout/LineLength:
   Max: 120
