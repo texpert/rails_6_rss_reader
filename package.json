@@ -26,6 +26,9 @@
     "webpack-dashboard": "^3.3.3",
     "webpack-dev-server": "^4.0.0-beta.3"
   },
+  "resolutions": {
+    "multicast-dns": "7.2.3"
+  },
   "babel": {
     "presets": [
       "./node_modules/@rails/webpacker/package/babel/preset.js"
