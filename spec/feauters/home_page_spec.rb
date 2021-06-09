@@ -16,7 +16,7 @@ RSpec.describe 'Home page', type: :feature do
         it_has_layout_elements 'feeds list table'
 
         it 'has no pagination widget, and a `New Feed` link' do
-          within('body .container') do
+          within('body') do
             expect(page).to have_link('New Feed', exact: true)
             expect(page).not_to have_css('.pagy-bootstrap-nav')
           end
@@ -36,7 +36,7 @@ RSpec.describe 'Home page', type: :feature do
         it_has_layout_elements 'feeds list table'
 
         it 'has no pagination widget, and a `New Feed` link' do
-          within('body .container') do
+          within('body') do
             expect(page).to have_link('New Feed', exact: true)
             expect(page).not_to have_css('.pagy-bootstrap-nav')
           end
@@ -54,7 +54,7 @@ RSpec.describe 'Home page', type: :feature do
         it_has_layout_elements 'feeds list table'
 
         it 'has a pagination widget, and a `New Feed` link' do
-          within('body .container') do
+          within('body') do
             expect(page).to have_link('New Feed', exact: true)
             expect(page).to have_css('.pagy-bootstrap-nav')
           end
