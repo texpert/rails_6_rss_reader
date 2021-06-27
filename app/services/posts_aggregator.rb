@@ -17,7 +17,7 @@ class PostsAggregator
   def run
     feeds_urls = Feed.pluck(:url)
 
-    responses = *HTTPX.get(*feeds_urls)
+    responses = HTTPX.get(*feeds_urls)
 
     posts = []
     responses.each do |r|
