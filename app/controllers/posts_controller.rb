@@ -9,6 +9,6 @@ class PostsController < ApplicationController
   def index
     result = PostsAggregator.run
     result.respond_to?(:errors) ? (flash[:alert] = result.errors.messages) : (@pagy, @posts = pagy_array(result))
-    @posts ||= []
+    @posts ||= [] # rubocop:disable Naming/MemoizedInstanceVariableName
   end
 end
