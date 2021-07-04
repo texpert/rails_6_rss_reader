@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 class PostsAggregator
-  def self.run(params = {})
-    new(params).run
+  def self.run(...)
+    new(...).run
   end
 
   Errors = Struct.new(:messages)
@@ -15,9 +15,10 @@ class PostsAggregator
   attr_reader :errors
 
   def run
-    feeds_urls = Feed.pluck(:url)
+    feed_id = @params[:feed_id]
+    feeds_urls = feed_id ? Feed.where(id: feed_id).pluck(:url) : Feed.pluck(:url)
 
-    responses = HTTPX.get(*feeds_urls)
+    responses = *HTTPX.get(*feeds_urls)
 
     posts = []
     responses.each do |r|

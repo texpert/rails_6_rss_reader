@@ -2,6 +2,8 @@
 
 Rails.application.routes.draw do
   root 'feeds#index'
-  resources :feeds
+  resources :feeds do
+    resources :posts
+  end
   get '/posts', to: 'posts#index'
 end

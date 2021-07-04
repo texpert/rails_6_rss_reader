@@ -7,7 +7,7 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
-    result = PostsAggregator.run
+    result = PostsAggregator.run(params)
     result.respond_to?(:errors) ? (flash[:alert] = result.errors.messages) : (@pagy, @posts = pagy_array(result))
     @posts ||= [] # rubocop:disable Naming/MemoizedInstanceVariableName
   end

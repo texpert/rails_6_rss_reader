@@ -7,6 +7,7 @@
     <th></th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
   </thead>
   <tbody>
@@ -14,6 +15,7 @@
     <tr>
       <td><%= feed.title %></td>
       <td><%= feed.url %></td>
+      <td><%= link_to 'Posts', feed_posts_path(feed) %></td>
       <td><%= link_to 'Show', feed %></td>
       <td><%= link_to 'Edit', edit_feed_path(feed) %></td>
       <td><%= link_to 'Destroy', feed, data: { confirm: 'Are you sure?' }, method: :delete %></td>
