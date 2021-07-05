@@ -163,7 +163,7 @@ GEM
     nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    oj (3.11.7)
+    oj (3.11.8)
     pagy (4.10.1)
     parallel (1.20.1)
     parser (3.0.1.1)
