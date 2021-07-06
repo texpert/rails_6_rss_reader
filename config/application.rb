@@ -45,4 +45,5 @@ module Rails6RssReader
   end
 end
 
+Oj.default_options = { mode: :custom, cache_keys: true, cache_str: 5 }
 Oj.optimize_rails
