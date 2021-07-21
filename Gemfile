@@ -34,7 +34,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'listen', '~> 3.5'
+  gem 'listen', '~> 3.6'
   gem 'rubocop', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
