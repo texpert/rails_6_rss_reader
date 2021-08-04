@@ -30,6 +30,7 @@ gem 'webpacker', git: 'https://github.com/rails/webpacker'
 # gem 'image_processing', '~> 1.2'
 
 group :development, :test do
+  gem 'appmap'
   gem 'rspec-rails'
 end
 
