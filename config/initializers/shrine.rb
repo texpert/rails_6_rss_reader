@@ -40,7 +40,7 @@ else
     extension    = File.extname(filename)
     content_type = Rack::Mime.mime_type(extension)
 
-    { content_length_range: 0..1.gigabyte, # limit filesize to 1 GB
+    { content_length_range: 0..(1.gigabyte), # limit filesize to 1 GB
       content_disposition:  "attachment; filename=\"#{filename}\"", # download with original filename
       content_type:         content_type } # set correct content type
   }
