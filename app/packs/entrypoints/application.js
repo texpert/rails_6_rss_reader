@@ -14,7 +14,6 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 require("@rails/ujs").start()
 require("turbolinks").start()
@@ -23,6 +22,5 @@ import $ from 'jquery/src/jquery'
 window.jQuery = $
 window.$ = $
 
-import '../stylesheets/application.scss'
 import '../src/js/bootstrap_custom.js'
 import '../src/js/pagy.js.erb'
