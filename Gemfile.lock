@@ -94,7 +94,7 @@ GEM
     aws-sigv4 (1.2.4)
       aws-eventstream (~> 1, >= 1.0.2)
     bindex (0.8.1)
-    bootsnap (1.8.0)
+    bootsnap (1.8.1)
       msgpack (~> 1.0)
     builder (3.2.4)
     capybara (3.35.3)
@@ -316,7 +316,7 @@ PLATFORMS
 
 DEPENDENCIES
   appmap
-  bootsnap (>= 1.4.4)
+  bootsnap (>= 1.8.1)
   capybara (>= 2.15)
   factory_bot_rails
   faker
