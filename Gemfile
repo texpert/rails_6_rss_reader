@@ -48,7 +48,7 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'factory_bot_rails'
   gem 'faker'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '>= 4.0.0.rc1'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'webdrivers'
