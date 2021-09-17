@@ -349,7 +349,7 @@ DEPENDENCIES
   webpacker (>= 6.0.0.pre.rc.5)
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 2.7.4p191
 
 BUNDLED WITH
    1.17.3

@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version: 2.6.6
+* Ruby version: 2.7.4
 
 * Node.js version 14.16.0
 
