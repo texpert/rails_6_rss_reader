@@ -36,6 +36,7 @@ end
 
 group :development do
   gem 'listen', '~> 3.7'
+  gem 'localhost', require: 'localhost/authority'
   gem 'rubocop', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
