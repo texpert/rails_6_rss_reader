@@ -11,7 +11,7 @@ RSpec.describe 'Feeds', type: :request do
       get feeds_path
     end
 
-    it 'returns  a successful response' do
+    it 'returns a successful response' do
       expect(response).to be_successful
     end
 
