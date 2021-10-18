@@ -23,8 +23,8 @@ RSpec.describe 'Home page', type: :feature do
         end
       end
 
-      context 'when there a number of feeds defined, but less than Pagy::VARS[:items]' do
-        let(:feeds_number) { rand(1..Pagy::VARS[:items]) }
+      context 'when there a number of feeds defined, but less than Pagy::DEFAULT[:items]' do
+        let(:feeds_number) { rand(1..Pagy::DEFAULT[:items]) }
         let(:feed_list_number) { feeds_number }
         let!(:feed_list) { create_list(:feed, feeds_number) } # rubocop:disable RSpec/LetSetup
 
@@ -43,9 +43,9 @@ RSpec.describe 'Home page', type: :feature do
         end
       end
 
-      context 'when there a number of feeds defined, more than Pagy::VARS[:items]' do
-        let(:feeds_number) { rand(Pagy::VARS[:items] + 1..Pagy::VARS[:items] + 5) }
-        let(:feed_list_number) { Pagy::VARS[:items] }
+      context 'when there a number of feeds defined, more than Pagy::DEFAULT[:items]' do
+        let(:feeds_number) { rand(Pagy::DEFAULT[:items] + 1..Pagy::DEFAULT[:items] + 5) }
+        let(:feed_list_number) { Pagy::DEFAULT[:items] }
         let!(:feed_list) { create_list(:feed, feeds_number) } # rubocop:disable RSpec/LetSetup
 
         before { visit '/' }

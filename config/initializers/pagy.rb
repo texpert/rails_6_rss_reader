@@ -16,7 +16,7 @@ require 'pagy/extras/array'
 # Countless extra: Paginate without any count, saving one query per rendering
 # See https://ddnexus.github.io/pagy/extras/countless
 # require 'pagy/extras/countless'
-# Pagy::VARS[:cycle] = false    # default
+# Pagy::DEFAULT[:cycle] = false    # default
 
 # Elasticsearch Rails extra: Paginate `ElasticsearchRails::Results` objects
 # See https://ddnexus.github.io/pagy/extras/elasticsearch_rails
@@ -60,7 +60,7 @@ require 'pagy/extras/bootstrap'
 
 # Multi size var used by the *_nav_js helpers
 # See https://ddnexus.github.io/pagy/extras/navs#steps
-# Pagy::VARS[:steps] = { 0 => [2,3,3,2], 540 => [3,5,5,3], 720 => [5,7,7,5] }   # example
+# Pagy::DEFAULT[:steps] = { 0 => [2,3,3,2], 540 => [3,5,5,3], 720 => [5,7,7,5] }   # example
 
 # Feature Extras
 
@@ -68,7 +68,7 @@ require 'pagy/extras/bootstrap'
 # See http://ddnexus.github.io/pagy/extras/headers
 # require 'pagy/extras/headers'
 # default:
-# Pagy::VARS[:headers] = { page: 'Current-Page', items: 'Page-Items', count: 'Total-Count', pages: 'Total-Pages' }
+# Pagy::DEFAULT[:headers] = { page: 'Current-Page', items: 'Page-Items', count: 'Total-Count', pages: 'Total-Pages' }
 
 # Support extra: Extra support for features like: incremental, infinite, auto-scroll pagination
 # See https://ddnexus.github.io/pagy/extras/support
@@ -77,13 +77,13 @@ require 'pagy/extras/bootstrap'
 # Items extra: Allow the client to request a custom number of items per page with an optional selector UI
 # See https://ddnexus.github.io/pagy/extras/items
 # require 'pagy/extras/items'
-# Pagy::VARS[:items_param] = :items    # default
-# Pagy::VARS[:max_items]   = 100       # default
+# Pagy::DEFAULT[:items_param] = :items    # default
+# Pagy::DEFAULT[:max_items]   = 100       # default
 
 # Overflow extra: Allow for easy handling of overflowing pages
 # See https://ddnexus.github.io/pagy/extras/overflow
 # require 'pagy/extras/overflow'
-# Pagy::VARS[:overflow] = :empty_page    # default  (other options: :last_page and :exception)
+# Pagy::DEFAULT[:overflow] = :empty_page    # default  (other options: :last_page and :exception)
 
 # Metadata extra: Provides the pagination metadata to Javascript frameworks like Vue.js, react.js, etc.
 # See https://ddnexus.github.io/pagy/extras/metadata
@@ -91,7 +91,7 @@ require 'pagy/extras/bootstrap'
 # require 'pagy/extras/shared'
 # require 'pagy/extras/metadata'
 # For performance reason, you should explicitly set ONLY the metadata you use in the frontend
-# Pagy::VARS[:metadata] = [:scaffold_url, :count, :page, :prev, :next, :last]    # example
+# Pagy::DEFAULT[:metadata] = [:scaffold_url, :count, :page, :prev, :next, :last]    # example
 
 # Trim extra: Remove the page=1 param from links
 # See https://ddnexus.github.io/pagy/extras/trim
@@ -99,20 +99,20 @@ require 'pagy/extras/bootstrap'
 
 # Pagy Variables
 # See https://ddnexus.github.io/pagy/api/pagy#variables
-# All the Pagy::VARS are set for all the Pagy instances but can be overridden
+# All the Pagy::DEFAULT are set for all the Pagy instances but can be overridden
 # per instance by just passing them to Pagy.new or the #pagy controller method
 
 # Instance variables
 # See https://ddnexus.github.io/pagy/api/pagy#instance-variables
-# Pagy::VARS[:items] = 20                                   # default
+# Pagy::DEFAULT[:items] = 20                                   # default
 
 # Other Variables
 # See https://ddnexus.github.io/pagy/api/pagy#other-variables
-# Pagy::VARS[:size]       = [1,4,4,1]                       # default
-# Pagy::VARS[:page_param] = :page                           # default
-# Pagy::VARS[:params]     = {}                              # default
-# Pagy::VARS[:anchor]     = '#anchor'                       # example
-# Pagy::VARS[:link_extra] = 'data-remote="true"'            # example
+# Pagy::DEFAULT[:size]       = [1,4,4,1]                       # default
+# Pagy::DEFAULT[:page_param] = :page                           # default
+# Pagy::DEFAULT[:params]     = {}                              # default
+# Pagy::DEFAULT[:fragment]   = '#fragment'                     # example
+# Pagy::DEFAULT[:link_extra] = 'data-remote="true"'            # example
 
 # Rails
 
@@ -156,4 +156,4 @@ require 'pagy/extras/bootstrap'
 # require 'pagy/extras/i18n'
 
 # Default i18n key
-# Pagy::VARS[:i18n_key] = 'pagy.item_name'   # default
+# Pagy::DEFAULT[:i18n_key] = 'pagy.item_name'   # default

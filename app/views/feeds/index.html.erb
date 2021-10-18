@@ -30,4 +30,4 @@
 
 <hr />
 
-<%== pagy_bootstrap_nav(@pagy) if @pagy.count > Pagy::VARS[:items] %>
+<%== pagy_bootstrap_nav(@pagy) if @pagy.count > Pagy::DEFAULT[:items] %>
