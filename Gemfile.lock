@@ -314,6 +314,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_86-linux
 
 DEPENDENCIES
   appmap
@@ -353,4 +354,4 @@ RUBY VERSION
    ruby 2.7.4p191
 
 BUNDLED WITH
-   1.17.3
+   2.2.21
