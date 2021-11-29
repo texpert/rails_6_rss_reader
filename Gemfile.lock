@@ -155,7 +155,7 @@ GEM
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
     oj (3.13.9)
-    pagy (5.6.0)
+    pagy (5.6.1)
     parallel (1.21.0)
     parser (3.0.3.0)
       ast (~> 2.4.1)
