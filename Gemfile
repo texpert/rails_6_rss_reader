@@ -41,7 +41,6 @@ group :development do
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
-  gem 'spring'
   gem 'web-console', '>= 3.3.0'
 end
 
