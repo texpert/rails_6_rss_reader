@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version: 2.7.5
 
-* Node.js version 14.16.0
+* Node.js version 16.13.2
 
 * Running `yarn dev` will start `webpack-dev-server` via `webpack-dashboard`
 
