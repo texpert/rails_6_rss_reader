@@ -15,7 +15,8 @@
 // const imagePath = (name) => images(name, true)
 
 import 'regenerator-runtime/runtime'
-require("@rails/ujs").start()
+import Rails from "@rails/ujs"
+Rails.start()
 require("turbolinks").start()
 
 import $ from 'jquery/src/jquery'
