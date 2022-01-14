@@ -142,9 +142,6 @@ GEM
       concurrent-ruby (~> 1.0)
     io-wait (0.2.1)
     jmespath (1.5.0)
-    listen (3.7.1)
-      rb-fsevent (~> 0.10, >= 0.10.3)
-      rb-inotify (~> 0.9, >= 0.9.10)
     localhost (1.1.9)
     loofah (2.13.0)
       crass (~> 1.0.2)
@@ -220,9 +217,6 @@ GEM
       zeitwerk (~> 2.5)
     rainbow (3.1.1)
     rake (13.0.6)
-    rb-fsevent (0.11.0)
-    rb-inotify (0.10.1)
-      ffi (~> 1.0)
     regexp_parser (2.2.0)
     reverse_markdown (2.1.1)
       nokogiri
@@ -348,7 +342,6 @@ DEPENDENCIES
   faker
   feedjira
   httpx
-  listen (~> 3.7)
   localhost
   oj
   pagy
