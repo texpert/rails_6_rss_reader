@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/que-rb/que
-  revision: 9535d5e0b69f1dbf4fb1cfb42a84bd6b8c7e9196
+  revision: fa4988ee33444c5a2db379f112000330434abac1
   specs:
-    que (1.0.0.beta5)
+    que (1.0.0)
 
 GEM
   remote: https://rubygems.org/
