@@ -30,7 +30,6 @@ gem 'webpacker', '>= 6.0.0.pre.rc.5'
 # gem 'image_processing', '~> 1.2'
 
 group :development, :test do
-  gem 'appmap'
   gem 'rspec-rails'
 end
 

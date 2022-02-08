@@ -68,11 +68,6 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    appmap (0.72.1)
-      activesupport
-      method_source
-      rack
-      reverse_markdown
     ast (2.4.2)
     aws-eventstream (1.2.0)
     aws-partitions (1.553.0)
@@ -214,8 +209,6 @@ GEM
     rainbow (3.1.1)
     rake (13.0.6)
     regexp_parser (2.2.0)
-    reverse_markdown (2.1.1)
-      nokogiri
     rexml (3.2.5)
     rspec-core (3.10.2)
       rspec-support (~> 3.10.0)
@@ -331,7 +324,6 @@ PLATFORMS
   x86_86-linux
 
 DEPENDENCIES
-  appmap
   bootsnap (>= 1.8.1)
   capybara (>= 2.15)
   factory_bot_rails
