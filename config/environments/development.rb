@@ -2,6 +2,19 @@
 
 require 'active_support/core_ext/integer/time'
 
+if NGROK_ENABLED
+  require 'ngrok/wrapper'
+
+  options = { addr: 'https://localhost:3000', persistence: true }
+  options[:config] = ENV.fetch('NGROK_CONFIG', "#{ENV['HOME']}/.ngrok2/ngrok.yml")
+  options[:inspect] = ENV['NGROK_INSPECT'] if ENV['NGROK_INSPECT']
+
+  puts "[NGROK] tunneling at #{Ngrok::Wrapper.start(options)}"
+  puts '[NGROK] inspector web interface listening at http://127.0.0.1:4040' if ENV['NGROK_INSPECT'] == 'true'
+
+  NGROK_URL = Ngrok::Wrapper.ngrok_url_https
+end
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -57,6 +70,11 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
+
+  if NGROK_ENABLED
+    config.force_ssl = true
+    config.hosts << ".ngrok.io"
+  end
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true

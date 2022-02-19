@@ -163,6 +163,7 @@ GEM
       digest
       net-protocol
       timeout
+    ngrok-wrapper (0.1.0)
     nio4r (2.5.8)
     nokogiri (1.13.1)
       mini_portile2 (~> 2.7.0)
@@ -336,6 +337,7 @@ DEPENDENCIES
   feedjira
   httpx
   localhost
+  ngrok-wrapper
   oj
   pagy
   pg

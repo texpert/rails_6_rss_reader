@@ -36,6 +36,7 @@ end
 
 group :development do
   gem 'localhost', require: 'localhost/authority'
+  gem 'ngrok-wrapper'
   gem 'rubocop', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
