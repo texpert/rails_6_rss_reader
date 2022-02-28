@@ -27,7 +27,7 @@ $$;
 
 SET default_tablespace = '';
 
-SET default_with_oids = false;
+SET default_table_access_method = heap;
 
 --
 -- Name: que_jobs; Type: TABLE; Schema: public; Owner: -
@@ -46,6 +46,7 @@ CREATE TABLE public.que_jobs (
     expired_at timestamp with time zone,
     args jsonb DEFAULT '[]'::jsonb NOT NULL,
     data jsonb DEFAULT '{}'::jsonb NOT NULL,
+    job_schema_version integer DEFAULT 1,
     CONSTRAINT error_length CHECK (((char_length(last_error_message) <= 500) AND (char_length(last_error_backtrace) <= 10000))),
     CONSTRAINT job_class_length CHECK ((char_length(
 CASE job_class
@@ -57,13 +58,6 @@ END) <= 200)),
     CONSTRAINT valid_data CHECK (((jsonb_typeof(data) = 'object'::text) AND ((NOT (data ? 'tags'::text)) OR ((jsonb_typeof((data -> 'tags'::text)) = 'array'::text) AND (jsonb_array_length((data -> 'tags'::text)) <= 5) AND public.que_validate_tags((data -> 'tags'::text))))))
 )
 WITH (fillfactor='90');
-
-
---
--- Name: TABLE que_jobs; Type: COMMENT; Schema: public; Owner: -
---
-
-COMMENT ON TABLE public.que_jobs IS '4';
 
 
 --
@@ -113,7 +107,10 @@ CREATE FUNCTION public.que_job_notify() RETURNS trigger
         FROM (
           SELECT *
           FROM public.que_lockers ql, generate_series(1, ql.worker_count) AS id
-          WHERE listening AND queues @> ARRAY[NEW.queue]
+          WHERE
+            listening AND
+            queues @> ARRAY[NEW.queue] AND
+            ql.job_schema_version = NEW.job_schema_version
           ORDER BY md5(pid::text || id::text)
         ) t1
       ) t2
@@ -236,7 +233,8 @@ CREATE TABLE public.feeds (
     title character varying,
     url character varying NOT NULL,
     created_at timestamp(6) without time zone NOT NULL,
-    updated_at timestamp(6) without time zone NOT NULL
+    updated_at timestamp(6) without time zone NOT NULL,
+    logo_data text
 );
 
 
@@ -290,6 +288,7 @@ CREATE UNLOGGED TABLE public.que_lockers (
     ruby_hostname text NOT NULL,
     queues text[] NOT NULL,
     listening boolean NOT NULL,
+    job_schema_version integer DEFAULT 1,
     CONSTRAINT valid_queues CHECK (((array_ndims(queues) = 1) AND (array_length(queues, 1) IS NOT NULL))),
     CONSTRAINT valid_worker_priorities CHECK (((array_ndims(worker_priorities) = 1) AND (array_length(worker_priorities, 1) IS NOT NULL)))
 );
@@ -414,17 +413,24 @@ CREATE INDEX que_poll_idx ON public.que_jobs USING btree (queue, priority, run_a
 
 
 --
+-- Name: que_poll_idx_with_job_schema_version; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX que_poll_idx_with_job_schema_version ON public.que_jobs USING btree (job_schema_version, queue, priority, run_at, id) WHERE ((finished_at IS NULL) AND (expired_at IS NULL));
+
+
+--
 -- Name: que_jobs que_job_notify; Type: TRIGGER; Schema: public; Owner: -
 --
 
-CREATE TRIGGER que_job_notify AFTER INSERT ON public.que_jobs FOR EACH ROW EXECUTE PROCEDURE public.que_job_notify();
+CREATE TRIGGER que_job_notify AFTER INSERT ON public.que_jobs FOR EACH ROW EXECUTE FUNCTION public.que_job_notify();
 
 
 --
 -- Name: que_jobs que_state_notify; Type: TRIGGER; Schema: public; Owner: -
 --
 
-CREATE TRIGGER que_state_notify AFTER INSERT OR DELETE OR UPDATE ON public.que_jobs FOR EACH ROW EXECUTE PROCEDURE public.que_state_notify();
+CREATE TRIGGER que_state_notify AFTER INSERT OR DELETE OR UPDATE ON public.que_jobs FOR EACH ROW EXECUTE FUNCTION public.que_state_notify();
 
 
 --
@@ -435,6 +441,7 @@ SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
 ('20190831005357'),
-('20210326233837');
+('20210326233837'),
+('20220228090333');
 
 
