@@ -31,3 +31,7 @@
 
 en:
   hello: "Hello world"
+  feeds:
+    create_success: 'Feed was successfully created'
+    update_success: 'Feed was successfully updated'
+    destroy_success: 'Feed was successfully destroyed'

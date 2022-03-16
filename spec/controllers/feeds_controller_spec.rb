@@ -33,7 +33,7 @@ RSpec.describe FeedsController, type: :controller do
 
   let(:invalid_attributes) { { url: 'bad url' } }
 
-  let(:feed) { create :feed }
+  let!(:feed) { create :feed, valid_attributes }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -42,8 +42,6 @@ RSpec.describe FeedsController, type: :controller do
 
   describe 'GET #index' do
     it 'returns a success response' do
-      Feed.create! valid_attributes
-
       get :index, params: {}, session: valid_session
 
       expect(response).to be_successful
@@ -52,8 +50,6 @@ RSpec.describe FeedsController, type: :controller do
 
   describe 'GET #show' do
     it 'returns a success response' do
-      feed = Feed.create! valid_attributes
-
       get :show, params: { id: feed.to_param }, session: valid_session
 
       expect(response).to be_successful
@@ -70,8 +66,6 @@ RSpec.describe FeedsController, type: :controller do
 
   describe 'GET #edit' do
     it 'returns a success response' do
-      feed = Feed.create! valid_attributes
-
       get :edit, params: { id: feed.to_param }, session: valid_session
 
       expect(response).to be_successful
@@ -94,7 +88,7 @@ RSpec.describe FeedsController, type: :controller do
         expect(response).to redirect_to(feed)
       end
 
-      it { is_expected.to set_flash[:notice].to('Feed was successfully created') }
+      it { is_expected.to set_flash[:notice].to(I18n.t(:create_success, scope: :feeds)) }
     end
 
     context 'with invalid params' do
@@ -117,25 +111,23 @@ RSpec.describe FeedsController, type: :controller do
     context 'with valid params' do
       let(:new_attributes) { { url: Faker::Internet.url } }
 
-      it 'updates the requested feed' do
-        feed = Feed.create! valid_attributes
-        put :update, params: { id: feed.to_param, feed: new_attributes }, session: valid_session
+      before { put :update, params: { id: feed.to_param, feed: new_attributes }, session: valid_session }
 
+      it 'updates the requested feed' do
         feed.reload
+
         expect(feed.url).to eql(new_attributes[:url])
       end
 
       it 'redirects to the feed' do
-        feed = Feed.create! valid_attributes
-        put :update, params: { id: feed.to_param, feed: valid_attributes }, session: valid_session
-
         expect(response).to redirect_to(feed)
       end
+
+      it { is_expected.to set_flash[:notice].to(I18n.t(:update_success, scope: :feeds)) }
     end
 
     context 'with invalid params' do
       it "returns a success response (i.e. to display the 'edit' template)" do
-        feed = Feed.create! valid_attributes
         put :update, params: { id: feed.to_param, feed: invalid_attributes }, session: valid_session
 
         expect(response).to be_successful
@@ -145,14 +137,19 @@ RSpec.describe FeedsController, type: :controller do
 
   describe 'DELETE #destroy' do
     it 'destroys the requested feed' do
-      feed = Feed.create! valid_attributes
       expect { delete :destroy, params: { id: feed.to_param }, session: valid_session }.to change(Feed, :count).by(-1)
     end
 
     it 'redirects to the feeds list' do
-      feed = Feed.create! valid_attributes
       delete :destroy, params: { id: feed.to_param }, session: valid_session
+
       expect(response).to redirect_to(feeds_url)
+    end
+
+    it 'sets the success flash' do
+      delete :destroy, params: { id: feed.to_param }, session: valid_session
+
+      expect(flash[:notice]).to eql(I18n.t(:destroy_success, scope: :feeds))
     end
   end
 end

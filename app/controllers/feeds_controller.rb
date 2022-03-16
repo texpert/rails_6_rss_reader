@@ -27,7 +27,7 @@ class FeedsController < ApplicationController
   def create
     result = FeedCreator.run(feed_params)
 
-    return redirect_to result, notice: 'Feed was successfully created' if result.errors.blank?
+    return redirect_to result, notice: I18n.t(:create_success, scope: :feeds) if result.errors.blank?
 
     redirect_to :new_feed, alert: result.errors
   end
@@ -35,7 +35,7 @@ class FeedsController < ApplicationController
   # PATCH/PUT /feeds/1
   def update
     if @feed.update(feed_params)
-      redirect_to @feed, notice: 'Feed was successfully updated'
+      redirect_to @feed, notice: I18n.t(:update_success, scope: :feeds)
     else
       render :edit
     end
@@ -44,7 +44,7 @@ class FeedsController < ApplicationController
   # DELETE /feeds/1
   def destroy
     @feed.destroy
-    redirect_to feeds_url, notice: 'Feed was successfully destroyed.'
+    redirect_to feeds_url, notice: I18n.t(:destroy_success, scope: :feeds)
   end
 
   private
