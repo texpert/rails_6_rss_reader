@@ -1,6 +1,7 @@
 {
   "name": "rails_6_rss_reader",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "webpack-dashboard -- bin/webpacker"
   },
