@@ -16,10 +16,10 @@ gem 'puma', '~> 5.6'
 gem 'que'
 gem 'rails', '~> 7.0'
 gem 'sassc-rails'
+gem 'shakapacker', '6.2.0'
 gem 'shrine-lambda', '0.1.1'
 gem 'turbolinks', '~> 5'
 gem 'twingly-url'
-gem 'webpacker', '>= 6.0.0.pre.rc.5'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

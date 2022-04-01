@@ -23,5 +23,5 @@ import $ from 'jquery/src/jquery'
 window.jQuery = $
 window.$ = $
 
-import '../src/js/bootstrap_custom.js'
-import '../src/js/pagy.js.erb'
+import './src/js/bootstrap_custom.js'
+import './src/js/pagy.js.erb'
