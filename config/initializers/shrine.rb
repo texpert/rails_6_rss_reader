@@ -34,22 +34,23 @@ else
 
   Shrine.plugin :lambda, s3_options.merge(callback_url: lambda_callback_url)
   Shrine.lambda_function_list
-
-  Shrine.plugin :presign_endpoint, presign_options: lambda { |request|
-    filename     = request.params['filename']
-    extension    = File.extname(filename)
-    content_type = Rack::Mime.mime_type(extension)
-
-    { content_length_range: 0..(1.gigabyte), # limit filesize to 1 GB
-      content_disposition:  "attachment; filename=\"#{filename}\"", # download with original filename
-      content_type:         content_type } # set correct content type
-  }
 end
 
 Shrine.plugin :activerecord
 Shrine.plugin :backgrounding
 Shrine.plugin :cached_attachment_data # for forms
 Shrine.plugin :logging, logger: Rails.logger
+
+Shrine.plugin :presign_endpoint, presign_options: lambda { |request|
+  filename     = request.params['filename']
+  extension    = File.extname(filename)
+  content_type = Rack::Mime.mime_type(extension)
+
+  { content_length_range: 0..(1.gigabyte), # limit filesize to 1 GB
+    content_disposition:  "attachment; filename=\"#{filename}\"", # download with original filename
+    content_type:         content_type } # set correct content type
+}
+
 Shrine.plugin :rack_file # for non-Rails apps
 Shrine.plugin :remote_url, max_size: 1.gigabyte
 

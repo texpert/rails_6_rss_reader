@@ -354,6 +354,7 @@ DEPENDENCIES
   selenium-webdriver
   shakapacker (= 6.4.1)
   shoulda-matchers
+  shrine (~> 2.19.4)
   shrine-lambda (= 0.1.1)
   simplecov
   turbolinks (~> 5)
