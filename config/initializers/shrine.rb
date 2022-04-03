@@ -40,6 +40,7 @@ Shrine.plugin :activerecord
 Shrine.plugin :backgrounding
 Shrine.plugin :cached_attachment_data # for forms
 Shrine.plugin :logging, logger: Rails.logger
+Shrine.plugin :parsed_json
 
 Shrine.plugin :presign_endpoint, presign_options: lambda { |request|
   filename     = request.params['filename']
@@ -54,5 +55,5 @@ Shrine.plugin :presign_endpoint, presign_options: lambda { |request|
 Shrine.plugin :rack_file # for non-Rails apps
 Shrine.plugin :remote_url, max_size: 1.gigabyte
 
-Shrine::Attacher.promote { |data| PromoteJob.perform_later(data) }
-Shrine::Attacher.delete { |data| DeleteJob.perform_later(data) }
+Shrine::Attacher.promote { |data| PromoteJob.enqueue(data) }
+Shrine::Attacher.delete { |data| DeleteJob.enqueue(data) }

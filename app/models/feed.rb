@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class Feed < ApplicationRecord
+  include Uploader::Attachment(:logo)
+
   attr_readonly :title
 
   validates :url, presence: true

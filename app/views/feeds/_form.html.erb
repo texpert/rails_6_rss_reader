@@ -6,9 +6,24 @@
       </div>
       <div class="col-11">
         <%= f.text_field :url %>
-      </div></div></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <%= f.label :logo %>
+      </div>
+      <div class="col-11">
+        <%= f.hidden_field :logo, value: @feed.cached_logo_data, class: "upload-data" %>
+        <%= f.file_field :logo, class: "upload-file" %>
+      </div>
+    </div>
+  </div>
   <hr />
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+<div class="upload-preview">
+  <%= image_tag @feed.logo_url.to_s, height: "300" %>
+</div>

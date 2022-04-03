@@ -4,7 +4,6 @@ class Uploader < Shrine
   def generate_location(_io, context)
     if (@record = context[:record])
       id = @record.id
-      resource_class = class_location(@record.class)
       type = owner_type_and_id == "#{resource_class}/#{id}" ? resource_class : "#{owner_type_and_id}/#{resource_class}"
     end
     name = context[:name]
@@ -18,16 +17,24 @@ class Uploader < Shrine
 
   private
 
-  def class_location(klass)
-    parts = klass.name.downcase.split('::')
-    if (separator = opts[:pretty_location_namespace])
-      parts.join(separator)
-    else
-      parts.last
-    end
+  def resource_class
+    return @resource_class if defined?(@resource_class)
+
+    parts = @record.class.name.downcase.split('::')
+    @resource_class = (separator = opts[:pretty_location_namespace]) ? parts.join(separator) : parts.last
   end
 
   def owner_type_and_id
-    @owner_type_and_id ||= "#{@record.owner_type.downcase}/#{@record.owner_id}"
+    return @owner_type_and_id if defined?(@owner_type_and_id)
+
+    if @record.respond_to?(:owner)
+      record_owner_type = @record.owner_type.downcase
+      record_owner_id = @record.owner_id
+    else
+      record_owner_type = resource_class
+      record_owner_id = @record.id
+    end
+
+    @owner_type_and_id = "#{record_owner_type}/#{record_owner_id}"
   end
 end
