@@ -136,7 +136,7 @@ GEM
     io-wait (0.2.1)
     jmespath (1.6.1)
     localhost (1.1.9)
-    loofah (2.15.0)
+    loofah (2.16.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
