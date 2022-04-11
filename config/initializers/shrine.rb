@@ -27,7 +27,7 @@ else
                       store: Shrine::Storage::S3.new(prefix: 'store', **s3_options.merge(bucket: store_bucket)) }
 
   lambda_callback_url = if Rails.env.development?
-                          "http://#{ENV['USER']}.localtunnel.me/rapi/lambda"
+                          "#{NGROK_URL}/rapi/lambda"
                         else
                           "https://#{ENV.fetch('APP_HOST')}/rapi/lambda"
                         end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class LambdaUploader < Uploader
-  Attacher.promote { |data| LambdaPromoteJob.perform_later(data) } unless Rails.env.test?
+  Attacher.promote { |data| LambdaPromoteJob.enqueue(data) } unless Rails.env.test?
 
   plugin :upload_options, store: lambda { |_io, context|
     if %i[avatar logo].include?(context[:name])
@@ -13,9 +13,10 @@ class LambdaUploader < Uploader
 
   plugin :versions
 
-  def lambda_process(io, context)
-    assembly =
-      { function: Rails.env.production? ? :pinstriped_image_resize_production : :pinstriped_image_resize_staging }
+  def lambda_process_versions(io, context)
+    assembly = {
+      function: Rails.env.production? ? :pinstriped_image_resize_production : 'lambda-test-ImageResizeOnDemand-1BYKRPZK611IJ'
+    }
 
     if DocumentTypes::SharpImage::VALUES.include?(io&.data&.dig('metadata', 'mime_type'))
       case context[:name]

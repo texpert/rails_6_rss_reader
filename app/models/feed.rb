@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Feed < ApplicationRecord
-  include Uploader::Attachment(:logo)
+  include LambdaUploader::Attachment(:logo)
 
   attr_readonly :title
 

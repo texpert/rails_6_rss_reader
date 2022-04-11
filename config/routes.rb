@@ -2,6 +2,9 @@
 
 Rails.application.routes.draw do
   root 'feeds#index'
+
+  mount Rapi::Base => '/rapi'
+
   resources :feeds do
     resources :posts
   end
