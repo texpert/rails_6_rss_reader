@@ -15,3 +15,6 @@ Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
+
+Style/FetchEnvVar:
+  Enabled: false
