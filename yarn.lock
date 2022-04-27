@@ -956,10 +956,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.4.tgz#d8c7b8db9226d2d7664553a0741ad7d0397ee503"
   integrity sha512-q/ytXxO5NKvyT37pmisQAItCFqA7FD/vNb8dgaJy3/630Fsc+Mz9/9f2SziBoIZ30TJooXyTwZmhi1zjXmObYg==
 
-"@rails/ujs@^7.0.2-2":
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.2.tgz#6e0f843fb810b23ce1c33457b27e0accce6755e4"
-  integrity sha512-eAn41MQI6z9Yj4RVAIL9qzYorHRM22hPJp9MR86ra62UmcAsI3HEkIgeguN2qWJRxUbztLer+T4fycmTqB/Osw==
+"@rails/ujs@^7.0.2-4":
+  version "7.0.2-4"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.2-4.tgz#199b071e9f07c5a341006c368f7adc764dc0a3d9"
+  integrity sha512-P5DGRBx0bP/VDqKCWYHNAQQrRuyQ4QXgFwfMPyboBjKyZiaicotm2CYyTLxYX6vbB4RAd33jUaddeeDq8Q/0CA==
 
 "@socket.io/base64-arraybuffer@~1.0.2":
   version "1.0.2"
