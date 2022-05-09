@@ -6,7 +6,7 @@ if NGROK_ENABLED
   require 'ngrok/wrapper'
 
   options = { addr: 'https://localhost:3000', persistence: true }
-  options[:config] = ENV.fetch('NGROK_CONFIG', "#{ENV['HOME']}/.ngrok2/ngrok.yml")
+  options[:config] = ENV.fetch('NGROK_CONFIG', "#{Dir.home}/.ngrok2/ngrok.yml")
   options[:inspect] = ENV['NGROK_INSPECT'] if ENV['NGROK_INSPECT']
 
   # rubocop:disable Rails/Output
