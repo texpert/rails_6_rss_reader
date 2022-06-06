@@ -3313,9 +3313,9 @@ postcss-normalize-whitespace@^5.1.1:
     postcss-value-parser "^4.2.0"
 
 postcss-ordered-values@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/postcss-ordered-values/-/postcss-ordered-values-5.1.1.tgz#0b41b610ba02906a3341e92cab01ff8ebc598adb"
-  integrity sha512-7lxgXF0NaoMIgyihL/2boNAEZKiW0+HkMhdKMTD93CjW8TdCy2hSdj8lsAo+uwm7EDG16Da2Jdmtqpedl0cMfw==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/postcss-ordered-values/-/postcss-ordered-values-5.1.2.tgz#daffacd4abf327d52d5ac570b59dfbcf4b836614"
+  integrity sha512-wr2avRbW4HS2XE2ZCqpfp4N/tDC6GZKZ+SVP8UBTOVS8QWrc4TD8MYrebJrvVVlGPKszmiSCzue43NDiVtgDmg==
   dependencies:
     cssnano-utils "^3.1.0"
     postcss-value-parser "^4.2.0"
