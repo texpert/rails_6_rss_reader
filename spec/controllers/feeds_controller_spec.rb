@@ -88,7 +88,7 @@ RSpec.describe FeedsController, type: :controller do
         expect(response).to redirect_to(feed)
       end
 
-      it { is_expected.to set_flash[:notice].to(I18n.t(:create_success, scope: :feeds)) }
+      it { is_expected.to set_flash[:notice].to(I18n.t('feeds.create_success')) }
     end
 
     context 'with invalid params' do
@@ -123,7 +123,7 @@ RSpec.describe FeedsController, type: :controller do
         expect(response).to redirect_to(feed)
       end
 
-      it { is_expected.to set_flash[:notice].to(I18n.t(:update_success, scope: :feeds)) }
+      it { is_expected.to set_flash[:notice].to(I18n.t('feeds.update_success')) }
     end
 
     context 'with invalid params' do
@@ -149,7 +149,7 @@ RSpec.describe FeedsController, type: :controller do
     it 'sets the success flash' do
       delete :destroy, params: { id: feed.to_param }, session: valid_session
 
-      expect(flash[:notice]).to eql(I18n.t(:destroy_success, scope: :feeds))
+      expect(flash[:notice]).to eql(I18n.t('feeds.destroy_success'))
     end
   end
 end
