@@ -17,11 +17,14 @@ class FeedsController < ApplicationController
 
   # GET /feeds/new
   def new
+    @webpack_dropzone = true
     @feed = Feed.new
   end
 
   # GET /feeds/1/edit
-  def edit; end
+  def edit
+    @webpack_dropzone = true
+  end
 
   # POST /feeds
   def create
@@ -54,6 +57,6 @@ class FeedsController < ApplicationController
   end
 
   def feed_params
-    params.require(:feed).permit(:title, :url)
+    params.require(:feed).permit(:title, :url, :logo)
   end
 end

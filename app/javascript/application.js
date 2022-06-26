@@ -25,3 +25,10 @@ window.$ = $
 
 import './src/js/bootstrap_custom.js'
 import './src/js/pagy.js.erb'
+import fileUpload from './src/js/fileUpload.js'
+
+// if you are using turbo, listen on turbo:load instead
+// listen on 'turbolinks:load' instead of 'DOMContentLoaded' if using Turbolinks
+document.addEventListener(
+  'turbolinks:load', () => { document.querySelectorAll('.upload-file').forEach(fileInput => { fileUpload(fileInput) }) }
+)
