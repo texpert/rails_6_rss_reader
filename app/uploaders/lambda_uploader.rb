@@ -15,9 +15,10 @@ class LambdaUploader < Uploader
 
   def lambda_process_versions(io, context)
     assembly = {
-      function: Rails.env.production? ? :pinstriped_image_resize_production : 'lambda-test-ImageResizeOnDemand-1BYKRPZK611IJ'
+      function: Rails.env.production? ? :image_resize_production : 'lambda-test-ImageResizeOnDemand-1BYKRPZK611IJ'
     }
 
+    # rubocop:disable Naming/VariableNumber
     if DocumentTypes::SharpImage::VALUES.include?(io&.data&.dig('metadata', 'mime_type'))
       case context[:name]
       when :logo
@@ -35,6 +36,7 @@ class LambdaUploader < Uploader
           [{ name: :size800, storage: :store, width: 600, height: 800, background: :transparent, format: :jpg },
            { name: :size100, storage: :store, width: 100, height: 100, background: :transparent, format: :jpg }]
       end
+      # rubocop:enable Naming/VariableNumber
     end
     assembly
   end
