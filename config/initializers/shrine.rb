@@ -26,14 +26,16 @@ else
   Shrine.storages = { cache: Shrine::Storage::S3.new(prefix: 'cache', **s3_options.merge(bucket: cache_bucket)),
                       store: Shrine::Storage::S3.new(prefix: 'store', **s3_options.merge(bucket: store_bucket)) }
 
-  lambda_callback_url = if Rails.env.development?
-                          "#{NGROK_URL}/rapi/lambda"
-                        else
-                          "https://#{ENV.fetch('APP_HOST')}/rapi/lambda"
-                        end
+  ActiveSupport::Reloader.to_prepare do
+    lambda_callback_url = if Rails.env.development?
+                            "#{NGROK_URL}/rapi/lambda"
+                          else
+                            "https://#{ENV.fetch('APP_HOST')}/rapi/lambda"
+                          end
 
-  Shrine.plugin :lambda, s3_options.merge(callback_url: lambda_callback_url)
-  Shrine.lambda_function_list
+    Shrine.plugin :lambda, s3_options.merge(callback_url: lambda_callback_url)
+    Shrine.lambda_function_list
+  end
 end
 
 Shrine.plugin :activerecord
