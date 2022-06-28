@@ -27,10 +27,10 @@ else
                       store: Shrine::Storage::S3.new(prefix: 'store', **s3_options.merge(bucket: store_bucket)) }
 
   ActiveSupport::Reloader.to_prepare do
-    lambda_callback_url = if Rails.env.development?
+    lambda_callback_url = if Rails.env.development? && NGROK_ENABLED
                             "#{NGROK_URL}/rapi/lambda"
                           else
-                            "https://#{ENV.fetch('APP_HOST')}/rapi/lambda"
+                            "https://#{ENV['APP_HOST'] || 'localhost'}/rapi/lambda"
                           end
 
     Shrine.plugin :lambda, s3_options.merge(callback_url: lambda_callback_url)
