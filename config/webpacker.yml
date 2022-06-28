@@ -2,11 +2,21 @@
 
 default: &default
   source_path: app/javascript
-  source_entry_path: /
+
+  # You can have a subdirectory of the source_path, like 'packs' (recommended).
+  # Alternatively, you can use '/' to use the whole source_path directory.
+  source_entry_path: packs
+
+  # If nested_entries is true, then we'll pick up subdirectories within the source_entry_path.
+  # You cannot set this option to true if you set source_entry_path to '/'
+  nested_entries: false
+
   public_root_path: public
   public_output_path: packs
   cache_path: tmp/webpacker
   webpack_compile_output: true
+  # See https://github.com/shakacode/shakapacker#deployment
+  webpacker_precompile: true
 
   # Location for manifest.json, defaults to {public_output_path}/manifest.json if unset
   # manifest_path: public/packs/manifest.json
@@ -22,15 +32,17 @@ default: &default
   webpack_loader: 'babel'
 
   # Set to true to enable check for matching versions of shakapacker gem and NPM package - will raise an error if
-#  there is a mismatch or wildcard versioning is used
+  # there is a mismatch or wildcard versioning is used
   ensure_consistent_versioning: true
+
+  # Select whether the compiler will use SHA digest ('digest' option) or
+  # most most recent modified timestamp ('mtime') to determine freshness
+  compiler_strategy: mtime
 
 development:
   <<: *default
   compile: true
-
-  # Set to false if using HMR for CSS
-  extract_css: false
+  compiler_strategy: mtime
 
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
@@ -59,6 +71,7 @@ development:
       #  port: 8080
     # Should we use gzip compression?
     compress: true
+    # Note that apps that do not check the host are vulnerable to DNS rebinding attacks
     allowed_hosts: "all"
     pretty: true
     headers:
@@ -77,7 +90,7 @@ test:
 production:
   <<: *default
 
-  # Production depends on precompilation of packs prior to booting for performance.
+  # Production depends on pre-compilation of packs prior to booting for performance.
   compile: false
 
   # Cache manifest.json for performance
