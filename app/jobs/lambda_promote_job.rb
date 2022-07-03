@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class LambdaPromoteJob < Que::Job
-  def run(data)
+  def run(attacher_class, record_class, record_id, name, file_data)
     ActiveRecord::Base.transaction do
-      Shrine::Attacher.lambda_process(data.stringify_keys) # TODO: Remove `stringify_keys` when Shrine will get it fixed
+      Shrine::Attacher.lambda_process(attacher_class, record_class, record_id, name, file_data)
     end
   end
 end

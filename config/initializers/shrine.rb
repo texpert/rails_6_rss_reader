@@ -60,3 +60,6 @@ Shrine.plugin :remote_url, max_size: 1.gigabyte
 
 Shrine::Attacher.promote { |data| PromoteJob.enqueue(data) }
 Shrine::Attacher.delete { |data| DeleteJob.enqueue(data) }
+
+Shrine::Attacher.promote_block { PromoteJob.enqueue(self.class.name, record.class.name, record.id, name, file_data) }
+Shrine::Attacher.destroy_block { DeleteJob.enqueue(self.class.name, data) }
