@@ -41,8 +41,9 @@ end
 Shrine.plugin :activerecord
 Shrine.plugin :backgrounding
 Shrine.plugin :cached_attachment_data # for forms
-Shrine.plugin :logging, logger: Rails.logger
-Shrine.plugin :parsed_json
+
+Shrine.logger = Rails.logger
+Shrine.plugin :instrumentation
 
 Shrine.plugin :presign_endpoint, presign_options: lambda { |request|
   filename     = request.params['filename']
