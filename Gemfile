@@ -19,7 +19,7 @@ gem 'roda'
 gem 'sassc-rails'
 gem 'shakapacker', '6.4.1'
 gem 'shrine', '~> 2.19.4'
-gem 'shrine-lambda', '0.1.1'
+gem 'shrine-aws-lambda'
 gem 'turbolinks', '~> 5'
 gem 'twingly-url'
 

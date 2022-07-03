@@ -33,7 +33,7 @@ else
                             "https://#{ENV['APP_HOST'] || 'localhost'}/rapi/lambda"
                           end
 
-    Shrine.plugin :lambda, s3_options.merge(callback_url: lambda_callback_url)
+    Shrine.plugin :aws_lambda, s3_options.merge(callback_url: lambda_callback_url)
     Shrine.lambda_function_list
   end
 end
