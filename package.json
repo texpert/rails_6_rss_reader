@@ -20,7 +20,7 @@
     "jquery": "^3.6.0",
     "mini-css-extract-plugin": "^2.6.1",
     "rails-erb-loader": "github:usabilityhub/rails-erb-loader",
-    "sass": "^1.53.0",
+    "sass": "^1.54.0",
     "sass-loader": "^13.0.2",
     "shakapacker": "6.5.0",
     "terser-webpack-plugin": "5",
