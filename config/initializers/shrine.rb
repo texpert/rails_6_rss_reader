@@ -17,14 +17,14 @@ else
                  region:            'us-east-2' }
 
   if Rails.env.production?
-    cache_bucket = store_bucket = credentials.aws_s3_bucket
+    cache_bucket = store_bucket = aws_credentials.aws_s3_bucket
   else
     cache_bucket = 'texpert-test-cache'
     store_bucket = 'texpert-test-store'
   end
 
-  Shrine.storages = { cache: Shrine::Storage::S3.new(prefix: 'cache', **s3_options.merge(bucket: cache_bucket)),
-                      store: Shrine::Storage::S3.new(prefix: 'store', **s3_options.merge(bucket: store_bucket)) }
+  Shrine.storages = { cache: Shrine::Storage::S3.new(prefix: 'cache', **s3_options.merge!(bucket: cache_bucket)),
+                      store: Shrine::Storage::S3.new(prefix: 'store', **s3_options.merge!(bucket: store_bucket)) }
 
   ActiveSupport::Reloader.to_prepare do
     lambda_callback_url = if Rails.env.development? && NGROK_ENABLED
@@ -33,7 +33,7 @@ else
                             "https://#{ENV['APP_HOST'] || 'localhost'}/rapi/lambda"
                           end
 
-    Shrine.plugin :aws_lambda, s3_options.merge(callback_url: lambda_callback_url)
+    Shrine.plugin :aws_lambda, s3_options.merge!(callback_url: lambda_callback_url)
     Shrine.lambda_function_list
   end
 end
@@ -57,9 +57,6 @@ Shrine.plugin :presign_endpoint, presign_options: lambda { |request|
 
 Shrine.plugin :rack_file # for non-Rails apps
 Shrine.plugin :remote_url, max_size: 1.gigabyte
-
-Shrine::Attacher.promote { |data| PromoteJob.enqueue(data) }
-Shrine::Attacher.delete { |data| DeleteJob.enqueue(data) }
 
 Shrine::Attacher.promote_block { PromoteJob.enqueue(self.class.name, record.class.name, record.id, name, file_data) }
 Shrine::Attacher.destroy_block { DeleteJob.enqueue(self.class.name, data) }
