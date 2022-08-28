@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
 class LambdaUploader < Uploader
-  Attacher.promote { |data| LambdaPromoteJob.enqueue(data) } unless Rails.env.test?
+  unless Rails.env.test?
+    Attacher.promote_block do
+      LambdaPromoteJob.enqueue(self.class.name, record.class.name, record.id, name, file_data)
+    end
+  end
 
   plugin :upload_options, store: lambda { |_io, context|
     if %i[avatar logo].include?(context[:name])
