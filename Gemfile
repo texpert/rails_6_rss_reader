@@ -19,7 +19,7 @@ gem 'roda'
 gem 'sassc-rails'
 gem 'shakapacker', '6.5.1'
 gem 'shrine', '~> 3.4'
-gem 'shrine-aws-lambda', path: '/Users/thunder/dev/ruby/shrine-aws-lambda'
+gem 'shrine-aws-lambda', '~> 0.2.0'
 gem 'turbolinks', '~> 5'
 gem 'twingly-url'
 
