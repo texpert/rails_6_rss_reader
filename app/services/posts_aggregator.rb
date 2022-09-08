@@ -18,7 +18,7 @@ class PostsAggregator
     feed_id = @params[:feed_id]
     feeds_urls = feed_id ? Feed.where(id: feed_id).pluck(:url) : Feed.pluck(:url)
 
-    responses = *HTTPX.get(*feeds_urls)
+    responses = *HTTPX.plugin(:follow_redirects).max_redirects(42).get(*feeds_urls)
 
     posts = []
     responses.each do |r|
