@@ -22,7 +22,7 @@
     "rails-erb-loader": "github:usabilityhub/rails-erb-loader",
     "sass": "^1.54.9",
     "sass-loader": "^13.0.2",
-    "shakapacker": "6.5.1",
+    "shakapacker": "6.5.2",
     "terser-webpack-plugin": "5",
     "turbolinks": "^5.2.0",
     "uppy": "^2.13.5",
