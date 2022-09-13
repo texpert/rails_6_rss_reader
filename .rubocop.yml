@@ -73,5 +73,10 @@ RSpec/MultipleExpectations:
 RSpec/NestedGroups:
   Max: 7
 
+RSpec:
+  Language:
+    Expectations:
+      - assert_select
+
 Style/StringLiterals:
   ConsistentQuotesInMultiline: true
