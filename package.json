@@ -13,7 +13,7 @@
     "@popperjs/core": "^2.11.6",
     "@rails/ujs": "^7.0.4",
     "babel-loader": "8",
-    "bootstrap": "^5.2.1",
+    "bootstrap": "^5.2.2",
     "compression-webpack-plugin": "10",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^4.2.0",
