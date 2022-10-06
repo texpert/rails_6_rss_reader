@@ -35,10 +35,15 @@ RSpec.describe 'Home page', type: :feature do
         it_has_layout_elements 'navbar'
         it_has_layout_elements 'feeds list table'
 
-        it 'has no pagination widget, and a `New Feed` link' do
+        it 'has a `New Feed` link' do
           within('body') do
-            expect(page).to have_link('New Feed', exact: true)
-            expect(page).not_to have_css('.pagy-bootstrap-nav')
+            has_link?('New Feed', exact: true)
+          end
+        end
+
+        it 'has no pagination widget' do
+          within('body') do
+            has_no_css?('.pagy-bootstrap-nav')
           end
         end
       end

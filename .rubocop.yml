@@ -31,6 +31,13 @@ AllCops:
   # the --only-guide-cops option.
   TargetRubyVersion: 2.7
 
+RSpec:
+  Language:
+    Expectations:
+      - assert_select
+      - has_link?
+      - has_no_css?
+
 Layout/LineLength:
   Max: 120
 
@@ -72,11 +79,6 @@ RSpec/MultipleExpectations:
 
 RSpec/NestedGroups:
   Max: 7
-
-RSpec:
-  Language:
-    Expectations:
-      - assert_select
 
 Style/StringLiterals:
   ConsistentQuotesInMultiline: true
