@@ -37,13 +37,13 @@ RSpec.describe 'Home page', type: :feature do
 
         it 'has a `New Feed` link' do
           within('body') do
-            has_link?('New Feed', exact: true)
+            expect(has_link?('New Feed', exact: true)).to be true
           end
         end
 
         it 'has no pagination widget' do
           within('body') do
-            has_no_css?('.pagy-bootstrap-nav')
+            expect(has_no_css?('.pagy-bootstrap-nav')).to be true
           end
         end
       end
