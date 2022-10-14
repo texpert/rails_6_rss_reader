@@ -16,7 +16,7 @@
     "bootstrap": "^5.2.2",
     "compression-webpack-plugin": "10",
     "css-loader": "^6.5.1",
-    "css-minimizer-webpack-plugin": "^4.2.1",
+    "css-minimizer-webpack-plugin": "^4.2.2",
     "jquery": "^3.6.1",
     "mini-css-extract-plugin": "^2.6.1",
     "rails-erb-loader": "github:usabilityhub/rails-erb-loader",
