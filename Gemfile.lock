@@ -121,7 +121,7 @@ GEM
       railties (>= 5.0.0)
     faker (2.23.0)
       i18n (>= 1.8.11, < 2)
-    feedjira (3.2.1)
+    feedjira (3.2.2)
       loofah (>= 2.3.1)
       sax-machine (>= 1.0)
     ffi (1.15.5)
