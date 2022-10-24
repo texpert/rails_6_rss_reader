@@ -2094,10 +2094,15 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400:
+caniuse-lite@^1.0.0:
   version "1.0.30001422"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001422.tgz#f2d7c6202c49a8359e6e35add894d88ef93edba1"
   integrity sha512-hSesn02u1QacQHhaxl/kNMZwqVG35Sz/8DgvmgedxSH8z9UUpcDYSPYgsj3x5dQNRcNp6BwpSfQfVzYUTm+fog==
+
+caniuse-lite@^1.0.30001400:
+  version "1.0.30001423"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001423.tgz#57176d460aa8cd85ee1a72016b961eb9aca55d91"
+  integrity sha512-09iwWGOlifvE1XuHokFMP7eR38a0JnajoyL3/i87c8ZjRWRrdKo1fqjNfugfBD0UDBIOz0U+jtNhJ0EPm1VleQ==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -2310,9 +2315,9 @@ cookie@~0.4.1:
   integrity sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==
 
 core-js-compat@^3.25.1:
-  version "3.25.5"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.25.5.tgz#0016e8158c904f7b059486639e6e82116eafa7d9"
-  integrity sha512-ovcyhs2DEBUIE0MGEKHP4olCUW/XYte3Vroyxuh38rD1wAO4dHohsovUC4eAOuzFxE6b+RXvBU3UZ9o0YhUTkA==
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.26.0.tgz#94e2cf8ba3e63800c4956ea298a6473bc9d62b44"
+  integrity sha512-piOX9Go+Z4f9ZiBFLnZ5VrOpBl0h7IGCkiFUN11QTe6LjAvOT3ifL/5TdoizMh99hcGy5SoLyWbapIY/PIb/3A==
   dependencies:
     browserslist "^4.21.4"
 
