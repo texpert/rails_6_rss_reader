@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'feeds/new', type: :view do
+RSpec.describe 'feeds/new' do
   before do
     assign(:feed, Feed.new(title: 'MyString', url: 'MyString'))
   end

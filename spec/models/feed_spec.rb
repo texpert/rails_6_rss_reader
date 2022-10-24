@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe Feed, type: :model do
+RSpec.describe Feed do
   it { is_expected.to have_db_column(:title) }
   it { is_expected.to have_db_column(:url).with_options(null: false) }
 

@@ -25,7 +25,7 @@ require 'rails_helper'
 # removed from Rails core in Rails 5, but can be added back in via the
 # `rails-controller-testing` gem.
 
-RSpec.describe FeedsController, type: :controller do
+RSpec.describe FeedsController do
   # This should return the minimal set of attributes required to create a valid
   # Feed. As you add validations to Feed, be sure to
   # adjust the attributes here as well.
@@ -33,7 +33,7 @@ RSpec.describe FeedsController, type: :controller do
 
   let(:invalid_attributes) { { url: 'bad url' } }
 
-  let!(:feed) { create :feed, valid_attributes }
+  let!(:feed) { create(:feed, valid_attributes) }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in

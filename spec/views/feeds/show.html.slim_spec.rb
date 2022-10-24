@@ -2,8 +2,8 @@
 
 require 'rails_helper'
 
-RSpec.describe 'feeds/show', type: :view do
-  let!(:feed1) { create :feed, title: 'Feed Title' }
+RSpec.describe 'feeds/show' do
+  let!(:feed1) { create(:feed, title: 'Feed Title') }
 
   before do
     @feed = assign(:feed, feed1)

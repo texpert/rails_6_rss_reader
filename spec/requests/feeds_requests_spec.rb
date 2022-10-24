@@ -2,9 +2,9 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Feeds', type: :request do
-  let!(:feed1) { create :feed, title: 'Feed #1' }
-  let!(:feed2) { create :feed, title: 'Feed #2' }
+RSpec.describe 'Feeds' do
+  let!(:feed1) { create(:feed, title: 'Feed #1') }
+  let!(:feed2) { create(:feed, title: 'Feed #2') }
 
   describe 'GET #index' do
     before do

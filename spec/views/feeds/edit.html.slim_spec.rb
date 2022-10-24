@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'feeds/edit', type: :view do
+RSpec.describe 'feeds/edit' do
   let!(:feed) { assign(:feed, Feed.create!(title: 'ExampleFeed', url: Faker::Internet.url)) }
 
   it 'renders the edit feed form' do

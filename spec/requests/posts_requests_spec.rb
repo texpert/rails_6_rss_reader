@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Posts', type: :request do
+RSpec.describe 'Posts' do
   let(:post1) { Feedjira::Parser::RSSEntry.new(title: 'Post #1 Title') }
   let(:post2) { Feedjira::Parser::RSSEntry.new(title: 'Post #2 Title') }
 
