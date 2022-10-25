@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe FeedsController do
+RSpec.describe 'routes for Feeds' do
   describe 'routing' do
     it 'routes default root to #index' do
       expect(get: '/').to route_to('feeds#index')
