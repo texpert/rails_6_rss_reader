@@ -33,12 +33,12 @@ gem 'twingly-url'
 
 group :development, :test do
   gem 'dotenv-rails'
-  gem 'rspec-rails'
 end
 
 group :development do
   gem 'localhost', require: 'localhost/authority'
   gem 'ngrok-wrapper'
+  gem 'rspec-rails', '~> 6.0'
   gem 'rubocop', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
