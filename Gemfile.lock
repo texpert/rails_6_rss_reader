@@ -297,7 +297,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    twingly-url (7.0.0)
+    twingly-url (7.0.1)
       addressable (~> 2.6)
       public_suffix (>= 3.0.1, < 6.0)
     tzinfo (2.0.5)
