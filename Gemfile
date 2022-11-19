@@ -33,12 +33,13 @@ gem 'twingly-url'
 
 group :development, :test do
   gem 'dotenv-rails'
+  # It needs to be in both groups to expose generators and rake tasks without having to type RAILS_ENV=test
+  gem 'rspec-rails', '~> 6.0'
 end
 
 group :development do
   gem 'localhost', require: 'localhost/authority'
   gem 'ngrok-wrapper'
-  gem 'rspec-rails', '~> 6.0'
   gem 'rubocop', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
