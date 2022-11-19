@@ -75,7 +75,7 @@ Rails.application.configure do
 
   if NGROK_ENABLED
     config.force_ssl = true
-    config.hosts << '.ngrok.io'
+    config.hosts << URI.parse(NGROK_URL).host
   end
 
   # Raises error for missing translations.
