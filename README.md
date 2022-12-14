@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version: 2.7.7
 
-* Node.js version 16.13.2
+* Node.js version 16.19.0
 
 * Running `yarn dev` will start `webpacker` via `webpack-dashboard`
 
