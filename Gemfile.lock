@@ -128,7 +128,7 @@ GEM
     globalid (1.0.0)
       activesupport (>= 5.0)
     http-2-next (0.5.1)
-    httpx (0.21.1)
+    httpx (0.22.0)
       http-2-next (>= 0.4.1)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
