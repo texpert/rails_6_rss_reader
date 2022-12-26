@@ -280,7 +280,7 @@ GEM
       aws-sdk-lambda (~> 1.0)
       aws-sdk-s3 (~> 1.2)
       shrine (~> 3.4)
-    simplecov (0.21.2)
+    simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
       simplecov_json_formatter (~> 0.1)
