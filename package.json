@@ -25,7 +25,7 @@
     "shakapacker": "6.5.5",
     "terser-webpack-plugin": "5",
     "turbolinks": "^5.2.0",
-    "uppy": "2.13.8",
+    "uppy": "3.3.1",
     "webpack": "5",
     "webpack-assets-manifest": "5",
     "webpack-cli": "5",
