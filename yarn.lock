@@ -4038,8 +4038,8 @@ querystringify@^2.1.1:
 
 "rails-erb-loader@github:usabilityhub/rails-erb-loader":
   version "5.5.2"
-  uid ce2d166632cc08b50408beef745dc8abfcfdc749
-  resolved "https://codeload.github.com/usabilityhub/rails-erb-loader/tar.gz/ce2d166632cc08b50408beef745dc8abfcfdc749"
+  uid e95d10e6d6ed611ef4c09b894c800179961602e8
+  resolved "https://codeload.github.com/usabilityhub/rails-erb-loader/tar.gz/e95d10e6d6ed611ef4c09b894c800179961602e8"
   dependencies:
     loader-utils "^2.0.0"
     lodash.defaults "^4.2.0"
