@@ -2274,9 +2274,9 @@ compression@^1.7.4:
     vary "~1.1.2"
 
 compressorjs@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/compressorjs/-/compressorjs-1.1.1.tgz#54c147cf37fb38828b08c48646d0258d52faf050"
-  integrity sha512-SysRuUPfmUNoq+RviE0iMFVUmoX2q/x+7PkEPUmk6NGkd85hDrmvujx0Qtp8UCGA6KMe5kuodsylPQcNaLf60w==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/compressorjs/-/compressorjs-1.2.0.tgz#2993d625623f777d960dd5f8b96fda71637b1690"
+  integrity sha512-XSXEzIlzJpRWz3ikNYVfwgKHS1rDL4okJQ1Hqu1RDFwnR9P/C3EU9IRPbPrOVAPwB0XcyKMow0RNzbGKfC36FQ==
   dependencies:
     blueimp-canvas-to-blob "^3.29.0"
     is-blob "^2.1.0"
