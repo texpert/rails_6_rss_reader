@@ -1540,15 +1540,7 @@
   dependencies:
     nanoid "^3.1.25"
 
-"@uppy/thumbnail-generator@^2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@uppy/thumbnail-generator/-/thumbnail-generator-2.2.1.tgz#e6f4450c32c8955476a9daf083010b751b4cb2bb"
-  integrity sha512-p8GnoeFef3DYVzKI5deeTSVPw/JCbumvUfSuPfqWmK0id/pGveXNFfVZz9qDxjzDyDMv5FGWxf1cui4ADs52UA==
-  dependencies:
-    "@uppy/utils" "^4.1.2"
-    exifr "^7.0.0"
-
-"@uppy/thumbnail-generator@^2.2.2":
+"@uppy/thumbnail-generator@^2.2.1", "@uppy/thumbnail-generator@^2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@uppy/thumbnail-generator/-/thumbnail-generator-2.2.2.tgz#493904b7d80cf15a372c55e49da9621f7cdbe0ae"
   integrity sha512-5VwwzzvKRqXJNz28U/VwXu9K9dHY5vXQvzljxqkeCJrKIMgu/8vzKEFndAPY6sJZkUcF0jtAb3gUU2q5TGRlJg==
