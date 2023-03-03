@@ -1301,25 +1301,7 @@
     nanoid "^3.1.25"
     preact "^10.5.13"
 
-"@uppy/dashboard@^2.4.2":
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/@uppy/dashboard/-/dashboard-2.4.2.tgz#4fa4326fd62cd2586af59378b5374e5af05bac11"
-  integrity sha512-PNS/aRDAH446w/EVUsyEFDBhAaxzE113bWEBjFVn5SaXM8/AT2fByZDs+8IDmhTNW93kmfKsEQpl+Bonadu7jg==
-  dependencies:
-    "@transloadit/prettier-bytes" "0.0.7"
-    "@uppy/informer" "^2.1.1"
-    "@uppy/provider-views" "^2.1.3"
-    "@uppy/status-bar" "^2.2.2"
-    "@uppy/thumbnail-generator" "^2.2.1"
-    "@uppy/utils" "^4.1.2"
-    classnames "^2.2.6"
-    is-shallow-equal "^1.0.1"
-    lodash.debounce "^4.0.8"
-    memoize-one "^5.0.4"
-    nanoid "^3.1.25"
-    preact "^10.5.13"
-
-"@uppy/dashboard@^2.4.3":
+"@uppy/dashboard@^2.4.2", "@uppy/dashboard@^2.4.3":
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/@uppy/dashboard/-/dashboard-2.4.3.tgz#0443a1b81717ccaa554fdc338e00dce5266d69b8"
   integrity sha512-OPpvosiRaZXN873mraDmiM8T8c+2rIl86Ho7lQPsq+aQfjLUiPML+Y2rjmwDPE6eo7EiBszV5dQkO6vPjGO8/g==
@@ -1513,7 +1495,7 @@
   dependencies:
     nanoid "^3.1.25"
 
-"@uppy/thumbnail-generator@^2.2.1", "@uppy/thumbnail-generator@^2.2.2":
+"@uppy/thumbnail-generator@^2.2.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@uppy/thumbnail-generator/-/thumbnail-generator-2.2.2.tgz#493904b7d80cf15a372c55e49da9621f7cdbe0ae"
   integrity sha512-5VwwzzvKRqXJNz28U/VwXu9K9dHY5vXQvzljxqkeCJrKIMgu/8vzKEFndAPY6sJZkUcF0jtAb3gUU2q5TGRlJg==
