@@ -1568,16 +1568,7 @@
     component-emitter "^1.2.1"
     socket.io-client "^4.1.3"
 
-"@uppy/tus@^2.4.3":
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/@uppy/tus/-/tus-2.4.4.tgz#575d0937b0ffe6c65334243450806a024b86b9ad"
-  integrity sha512-c/gUHnJe4SGoam+zue64VN0sxAwmX6wkjmdWiJk+JVS+FiRCCYmFFq4xl2shGoW8MZn279q1L4OCz/2erxpI2A==
-  dependencies:
-    "@uppy/companion-client" "^2.2.2"
-    "@uppy/utils" "^4.1.3"
-    tus-js-client "^2.1.1"
-
-"@uppy/tus@^2.4.6":
+"@uppy/tus@^2.4.3", "@uppy/tus@^2.4.6":
   version "2.4.6"
   resolved "https://registry.yarnpkg.com/@uppy/tus/-/tus-2.4.6.tgz#947074f1ff4c47c7fb0d633d5cbfc085e40bcf17"
   integrity sha512-0R8D65YKZRyvx+SKNKPkgVYrgAcZiz6vtzc+ZmcCePFXNZj945kFIoeqNUuQ9aQlkIasihKB4kut6X2F4G93IA==
