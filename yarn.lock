@@ -1004,10 +1004,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
   integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
 
-"@rails/ujs@^7.0.4-2":
-  version "7.0.4-2"
-  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.4-2.tgz#62b108cc297c0c60f415720295673ee73f08e210"
-  integrity sha512-ec6e2+YSfg4DgrVzIYzpo7ayze6dOu+lZ6RsIR+COkuZCp2QGMEyHZQzNdHt065FjCtpv6wRZQIybAtWrzPqlQ==
+"@rails/ujs@^7.0.4-3":
+  version "7.0.4-3"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.4-3.tgz#a90a31189db702ac7a9e95b18c09503025fb4951"
+  integrity sha512-JttmF98C1xTVcCSWSDwbqF0IPrCKD6lpeB9uy4VjGYniZIidgSq0fSX1vmHxCH7CuSmsIFMNJ6LtLyCAb8Y6Ng==
 
 "@sinclair/typebox@^0.25.16":
   version "0.25.24"
