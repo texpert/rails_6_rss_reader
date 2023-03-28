@@ -21,7 +21,7 @@
     "mini-css-extract-plugin": "^2.7.5",
     "rails-erb-loader": "github:usabilityhub/rails-erb-loader",
     "sass": "^1.60.0",
-    "sass-loader": "^13.2.1",
+    "sass-loader": "^13.2.2",
     "shakapacker": "6.6.0",
     "terser-webpack-plugin": "5",
     "turbolinks": "^5.2.0",
