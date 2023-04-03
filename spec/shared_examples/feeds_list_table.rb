@@ -5,9 +5,10 @@ RSpec.shared_examples 'feeds list table' do
     within('body') do
       within('table') do
         expect(find('caption').text).to eql('Feeds List')
-        expect(page).to have_css('thead tr th') do |headers|
-          headers.map(&:text) == %w[Title Url]
-        end
+
+        headers = page.all('th').map(&:text)
+        expect(headers.reject(&:empty?)).to eql(%w[Title Url])
+
         within('tbody') do
           expect(page).to have_css('tr', count: feed_list_number)
         end
