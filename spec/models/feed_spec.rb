@@ -12,7 +12,7 @@ RSpec.describe Feed do
   it { is_expected.to have_readonly_attribute(:title) }
 
   context 'when validations' do
-    subject(:feed) { create(:feed) }
+    subject(:feed) { build(:feed) }
 
     it { is_expected.to validate_presence_of(:url) }
 
