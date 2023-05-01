@@ -173,7 +173,7 @@ GEM
     public_suffix (5.0.1)
     puma (6.2.2)
       nio4r (~> 2.0)
-    que (2.2.0)
+    que (2.2.1)
     racc (1.6.2)
     rack (2.2.7)
     rack-proxy (0.7.6)
@@ -344,7 +344,7 @@ DEPENDENCIES
   pg
   public_suffix
   puma (~> 6.2)
-  que (= 2.2.0)
+  que (= 2.2.1)
   rails (~> 7.0)
   roda
   rspec-rails (~> 6.0)
