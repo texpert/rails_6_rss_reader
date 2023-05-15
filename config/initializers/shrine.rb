@@ -52,7 +52,7 @@ Shrine.plugin :presign_endpoint, presign_options: lambda { |request|
 
   { content_length_range: 0..(1.gigabyte), # limit filesize to 1 GB
     content_disposition:  "attachment; filename=\"#{filename}\"", # download with original filename
-    content_type:         content_type } # set correct content type
+    content_type: } # set correct content type
 }
 
 Shrine.plugin :rack_file # for non-Rails apps
