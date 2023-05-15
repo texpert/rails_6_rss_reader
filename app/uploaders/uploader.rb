@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Uploader < Shrine
-  def generate_location(_io, context)
+  def generate_location(_io, metadata: {}, context: nil)
     if (@record = context[:record])
       id = @record.id
       type = owner_type_and_id == "#{resource_class}/#{id}" ? resource_class : "#{owner_type_and_id}/#{resource_class}"

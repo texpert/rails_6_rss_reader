@@ -282,7 +282,7 @@ GEM
     shrine (3.4.0)
       content_disposition (~> 1.0)
       down (~> 5.1)
-    shrine-aws-lambda (0.2.0)
+    shrine-aws-lambda (0.2.1)
       aws-sdk-lambda (~> 1.0)
       aws-sdk-s3 (~> 1.2)
       shrine (~> 3.4)
@@ -360,7 +360,7 @@ DEPENDENCIES
   shakapacker (= 6.6.0)
   shoulda-matchers
   shrine (~> 3.4)
-  shrine-aws-lambda (~> 0.2.0)
+  shrine-aws-lambda (~> 0.2.1)
   simplecov
   turbolinks (~> 5)
   twingly-url
