@@ -808,14 +808,7 @@
     "@babel/helper-skip-transparent-expression-wrappers" "^7.20.0"
     "@babel/plugin-syntax-optional-chaining" "^7.8.3"
 
-"@babel/plugin-transform-parameters@^7.22.3":
-  version "7.22.3"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-parameters/-/plugin-transform-parameters-7.22.3.tgz#24477acfd2fd2bc901df906c9bf17fbcfeee900d"
-  integrity sha512-x7QHQJHPuD9VmfpzboyGJ5aHEr9r7DsAsdxdhJiTB3J3j8dyl+NFZ+rX5Q2RWFDCs61c06qBfS4ys2QYn8UkMw==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.21.5"
-
-"@babel/plugin-transform-parameters@^7.22.5":
+"@babel/plugin-transform-parameters@^7.22.3", "@babel/plugin-transform-parameters@^7.22.5":
   version "7.22.5"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-parameters/-/plugin-transform-parameters-7.22.5.tgz#c3542dd3c39b42c8069936e48717a8d179d63a18"
   integrity sha512-AVkFUBurORBREOmHRKo06FjHYgjrabpdqRSwq6+C7R5iTCZOsM4QbcB27St0a4U6fffyAOqh3s/qEfybAhfivg==
