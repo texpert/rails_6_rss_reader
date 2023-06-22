@@ -9,7 +9,7 @@ Things you may want to cover:
 
 * Rails version: 7.0.5
 
-* Node.js version 16.20.0
+* Node.js version 16.20.1
 
 * Running `yarn dev` will start `webpacker` via `webpack-dashboard`
 
