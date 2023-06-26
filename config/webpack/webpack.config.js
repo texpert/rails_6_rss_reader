@@ -1,7 +1,9 @@
 const webpack = require('webpack');
-const { env, webpackConfig, merge } = require('shakapacker')
+const { env, generateWebpackConfig, merge } = require('shakapacker')
 const { existsSync } = require('fs')
 const { resolve } = require('path')
+
+const webpackConfig = generateWebpackConfig()
 
 const envSpecificConfig = () => {
   const path = resolve(__dirname, `${env.nodeEnv}.js`)

@@ -3,7 +3,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dashboard -- bin/webpacker"
+    "dev": "webpack-dashboard -- bin/shakapacker"
   },
   "dependencies": {
     "@babel/core": "7",
