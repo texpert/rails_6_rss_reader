@@ -1281,10 +1281,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@rails/ujs@^7.0.5":
-  version "7.0.5"
-  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.5.tgz#d35a71fe6ecd4ab88bbe4bc6c2f287c992c2de4c"
-  integrity sha512-/wQ6v4DGxhxflPWoLwGkOQoKbtIXx/LsVNKd8shRM+/HXxlVBEb+F5znN99TlxX8e/R3dN6anTPAqA+mfA5YtQ==
+"@rails/ujs@^7.0.5-1":
+  version "7.0.5-1"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-7.0.5-1.tgz#d73baa07f53da9875b5ac32b1a38bab32bdde970"
+  integrity sha512-GsD/zYWf2jCfyoNE5rf/ftgHi6RxBugHB3gycWYsMkXXsKX05tS+iDw0/45syvyFr5TwZ0YmfEXd5H+oRNG7Gg==
 
 "@sinclair/typebox@^0.25.16":
   version "0.25.24"
@@ -5046,7 +5046,6 @@ quick-lru@^4.0.1:
 
 "rails-erb-loader@github:usabilityhub/rails-erb-loader":
   version "5.5.2"
-  uid "1698444e9767f3633b50ca8a9a8b788a05f4127d"
   resolved "https://codeload.github.com/usabilityhub/rails-erb-loader/tar.gz/1698444e9767f3633b50ca8a9a8b788a05f4127d"
   dependencies:
     loader-utils "^2.0.0"
