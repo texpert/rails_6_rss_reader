@@ -1053,20 +1053,7 @@
     term-size "^2.1.0"
     tty-table "^4.1.5"
 
-"@changesets/config@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@changesets/config/-/config-2.3.0.tgz#bff074d6492fa772cee139f9a04efa4cd56445bb"
-  integrity sha512-EgP/px6mhCx8QeaMAvWtRrgyxW08k/Bx2tpGT+M84jEdX37v3VKfh4Cz1BkwrYKuMV2HZKeHOh8sHvja/HcXfQ==
-  dependencies:
-    "@changesets/errors" "^0.1.4"
-    "@changesets/get-dependents-graph" "^1.3.5"
-    "@changesets/logger" "^0.0.5"
-    "@changesets/types" "^5.2.1"
-    "@manypkg/get-packages" "^1.1.3"
-    fs-extra "^7.0.1"
-    micromatch "^4.0.2"
-
-"@changesets/config@^2.3.1":
+"@changesets/config@^2.3.0", "@changesets/config@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@changesets/config/-/config-2.3.1.tgz#3d4a1dc866c3623375180b30f69fccdf0e3efebf"
   integrity sha512-PQXaJl82CfIXddUOppj4zWu+987GCw2M+eQcOepxN5s+kvnsZOwjEJO3DH9eVy+OP6Pg/KFEWdsECFEYTtbg6w==
