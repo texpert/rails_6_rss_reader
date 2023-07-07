@@ -1175,7 +1175,7 @@
   dependencies:
     "@sinclair/typebox" "^0.27.8"
 
-"@jest/types@^29.6.0":
+"@jest/types@^29.6.1":
   version "29.6.1"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-29.6.1.tgz#ae79080278acff0a6af5eb49d063385aaa897bf2"
   integrity sha512-tPKQNMPuXgvdOn2/Lg9HNfUvjYVGolt04Hp03f5hAk878uwOLikN+JzeLY0HcVgKgFl9Hs3EIqpu3WX27XNhnw==
@@ -2199,7 +2199,7 @@ babel-loader@9:
     find-cache-dir "^3.3.2"
     schema-utils "^4.0.0"
 
-babel-plugin-polyfill-corejs2@^0.4.3, babel-plugin-polyfill-corejs2@^0.4.4:
+babel-plugin-polyfill-corejs2@^0.4.4:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-corejs2/-/babel-plugin-polyfill-corejs2-0.4.4.tgz#9f9a0e1cd9d645cc246a5e094db5c3aa913ccd2b"
   integrity sha512-9WeK9snM1BfxB38goUEv2FLnA6ja07UMfazFHzCXUb3NyDZAwfXvQiURQ6guTTMeHcOsdknULm1PDhs4uWtKyA==
@@ -2208,7 +2208,7 @@ babel-plugin-polyfill-corejs2@^0.4.3, babel-plugin-polyfill-corejs2@^0.4.4:
     "@babel/helper-define-polyfill-provider" "^0.4.1"
     "@nicolo-ribaudo/semver-v6" "^6.3.3"
 
-babel-plugin-polyfill-corejs3@^0.8.1, babel-plugin-polyfill-corejs3@^0.8.2:
+babel-plugin-polyfill-corejs3@^0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-corejs3/-/babel-plugin-polyfill-corejs3-0.8.2.tgz#d406c5738d298cd9c66f64a94cf8d5904ce4cc5e"
   integrity sha512-Cid+Jv1BrY9ReW9lIfNlNpsI53N+FN7gE+f73zLAUbr9C52W4gKLWSByx47pfDJsEysojKArqOtOKZSVIIUTuQ==
@@ -2216,7 +2216,7 @@ babel-plugin-polyfill-corejs3@^0.8.1, babel-plugin-polyfill-corejs3@^0.8.2:
     "@babel/helper-define-polyfill-provider" "^0.4.1"
     core-js-compat "^3.31.0"
 
-babel-plugin-polyfill-regenerator@^0.5.0, babel-plugin-polyfill-regenerator@^0.5.1:
+babel-plugin-polyfill-regenerator@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-regenerator/-/babel-plugin-polyfill-regenerator-0.5.1.tgz#ace7a5eced6dff7d5060c335c52064778216afd3"
   integrity sha512-L8OyySuI6OSQ5hFy9O+7zFjyr4WhAfRjLIOkhQGYl+emwJkd/S4XXT1JpfrgR1jrQ1NcGiOh+yAdGlF8pnC3Jw==
@@ -3994,11 +3994,11 @@ isobject@^3.0.1:
   integrity sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==
 
 jest-util@^29.5.0:
-  version "29.6.0"
-  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-29.6.0.tgz#4071050c5d70f5d4d48105e8883773f3a6b94f8d"
-  integrity sha512-S0USx9YwcvEm4pQ5suisVm/RVxBmi0GFR7ocJhIeaCuW5AXnAnffXbaVKvIFodyZNOc9ygzVtTxmBf40HsHXaA==
+  version "29.6.1"
+  resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-29.6.1.tgz#c9e29a87a6edbf1e39e6dee2b4689b8a146679cb"
+  integrity sha512-NRFCcjc+/uO3ijUVyNOQJluf8PtGCe/W6cix36+M3cTFgiYqFOOW5MgN4JOOcvbUhcKTYVd1CvHz/LWi8d16Mg==
   dependencies:
-    "@jest/types" "^29.6.0"
+    "@jest/types" "^29.6.1"
     "@types/node" "*"
     chalk "^4.0.0"
     ci-info "^3.2.0"
