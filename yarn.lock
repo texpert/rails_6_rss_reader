@@ -1382,9 +1382,9 @@
   integrity sha512-/K3ds8TRAfBvi5vfjuz8y6+GiAYBZ0x4tXv1Av6CWBWn0IlADc+ZX9pMq7oU0fNQPnBwIZl3rmeLp6SBApbxSQ==
 
 "@types/http-proxy@^1.17.8":
-  version "1.17.11"
-  resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.17.11.tgz#0ca21949a5588d55ac2b659b69035c84bd5da293"
-  integrity sha512-HC8G7c1WmaF2ekqpnFq626xd3Zz0uvaqFmBJNRZCGEZCXkvSdJoNFn/8Ygbd9fKNQj8UzLdCETaI0UWPAjK7IA==
+  version "1.17.12"
+  resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.17.12.tgz#86e849e9eeae0362548803c37a0a1afc616bd96b"
+  integrity sha512-kQtujO08dVtQ2wXAuSFfk9ASy3sug4+ogFR8Kd8UgP8PEuc1/G/8yjYRmp//PcDNJEUKOza/MrQu15bouEUCiw==
   dependencies:
     "@types/node" "*"
 
