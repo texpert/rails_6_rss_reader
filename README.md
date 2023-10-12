@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version: 3.1.4
 
-* Rails version: 7.0.8
+* Rails version: 7.1.1
 
 * Node.js version 16.20.2
 
