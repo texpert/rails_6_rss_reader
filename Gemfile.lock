@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/que-rb/que
+  revision: 0c66d030e3e474c94758774b21abcdc0e84cc3b3
+  branch: support-rails-7.1
+  specs:
+    que (2.2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -194,7 +201,6 @@ GEM
     public_suffix (5.0.3)
     puma (6.4.0)
       nio4r (~> 2.0)
-    que (2.2.1)
     racc (1.7.1)
     rack (3.0.8)
     rack-proxy (0.7.7)
@@ -381,7 +387,7 @@ DEPENDENCIES
   pg
   public_suffix
   puma (~> 6.4)
-  que (= 2.2.1)
+  que!
   rails (~> 7.1)
   roda
   rspec-rails (~> 6.0)
