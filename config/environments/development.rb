@@ -78,6 +78,8 @@ Rails.application.configure do
     config.hosts << URI.parse(NGROK_URL).host
   end
 
+  config.web_console.permissions = '0.0.0.0/0'
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 
