@@ -1389,9 +1389,9 @@
     "@types/node" "*"
 
 "@types/is-ci@^3.0.0":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@types/is-ci/-/is-ci-3.0.2.tgz#62acd24fc99bf31047086e0f6b1a657919837f15"
-  integrity sha512-9PyP1rgCro6xO3R7zOEoMgx5U9HpLhIg1FFb9p2mWX/x5QI8KMuCWWYtCT1dUQpicp84OsxEAw3iqwIKQY5Pog==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/is-ci/-/is-ci-3.0.3.tgz#6042f2fe12a16b2616deabb11d9a422f46a2ec03"
+  integrity sha512-FdHbjLiN2e8fk9QYQyVYZrK8svUDJpxSaSWLUga8EZS1RGAvvrqM9zbVARBtQuYPeLgnJxM2xloOswPwj1o2cQ==
   dependencies:
     ci-info "^3.1.0"
 
