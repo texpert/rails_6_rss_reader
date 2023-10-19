@@ -1408,9 +1408,9 @@
     "@types/istanbul-lib-coverage" "*"
 
 "@types/istanbul-reports@^3.0.0":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@types/istanbul-reports/-/istanbul-reports-3.0.2.tgz#edc8e421991a3b4df875036d381fc0a5a982f549"
-  integrity sha512-kv43F9eb3Lhj+lr/Hn6OcLCs/sSM8bt+fIaP11rCYngfV6NVjzWXJ17owQtDQTL9tQ8WSLUrGsSJ6rJz0F1w1A==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/istanbul-reports/-/istanbul-reports-3.0.3.tgz#0313e2608e6d6955d195f55361ddeebd4b74c6e7"
+  integrity sha512-1nESsePMBlf0RPRffLZi5ujYh7IH1BWL4y9pr+Bn3cJBdxz+RTP8bUFljLz9HvzhhOSWKdyBZ4DIivdL6rvgZg==
   dependencies:
     "@types/istanbul-lib-report" "*"
 
