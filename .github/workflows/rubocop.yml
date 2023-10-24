@@ -6,6 +6,9 @@
 # pulled from repo
 name: "Rubocop"
 
+env:
+  RAILS_ENV: test
+
 on:
   push:
     branches: [ "main", "develop" ]
