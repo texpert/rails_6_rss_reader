@@ -36,10 +36,10 @@ group :development, :test do
   # It needs to be in both groups to expose generators and rake tasks without having to type RAILS_ENV=test
   gem 'rspec-rails', '~> 6.0'
   gem 'rubocop', require: false
+  gem 'rubocop-capybara', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
-  gem 'rubocop-capybara', require: false
 end
 
 group :development do
