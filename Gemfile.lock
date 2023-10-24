@@ -386,6 +386,7 @@ DEPENDENCIES
   roda
   rspec-rails (~> 6.0)
   rubocop
+  rubocop-capybara
   rubocop-performance
   rubocop-rails
   rubocop-rspec
