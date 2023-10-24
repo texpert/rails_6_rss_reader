@@ -40,12 +40,12 @@ jobs:
       run: bundle add code-scanning-rubocop --version 0.3.0 --skip-install
 
     - name: Install dependencies
-      run: bundle install
+      run: RAILS_ENV=test bundle install
 
     - name: Rubocop run
       run: |
         bash -c "
-          bundle exec rubocop --require code_scanning --format CodeScanning::SarifFormatter -o rubocop.sarif
+          RAILS_ENV=test bundle exec rubocop --require code_scanning --format CodeScanning::SarifFormatter -o rubocop.sarif
           [[ $? -ne 2 ]]
         "
 
