@@ -22,10 +22,18 @@ class PostsAggregator
 
     posts = []
     responses.each do |r|
-      next if r.status != 200
+      case r
+        in status:
+          next if status != 200
 
-      fetched_feed = Feedjira.parse(r.to_s)
-      fetched_feed.entries.each { |e| posts << e }
+          fetched_feed = Feedjira.parse(r.to_s)
+          fetched_feed.entries.each { |e| posts << e }
+        in error:
+          errors.messages[:exception] = error.message
+          Rails.logger.error { error.message }
+        else
+          next
+      end
     end
 
     posts.sort_by(&:published).reverse
