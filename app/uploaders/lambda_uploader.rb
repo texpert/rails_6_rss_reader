@@ -25,20 +25,20 @@ class LambdaUploader < Uploader
     # rubocop:disable Naming/VariableNumber
     if DocumentTypes::SharpImage::VALUES.include?(io&.data&.dig('metadata', 'mime_type'))
       case context[:name]
-      when :logo
-        assembly[:versions] =
-          [{ name: :size270_180, storage: :store, width: 270, height: 180, background: :transparent, format: :jpg }]
-      when :avatar
-        assembly[:versions] =
-          [
-            { name: :size40, storage: :store, width: 40, height: 40, format: :jpg },
-            { name: :size80, storage: :store, width: 80, height: 80, format: :jpg },
-            { name: :size120, storage: :store, width: 120, height: 120, format: :jpg }
-          ]
-      when :doc
-        assembly[:versions] =
-          [{ name: :size800, storage: :store, width: 600, height: 800, background: :transparent, format: :jpg },
-           { name: :size100, storage: :store, width: 100, height: 100, background: :transparent, format: :jpg }]
+        when :logo
+          assembly[:versions] =
+            [{ name: :size270_180, storage: :store, width: 270, height: 180, background: :transparent, format: :jpg }]
+        when :avatar
+          assembly[:versions] =
+            [
+              { name: :size40, storage: :store, width: 40, height: 40, format: :jpg },
+              { name: :size80, storage: :store, width: 80, height: 80, format: :jpg },
+              { name: :size120, storage: :store, width: 120, height: 120, format: :jpg }
+            ]
+        when :doc
+          assembly[:versions] =
+            [{ name: :size800, storage: :store, width: 600, height: 800, background: :transparent, format: :jpg },
+             { name: :size100, storage: :store, width: 100, height: 100, background: :transparent, format: :jpg }]
       end
       # rubocop:enable Naming/VariableNumber
     end

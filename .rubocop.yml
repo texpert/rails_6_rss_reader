@@ -33,12 +33,10 @@ AllCops:
   # the --only-guide-cops option.
   TargetRubyVersion: 3.1
 
-RSpec:
-  Language:
-    Expectations:
-      - assert_select
-      - has_link?
-      - has_no_css?
+Layout/CaseIndentation:
+  Enabled: true
+  EnforcedStyle: case
+  IndentOneStep: true
 
 Layout/LineLength:
   Max: 120
@@ -53,15 +51,14 @@ Metrics/ClassLength:
   Max: 200
 
 Metrics/ModuleLength:
-  CountComments: false  # count full line comments?
+  CountComments: false
   Max: 200
 
-# Avoid complex methods.
 Metrics/CyclomaticComplexity:
   Max: 10
 
 Metrics/MethodLength:
-  CountComments: false  # count full line comments?
+  CountComments: false
   Max: 25
 
 Metrics/PerceivedComplexity:
@@ -75,6 +72,13 @@ Metrics/BlockLength:
     - '**/*.rake'
     - 'spec/**/*.rb'
     - 'db/**/*.rb'
+
+RSpec:
+  Language:
+    Expectations:
+      - assert_select
+      - has_link?
+      - has_no_css?
 
 RSpec/MultipleExpectations:
   Max: 13
