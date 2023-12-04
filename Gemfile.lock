@@ -151,7 +151,7 @@ GEM
       rdoc
       reline (>= 0.3.8)
     jmespath (1.6.2)
-    json (2.6.3)
+    json (2.7.0)
     language_server-protocol (3.17.0.3)
     localhost (1.1.10)
     loofah (2.22.0)
