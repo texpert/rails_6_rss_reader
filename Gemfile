@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby File.read('.ruby-version').strip
+ruby file: '.tool-versions'
 
 gem 'bootsnap', '>= 1.8.1', require: false
 gem 'feedjira'

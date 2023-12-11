@@ -31,9 +31,9 @@ jobs:
     # If running on a self-hosted runner, check it meets the requirements
     # listed at https://github.com/ruby/setup-ruby#using-self-hosted-runners
     - name: Set up Ruby
-      uses: ruby/setup-ruby@b252db7f2774eec6798adf2a3816e69529489dab # v1.153.0
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.1
+        ruby-version: 3.2
 
     # This step is not necessary if you add the gem to your Gemfile
     - name: Install Code Scanning integration
