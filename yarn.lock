@@ -4781,9 +4781,9 @@ postcss-calc@^9.0.0:
     postcss-value-parser "^4.2.0"
 
 postcss-colormin@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-colormin/-/postcss-colormin-6.0.0.tgz#d4250652e952e1c0aca70c66942da93d3cdeaafe"
-  integrity sha512-EuO+bAUmutWoZYgHn2T1dG1pPqHU6L4TjzPlu4t1wZGXQ/fxV16xg2EJmYi0z+6r+MGV1yvpx1BHkUaRrPa2bw==
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-colormin/-/postcss-colormin-6.0.1.tgz#3aa61d38a88dbdeeb7252fae67809a7ac547a129"
+  integrity sha512-Tb9aR2wCJCzKuNjIeMzVNd0nXjQy25HDgFmmaRsHnP0eP/k8uQWE4S8voX5S2coO5CeKrp+USFs1Ayv9Tpxx6w==
   dependencies:
     browserslist "^4.21.4"
     caniuse-api "^3.0.0"
