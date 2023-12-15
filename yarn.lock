@@ -4804,9 +4804,9 @@ postcss-discard-comments@^6.0.0:
   integrity sha512-p2skSGqzPMZkEQvJsgnkBhCn8gI7NzRH2683EEjrIkoMiwRELx68yoUJ3q3DGSGuQ8Ug9Gsn+OuDr46yfO+eFw==
 
 postcss-discard-duplicates@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-discard-duplicates/-/postcss-discard-duplicates-6.0.0.tgz#c26177a6c33070922e67e9a92c0fd23d443d1355"
-  integrity sha512-bU1SXIizMLtDW4oSsi5C/xHKbhLlhek/0/yCnoMQany9k3nPBq+Ctsv/9oMmyqbR96HYHxZcHyK2HR5P/mqoGA==
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-discard-duplicates/-/postcss-discard-duplicates-6.0.1.tgz#112b1a95948e69b3484fdd43584dda6930977939"
+  integrity sha512-1hvUs76HLYR8zkScbwyJ8oJEugfPV+WchpnA+26fpJ7Smzs51CzGBHC32RS03psuX/2l0l0UKh2StzNxOrKCYg==
 
 postcss-discard-empty@^6.0.0:
   version "6.0.0"
