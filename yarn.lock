@@ -4923,9 +4923,9 @@ postcss-normalize-repeat-style@^6.0.0:
     postcss-value-parser "^4.2.0"
 
 postcss-normalize-string@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-normalize-string/-/postcss-normalize-string-6.0.0.tgz#948282647a51e409d69dde7910f0ac2ff97cb5d8"
-  integrity sha512-KWkIB7TrPOiqb8ZZz6homet2KWKJwIlysF5ICPZrXAylGe2hzX/HSf4NTX2rRPJMAtlRsj/yfkrWGavFuB+c0w==
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-normalize-string/-/postcss-normalize-string-6.0.1.tgz#7605e0fb4ec7bf2709709991d13a949e4419db1d"
+  integrity sha512-5Fhx/+xzALJD9EI26Aq23hXwmv97Zfy2VFrt5PLT8lAhnBIZvmaT5pQk+NuJ/GWj/QWaKSKbnoKDGLbV6qnhXg==
   dependencies:
     postcss-value-parser "^4.2.0"
 
