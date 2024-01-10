@@ -41,7 +41,7 @@
     "defaults"
   ],
   "devDependencies": {
-    "style-loader": "^3.3.3",
+    "style-loader": "^3.3.4",
     "webpack-dashboard": "^3.3.8",
     "webpack-dev-server": "^4.15.1"
   }
