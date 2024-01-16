@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # ruby file: '.tool-versions'
-ruby File.read('.tool-versions').split("\n").find { |str| str.start_with?('ruby') }.delete_prefix('ruby ')
+# ruby File.read('.tool-versions').split("\n").find { |str| str.start_with?('ruby') }.delete_prefix('ruby ')
+ruby File.read('.ruby-version').strip
 
 gem 'bootsnap', '>= 1.8.1', require: false
 gem 'feedjira'
