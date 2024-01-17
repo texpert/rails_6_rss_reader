@@ -18,7 +18,7 @@ RSpec.describe 'Home page', type: :feature do
         it 'has no pagination widget, and a `New Feed` link' do
           within('body') do
             expect(page).to have_link('New Feed', exact: true)
-            expect(page).not_to have_css('.pagy-bootstrap-nav')
+            expect(page).to have_no_css('.pagy-bootstrap-nav')
           end
         end
       end
