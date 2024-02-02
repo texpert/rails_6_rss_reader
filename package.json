@@ -18,7 +18,7 @@
     "css-loader": "^6.10.0",
     "css-minimizer-webpack-plugin": "^6.0.0",
     "jquery": "^3.7.1",
-    "mini-css-extract-plugin": "^2.7.7",
+    "mini-css-extract-plugin": "^2.8.0",
     "rails-erb-loader": "github:usabilityhub/rails-erb-loader",
     "sass": "^1.70.0",
     "sass-loader": "^14.1.0",
