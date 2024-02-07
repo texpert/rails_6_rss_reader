@@ -2870,7 +2870,7 @@ defaults@^1.0.3:
   dependencies:
     clone "^1.0.2"
 
-define-data-property@^1.0.1, define-data-property@^1.1.1, define-data-property@^1.1.2:
+define-data-property@^1.0.1, define-data-property@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/define-data-property/-/define-data-property-1.1.2.tgz#f3c33b4f0102360cd7c0f5f28700f5678510b63a"
   integrity sha512-SRtsSqsDbgpJBbW3pABMCOt6rQyeM8s8RiyeSN8jYG8sYmt/kGJejbydttUsnDs1tadr19tvhT4ShwMyoqAm4g==
@@ -5484,18 +5484,7 @@ set-blocking@^2.0.0:
   resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
   integrity sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==
 
-set-function-length@^1.1.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/set-function-length/-/set-function-length-1.2.0.tgz#2f81dc6c16c7059bda5ab7c82c11f03a515ed8e1"
-  integrity sha512-4DBHDoyHlM1IRPGYcoxexgh67y4ueR53FKV1yyxwFMY7aCqcN/38M1+SwZ/qJQ8iLv7+ck385ot4CcisOAPT9w==
-  dependencies:
-    define-data-property "^1.1.1"
-    function-bind "^1.1.2"
-    get-intrinsic "^1.2.2"
-    gopd "^1.0.1"
-    has-property-descriptors "^1.0.1"
-
-set-function-length@^1.2.0:
+set-function-length@^1.1.1, set-function-length@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/set-function-length/-/set-function-length-1.2.1.tgz#47cc5945f2c771e2cf261c6737cf9684a2a5e425"
   integrity sha512-j4t6ccc+VsKwYHso+kElc5neZpjtq9EnRICFZtWyBsLojhmeF/ZBd/elqm22WJh/BziDe/SBiOeAt0m2mfLD0g==
