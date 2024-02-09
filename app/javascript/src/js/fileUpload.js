@@ -1,6 +1,9 @@
-import 'uppy/dist/uppy.min.css'
-
-import { Core, FileInput, Informer, ProgressBar, ThumbnailGenerator, AwsS3 } from 'uppy'
+import AwsS3 from '@uppy/aws-s3'
+import Core from '@uppy/core'
+import FileInput from '@uppy/file-input'
+import Informer from '@uppy/informer'
+import ProgressBar from '@uppy/progress-bar'
+import ThumbnailGenerator from '@uppy/thumbnail-generator'
 
 function fileUpload(fileInput) {
   const hiddenInput = document.querySelector('.upload-data'),
