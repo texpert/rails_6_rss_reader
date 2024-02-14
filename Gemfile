@@ -34,7 +34,7 @@ gem 'twingly-url'
 # gem 'image_processing', '~> 1.2'
 
 group :development, :test do
-  gem 'dotenv-rails'
+  gem 'dotenv'
   # It needs to be in both groups to expose generators and rake tasks without having to type RAILS_ENV=test
   gem 'rspec-rails', '~> 6.1'
   gem 'rubocop', require: false

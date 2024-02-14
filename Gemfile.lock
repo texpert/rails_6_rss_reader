@@ -120,9 +120,6 @@ GEM
     diff-lcs (1.5.1)
     docile (1.4.0)
     dotenv (3.0.0)
-    dotenv-rails (3.0.0)
-      dotenv (= 3.0.0)
-      railties (>= 6.1)
     down (5.4.1)
       addressable (~> 2.8)
     drb (2.2.0)
@@ -374,7 +371,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.8.1)
   capybara (>= 2.15)
-  dotenv-rails
+  dotenv
   factory_bot_rails
   faker
   feedjira
