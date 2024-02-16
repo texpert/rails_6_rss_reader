@@ -163,7 +163,6 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.5)
     minitest (5.22.2)
     msgpack (1.7.2)
     mutex_m (0.2.0)
@@ -178,13 +177,22 @@ GEM
       net-protocol
     ngrok-wrapper (0.3.0)
     nio4r (2.7.0)
-    nokogiri (1.16.2)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.16.2-aarch64-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.2-arm-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.2-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x86-linux)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.2-x86_64-linux)
       racc (~> 1.4)
     oj (3.16.3)
       bigdecimal (>= 3.0)
     package_json (0.1.0)
-    pagy (7.0.0)
+    pagy (7.0.1)
     parallel (1.24.0)
     parser (3.3.0.5)
       ast (~> 2.4.1)
@@ -366,8 +374,12 @@ GEM
     zeitwerk (2.6.13)
 
 PLATFORMS
-  ruby
-  x86_86-linux
+  aarch64-linux
+  arm-linux
+  arm64-darwin
+  x86-linux
+  x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.8.1)
@@ -408,4 +420,4 @@ RUBY VERSION
    ruby 3.2.3p157
 
 BUNDLED WITH
-   2.4.20
+   2.5.6
