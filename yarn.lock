@@ -2726,9 +2726,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.668:
-  version "1.4.681"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.681.tgz#5f23fad8aa7e1f64cbb7dd9d15c7e39a1cd7e6e3"
-  integrity sha512-1PpuqJUFWoXZ1E54m8bsLPVYwIVCRzvaL+n5cjigGga4z854abDnFRc+cTa2th4S79kyGqya/1xoR7h+Y5G5lg==
+  version "1.4.682"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.682.tgz#27577b88ccccc810e09b05093345cf1830f1bd65"
+  integrity sha512-oCglfs8yYKs9RQjJFOHonSnhikPK3y+0SvSYc/YpYJV//6rqc0/hbwd0c7vgK4vrl6y2gJAwjkhkSGWK+z4KRA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -4362,9 +4362,9 @@ onetime@^5.1.2:
     mimic-fn "^2.1.0"
 
 open@^10.0.3:
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/open/-/open-10.0.3.tgz#f60d8db49fa126c50aec751957fb5d7de3308d4f"
-  integrity sha512-dtbI5oW7987hwC9qjJTyABldTaa19SuyJse1QboWv3b0qCcrrLNVDqBx1XgELAjh9QTVQaP/C5b1nhQebd1H2A==
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/open/-/open-10.0.4.tgz#4869d009dc5b706ae6585699e15d8ccc6cb73629"
+  integrity sha512-oujJ/FFr7ra6/7gJuQ4ZJJ8Gf2VHM0J3J/W7IvH++zaqEzacWVxzK++NiVY5NLHTTj7u/jNH5H3Ei9biL31Lng==
   dependencies:
     default-browser "^5.2.1"
     define-lazy-prop "^3.0.0"
