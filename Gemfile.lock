@@ -174,7 +174,7 @@ GEM
     net-smtp (0.4.0.1)
       net-protocol
     ngrok-wrapper (0.3.0)
-    nio4r (2.7.0)
+    nio4r (2.7.1)
     nokogiri (1.16.3-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.3-arm-linux)
@@ -203,7 +203,7 @@ GEM
       nio4r (~> 2.0)
     que (2.3.0)
     racc (1.7.3)
-    rack (3.0.9.1)
+    rack (3.0.10)
     rack-proxy (0.7.7)
       rack
     rack-session (2.0.0)
