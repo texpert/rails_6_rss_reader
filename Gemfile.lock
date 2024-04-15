@@ -85,7 +85,7 @@ GEM
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.78.0)
+    aws-sdk-kms (1.79.0)
       aws-sdk-core (~> 3, >= 3.191.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-lambda (1.118.0)
@@ -250,7 +250,7 @@ GEM
     reline (0.5.1)
       io-console (~> 0.5)
     rexml (3.2.6)
-    roda (3.78.0)
+    roda (3.79.0)
       rack
     rspec-core (3.13.0)
       rspec-support (~> 3.13.0)
