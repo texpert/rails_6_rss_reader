@@ -17,14 +17,11 @@ class FeedsController < ApplicationController
 
   # GET /feeds/new
   def new
-    @webpack_dropzone = true
     @feed = Feed.new
   end
 
   # GET /feeds/1/edit
-  def edit
-    @webpack_dropzone = true
-  end
+  def edit; end
 
   # POST /feeds
   def create
