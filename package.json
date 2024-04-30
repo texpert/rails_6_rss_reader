@@ -49,5 +49,6 @@
     "style-loader": "^4.0.0",
     "webpack-dashboard": "^3.3.8",
     "webpack-dev-server": "^5.0.4"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
