@@ -5558,7 +5558,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:^2.1.2, json5@npm:^2.2.3":
+"json5@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "json5@npm:1.0.2"
+  dependencies:
+    minimist: "npm:^1.2.0"
+  bin:
+    json5: lib/cli.js
+  checksum: 10c0/9ee316bf21f000b00752e6c2a3b79ecf5324515a5c60ee88983a1910a45426b643a4f3461657586e8aeca87aaf96f0a519b0516d2ae527a6c3e7eed80f68717f
+  languageName: node
+  linkType: hard
+
+"json5@npm:^2.2.3":
   version: 2.2.3
   resolution: "json5@npm:2.2.3"
   bin:
@@ -5636,14 +5647,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loader-utils@npm:^2.0.0":
-  version: 2.0.4
-  resolution: "loader-utils@npm:2.0.4"
+"loader-utils@npm:^1.2.3":
+  version: 1.4.2
+  resolution: "loader-utils@npm:1.4.2"
   dependencies:
     big.js: "npm:^5.2.2"
     emojis-list: "npm:^3.0.0"
-    json5: "npm:^2.1.2"
-  checksum: 10c0/d5654a77f9d339ec2a03d88221a5a695f337bf71eb8dea031b3223420bb818964ba8ed0069145c19b095f6c8b8fd386e602a3fc7ca987042bd8bb1dcc90d7100
+    json5: "npm:^1.0.1"
+  checksum: 10c0/2b726088b5526f7605615e3e28043ae9bbd2453f4a85898e1151f3c39dbf7a2b65d09f3996bc588d92ac7e717ded529d3e1ea3ea42c433393be84a58234a2f53
   languageName: node
   linkType: hard
 
@@ -6001,7 +6012,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.2.5":
+"minimist@npm:^1.2.0, minimist@npm:^1.2.5":
   version: 1.2.8
   resolution: "minimist@npm:1.2.8"
   checksum: 10c0/19d3fcdca050087b84c2029841a093691a91259a47def2f18222f41e7645a0b7c44ef4b40e88a1e58a40c84d2ef0ee6047c55594d298146d0eb3f6b737c20ce6
@@ -7088,15 +7099,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rails-erb-loader@github:usabilityhub/rails-erb-loader":
+"rails-erb-loader@github:moonproject/rails-erb-loader#master":
   version: 5.5.2
-  resolution: "rails-erb-loader@https://github.com/usabilityhub/rails-erb-loader.git#commit=1b747ad182bfa9501f4ac91a7e57b9ddd11e3e73"
+  resolution: "rails-erb-loader@https://github.com/moonproject/rails-erb-loader.git#commit=2f29832e70f13de98b4e0832c3e37f0d0248b5a8"
   dependencies:
-    loader-utils: "npm:^2.0.0"
+    loader-utils: "npm:^1.2.3"
     lodash.defaults: "npm:^4.2.0"
   peerDependencies:
     webpack: ^2.0.0 || ^3.0.0 || ^4.0.0
-  checksum: 10c0/89b7765d427256e19a2b9cb3f93ed61dfc81bf1658c505316b0e8d3af6f9c155715c2c1cb891c3b7bdad4b02e6d440d878aefeebd51496b45e91123f88392215
+  checksum: 10c0/b38abfb4aa7f0bdce25178b00e8aaa198ed7d13c301222c9ee445f8799db53ce3a8de5dd64314759b07e33537577a60b3070743817869a18a639c79af2518b65
   languageName: node
   linkType: hard
 
@@ -7105,6 +7116,8 @@ __metadata:
   resolution: "rails_6_rss_reader@workspace:."
   dependencies:
     "@babel/core": "npm:7"
+    "@babel/plugin-transform-destructuring": "npm:^7.24.5"
+    "@babel/plugin-transform-regenerator": "npm:^7.24.1"
     "@babel/plugin-transform-runtime": "npm:7"
     "@babel/preset-env": "npm:7"
     "@babel/runtime": "npm:7"
@@ -7123,8 +7136,8 @@ __metadata:
     css-minimizer-webpack-plugin: "npm:^6.0.0"
     jquery: "npm:^3.7.1"
     mini-css-extract-plugin: "npm:^2.9.0"
-    rails-erb-loader: "github:usabilityhub/rails-erb-loader"
-    sass: "npm:^1.76.0"
+    rails-erb-loader: "github:moonproject/rails-erb-loader#master"
+    sass: "npm:1.76.0"
     sass-loader: "npm:^14.2.1"
     shakapacker: "npm:7.2.3"
     style-loader: "npm:^4.0.0"
@@ -7513,7 +7526,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.76.0":
+"sass@npm:1.76.0":
   version: 1.76.0
   resolution: "sass@npm:1.76.0"
   dependencies:
