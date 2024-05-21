@@ -1348,9 +1348,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@changesets/apply-release-plan@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@changesets/apply-release-plan@npm:7.0.0"
+"@changesets/apply-release-plan@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "@changesets/apply-release-plan@npm:7.0.1"
   dependencies:
     "@babel/runtime": "npm:^7.20.1"
     "@changesets/config": "npm:^3.0.0"
@@ -1365,7 +1365,7 @@ __metadata:
     prettier: "npm:^2.7.1"
     resolve-from: "npm:^5.0.0"
     semver: "npm:^7.5.3"
-  checksum: 10c0/5f4c2d6b500d0ade51b31bc03b2475dd0bcaf3a31995f2ad953a6c3b05d3fb588568470bad3093d052f351ecdc6f8e2124d38941210361692b81bf62afbba7d7
+  checksum: 10c0/ca41f84a22a1fd25af4b195956afd393000139581a84528b6d21871e4ce417abf884ad2ef8a8ed7abb49031fed7cbb69226a158df36050aa70ed295636a42369
   languageName: node
   linkType: hard
 
@@ -1393,11 +1393,11 @@ __metadata:
   linkType: hard
 
 "@changesets/cli@npm:^2.26.1":
-  version: 2.27.1
-  resolution: "@changesets/cli@npm:2.27.1"
+  version: 2.27.3
+  resolution: "@changesets/cli@npm:2.27.3"
   dependencies:
     "@babel/runtime": "npm:^7.20.1"
-    "@changesets/apply-release-plan": "npm:^7.0.0"
+    "@changesets/apply-release-plan": "npm:^7.0.1"
     "@changesets/assemble-release-plan": "npm:^6.0.0"
     "@changesets/changelog-git": "npm:^0.2.0"
     "@changesets/config": "npm:^3.0.0"
@@ -1409,7 +1409,7 @@ __metadata:
     "@changesets/pre": "npm:^2.0.0"
     "@changesets/read": "npm:^0.6.0"
     "@changesets/types": "npm:^6.0.0"
-    "@changesets/write": "npm:^0.3.0"
+    "@changesets/write": "npm:^0.3.1"
     "@manypkg/get-packages": "npm:^1.1.3"
     "@types/semver": "npm:^7.5.0"
     ansi-colors: "npm:^4.1.3"
@@ -1430,7 +1430,7 @@ __metadata:
     tty-table: "npm:^4.1.5"
   bin:
     changeset: bin.js
-  checksum: 10c0/c7adc35f22983be9b0f6a8e4c3bc7013208ddf341b637530b88267e78469f0b7af9e36b138bea9f2fe29bb7b44294cd08aa0301a5cba0c6a928824f11d024e04
+  checksum: 10c0/fee10ae204926dbf4847111bf49ca93dc5b43a55b48635e2e08e71ab8442cf414c8165ae11174d6366ef12305274ea1b75beb14ca74b9a766d82b8c32148199b
   languageName: node
   linkType: hard
 
@@ -1570,16 +1570,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@changesets/write@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@changesets/write@npm:0.3.0"
+"@changesets/write@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@changesets/write@npm:0.3.1"
   dependencies:
     "@babel/runtime": "npm:^7.20.1"
     "@changesets/types": "npm:^6.0.0"
     fs-extra: "npm:^7.0.1"
     human-id: "npm:^1.0.2"
     prettier: "npm:^2.7.1"
-  checksum: 10c0/537f419d854946cce5694696b6a48ffee0ea1f7b5c97c5246836931886db18153c42a7dea1e74b0e8bf571fcded527e2f443ab362fdb1e4129bd95a61b2d0fe5
+  checksum: 10c0/6c6ef4c12f93ae10706eea96fae73ab05fddeaa1870102681106a29e4e92c37be9643f214c56187141ab5cf3a4cccb4e8a59212d0fa6c7c26083c5d613878c9a
   languageName: node
   linkType: hard
 
@@ -1807,10 +1807,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rails/ujs@npm:7.1.3-3":
-  version: 7.1.3-3
-  resolution: "@rails/ujs@npm:7.1.3-3"
-  checksum: 10c0/9eee95372b72d8f704b67f14a3bf9f2681ab5b11c7b79919bfde3341f2970771876af5b40de5b3e4fca6a97c76a41046eff71d96490617c1fc80ef3ad8bbac47
+"@rails/ujs@npm:7.1.3":
+  version: 7.1.3
+  resolution: "@rails/ujs@npm:7.1.3"
+  checksum: 10c0/68112d9add9dbc59b40c2ec1bc095a67445c57d20d0ab7d817ce3de0cd90374e2690af8ad54ce6ecc2d1c748b34c0c44d0fbd2f515ce2c443d7c5d23d00b9ce5
   languageName: node
   linkType: hard
 
@@ -3819,9 +3819,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.773
-  resolution: "electron-to-chromium@npm:1.4.773"
-  checksum: 10c0/eef684e2d64848418080715a76bc4147373d75ade07f65e64a97a3efd52d8c83dd8dd0daadba0d5ca891e3738144f8e97e1b7fe4545de3d15e71cd70ff14b2f1
+  version: 1.4.775
+  resolution: "electron-to-chromium@npm:1.4.775"
+  checksum: 10c0/46d71ecdac657ef8a635bc15f6a98acb9612a72e45200d97c610a04c03384673e9653a547080e1c28237cd6b623890f3e3c1ffab9c59d7c76c3cde66e24d75fe
   languageName: node
   linkType: hard
 
@@ -4030,9 +4030,9 @@ __metadata:
   linkType: hard
 
 "es-module-lexer@npm:^1.2.1":
-  version: 1.5.2
-  resolution: "es-module-lexer@npm:1.5.2"
-  checksum: 10c0/20b6c668691ee81781a0ae56930560c23aa28fb934fce9137820f12ae3726a25626010cbd8ed1775c217d3bae108e23dd7b805f923133dc633bfbbc2b0020524
+  version: 1.5.3
+  resolution: "es-module-lexer@npm:1.5.3"
+  checksum: 10c0/0f50b655490d1048432eac6eec94d99d3933119666ae82be578c3db1ea4b2c594118a336f6b7a3c4e2815355dcc9a469d880acef1c45aa656a5aae8c8ae8e5f6
   languageName: node
   linkType: hard
 
@@ -4435,9 +4435,9 @@ __metadata:
   linkType: hard
 
 "fp-ts@npm:^2.6.1":
-  version: 2.16.5
-  resolution: "fp-ts@npm:2.16.5"
-  checksum: 10c0/7208a91dcfd3aadd356ee727df351ae86017cfe8c61a6375c6b8f642bb68028edcf928ec5075b3e9884d723cdac3103317c0398ccd6825448eaf01f6298cb61f
+  version: 2.16.6
+  resolution: "fp-ts@npm:2.16.6"
+  checksum: 10c0/2c02d72f5716ab4ada556d1954fa3e1d449df2cd0d91c4597723221a2ce9027d99f423cc8172e5d1ea449a869d32fa8d3f6c2943e23a15d54e744a056c820c03
   languageName: node
   linkType: hard
 
@@ -4594,33 +4594,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.2.2, glob@npm:^10.3.10":
-  version: 10.3.12
-  resolution: "glob@npm:10.3.12"
+"glob@npm:^10.2.2, glob@npm:^10.3.10, glob@npm:^10.3.7":
+  version: 10.3.15
+  resolution: "glob@npm:10.3.15"
   dependencies:
     foreground-child: "npm:^3.1.0"
     jackspeak: "npm:^2.3.6"
     minimatch: "npm:^9.0.1"
     minipass: "npm:^7.0.4"
-    path-scurry: "npm:^1.10.2"
+    path-scurry: "npm:^1.11.0"
   bin:
     glob: dist/esm/bin.mjs
-  checksum: 10c0/f60cefdc1cf3f958b2bb5823e1b233727f04916d489dc4641d76914f016e6704421e06a83cbb68b0cb1cb9382298b7a88075b844ad2127fc9727ea22b18b0711
-  languageName: node
-  linkType: hard
-
-"glob@npm:^10.3.7":
-  version: 10.3.10
-  resolution: "glob@npm:10.3.10"
-  dependencies:
-    foreground-child: "npm:^3.1.0"
-    jackspeak: "npm:^2.3.5"
-    minimatch: "npm:^9.0.1"
-    minipass: "npm:^5.0.0 || ^6.0.2 || ^7.0.0"
-    path-scurry: "npm:^1.10.1"
-  bin:
-    glob: dist/esm/bin.mjs
-  checksum: 10c0/13d8a1feb7eac7945f8c8480e11cd4a44b24d26503d99a8d8ac8d5aefbf3e9802a2b6087318a829fad04cb4e829f25c5f4f1110c68966c498720dd261c7e344d
+  checksum: 10c0/cda748ddc181b31b3df9548c0991800406d5cc3b3f8110e37a8751ec1e39f37cdae7d7782d5422d7df92775121cdf00599992dff22f7ff1260344843af227c2b
   languageName: node
   linkType: hard
 
@@ -5377,7 +5362,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jackspeak@npm:^2.3.5, jackspeak@npm:^2.3.6":
+"jackspeak@npm:^2.3.6":
   version: 2.3.6
   resolution: "jackspeak@npm:2.3.6"
   dependencies:
@@ -5936,11 +5921,11 @@ __metadata:
   linkType: hard
 
 "minimatch@npm:^9.0.1":
-  version: 9.0.3
-  resolution: "minimatch@npm:9.0.3"
+  version: 9.0.4
+  resolution: "minimatch@npm:9.0.4"
   dependencies:
     brace-expansion: "npm:^2.0.1"
-  checksum: 10c0/85f407dcd38ac3e180f425e86553911d101455ca3ad5544d6a7cec16286657e4f8a9aa6695803025c55e31e35a91a2252b5dc8e7d527211278b8b65b4dbd5eac
+  checksum: 10c0/2c16f21f50e64922864e560ff97c587d15fd491f65d92a677a344e970fe62aafdbeafe648965fa96d33c061b4d0eabfe0213466203dd793367e7f28658cf6414
   languageName: node
   linkType: hard
 
@@ -6467,7 +6452,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-scurry@npm:^1.10.1, path-scurry@npm:^1.10.2":
+"path-scurry@npm:^1.11.0":
   version: 1.11.1
   resolution: "path-scurry@npm:1.11.1"
   dependencies:
@@ -7049,7 +7034,7 @@ __metadata:
     "@babel/preset-env": "npm:7"
     "@babel/runtime": "npm:7"
     "@popperjs/core": "npm:^2.11.8"
-    "@rails/ujs": "npm:7.1.3-3"
+    "@rails/ujs": "npm:7.1.3"
     "@uppy/aws-s3": "npm:^3.6.2"
     "@uppy/core": "npm:^3.11.3"
     "@uppy/file-input": "npm:^3.1.2"
