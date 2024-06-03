@@ -1937,14 +1937,14 @@ __metadata:
   linkType: hard
 
 "@types/express-serve-static-core@npm:*, @types/express-serve-static-core@npm:^4.17.33":
-  version: 4.19.2
-  resolution: "@types/express-serve-static-core@npm:4.19.2"
+  version: 4.19.3
+  resolution: "@types/express-serve-static-core@npm:4.19.3"
   dependencies:
     "@types/node": "npm:*"
     "@types/qs": "npm:*"
     "@types/range-parser": "npm:*"
     "@types/send": "npm:*"
-  checksum: 10c0/471060bbab7be4bbf2c24f5628e1fa2edbfd29fb47a99ba77984e9c0ac33b105a660cfc384ddd1e6fb6f45d9515e70422eefc9a7ba317565919ebcd5db251107
+  checksum: 10c0/5d2a1fb96a17a8e0e8c59325dfeb6d454bbc5c9b9b6796eec0397ddf9dbd262892040d5da3d72b5d7148f34bb3fcd438faf1b37fcba8c5a03e75fae491ad1edf
   languageName: node
   linkType: hard
 
@@ -3022,9 +3022,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001587":
-  version: 1.0.30001625
-  resolution: "caniuse-lite@npm:1.0.30001625"
-  checksum: 10c0/26752c65c775ce24b8cfd39a241a4ce33accf2d2e2982f37827c2f94caac3520a3493419e096c42578d372073a2e9f4359f0122ca4c00e51cb02463c512fc6b3
+  version: 1.0.30001626
+  resolution: "caniuse-lite@npm:1.0.30001626"
+  checksum: 10c0/112c7219fbfefb5f1d8c05194712ea08093daee7f245896bba9750c7512443178ac1e8de581b4e7868415c4cef28d7577c0078ed170e8d2deff948eb16aa761a
   languageName: node
   linkType: hard
 
@@ -3832,9 +3832,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.785
-  resolution: "electron-to-chromium@npm:1.4.785"
-  checksum: 10c0/c6da9531bdbd604c70cd303fd7ec8888c6a2f2baa85f35f403a95863bcf1efc11651e8a9a937940aaa924bc44230223f7a248fb9684b00566fceaad7d3d697f0
+  version: 1.4.788
+  resolution: "electron-to-chromium@npm:1.4.788"
+  checksum: 10c0/62ad89f153a68b3d231f4e4e681ac0fc130b2f6ff4538fe835d712acdf253a46c8282919396177ddb028246d5f91fbc60b6b23d74d214e729345c585995e476d
   languageName: node
   linkType: hard
 
@@ -7069,7 +7069,7 @@ __metadata:
     jquery: "npm:^3.7.1"
     mini-css-extract-plugin: "npm:^2.9.0"
     rails-erb-loader: "github:moonproject/rails-erb-loader#master"
-    sass: "npm:1.77.3"
+    sass: "npm:1.77.4"
     sass-loader: "npm:^14.2.1"
     shakapacker: "npm:^8.0.0"
     style-loader: "npm:^4.0.0"
@@ -7458,16 +7458,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.77.3":
-  version: 1.77.3
-  resolution: "sass@npm:1.77.3"
+"sass@npm:1.77.4":
+  version: 1.77.4
+  resolution: "sass@npm:1.77.4"
   dependencies:
     chokidar: "npm:>=3.0.0 <4.0.0"
     immutable: "npm:^4.0.0"
     source-map-js: "npm:>=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 10c0/131469168a4c41f9c3eeaac8a91b3ada0ff4746c8588ce1bc4b819c9245281075a895d5fc74f6edeeb32142a572af8a0799bd0ae698614a1fcfcfbd97b0b1256
+  checksum: 10c0/b9cb4882bded282aabe38d011adfce375e1f282184fcf93dc3da5d5be834c6aa53c474c15634c351ef7bd85146cfd1cc81343654cc3bcf000d78e856da4225ef
   languageName: node
   linkType: hard
 
