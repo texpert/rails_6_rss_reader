@@ -52,5 +52,5 @@
     "webpack-dashboard": "^3.3.8",
     "webpack-dev-server": "^5.0.4"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.3.0"
 }
