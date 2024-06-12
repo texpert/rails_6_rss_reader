@@ -90,3 +90,9 @@ RSpec/NestedGroups:
 
 Style/StringLiterals:
   ConsistentQuotesInMultiline: true
+
+Capybara:
+  Enabled: true
+
+FactoryBot:
+  Enabled: true
