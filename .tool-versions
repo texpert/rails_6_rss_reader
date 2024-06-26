@@ -1,4 +1,4 @@
-ruby 3.3.2
+ruby 3.3.3
 nodejs 20.15.0
 bundler 2.5.14
 rust 1.76.0
