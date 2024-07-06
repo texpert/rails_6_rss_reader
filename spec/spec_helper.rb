@@ -47,7 +47,7 @@ RSpec.configure do |config|
   # compatibility in RSpec 3). It causes shared context metadata to be
   # inherited by the metadata hash of host groups and examples, rather than
   # triggering implicit auto-inclusion in groups with matching metadata.
-  config.shared_context_metadata_behavior = :apply_to_host_groups
+  # config.shared_context_metadata_behavior = :apply_to_host_groups
   config.alias_it_should_behave_like_to :it_has_layout_elements, 'has_layout_elements:'
 
   # The settings below are suggested to provide a good initial experience
