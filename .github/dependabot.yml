@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: daily
       time: "03:00"
-    open-pull-requests-limit: 50
+    open-pull-requests-limit: 20
     allow:
     - dependency-type: all
   - package-ecosystem: npm
@@ -23,7 +23,7 @@ updates:
     schedule:
       interval: daily
       time: "03:00"
-    open-pull-requests-limit: 50
+    open-pull-requests-limit: 20
     allow:
       - dependency-type: all
   - package-ecosystem: "github-actions"
