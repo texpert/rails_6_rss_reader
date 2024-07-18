@@ -2266,14 +2266,14 @@ __metadata:
   linkType: hard
 
 "@uppy/xhr-upload@npm:^3.6.2":
-  version: 3.6.7
-  resolution: "@uppy/xhr-upload@npm:3.6.7"
+  version: 3.6.8
+  resolution: "@uppy/xhr-upload@npm:3.6.8"
   dependencies:
     "@uppy/companion-client": "npm:^3.8.1"
     "@uppy/utils": "npm:^5.9.0"
   peerDependencies:
-    "@uppy/core": ^3.11.3
-  checksum: 10c0/54e6fd55f6b17a4c449501316230caf22eedae12445305f7e4976d19bfc6a9dd0f516f7891e4fc10883225e173eaf253fcfa2ee0fc352b4f435d38821983a01d
+    "@uppy/core": ^3.13.0
+  checksum: 10c0/fbb61d5d553b354d4642ba453d06f519eda583f1be7b958a4ee88ebd90433bd0334ef3617c930b241bf2101221edcc01d114a82896ea8ac0ddd653739cecd526
   languageName: node
   linkType: hard
 
