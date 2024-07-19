@@ -28,7 +28,7 @@
     "jquery": "^3.7.1",
     "mini-css-extract-plugin": "^2.9.0",
     "rails-erb-loader": "github:moonproject/rails-erb-loader#master",
-    "sass": "1.77.4",
+    "sass": "^1.77.4",
     "sass-loader": "^14.2.1",
     "shakapacker": "^8.0.1",
     "terser-webpack-plugin": "5",
@@ -36,7 +36,7 @@
     "webpack": "5",
     "webpack-assets-manifest": "5",
     "webpack-cli": "5",
-    "webpack-merge": "5"
+    "webpack-merge": "^6.0.1"
   },
   "version": "0.1.2",
   "babel": {
