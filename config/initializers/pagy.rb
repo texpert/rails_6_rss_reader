@@ -75,10 +75,10 @@ require 'pagy/extras/bootstrap'
 # require 'pagy/extras/support'
 
 # Items extra: Allow the client to request a custom number of items per page with an optional selector UI
-# See https://ddnexus.github.io/pagy/extras/items
-# require 'pagy/extras/items'
-# Pagy::DEFAULT[:items_param] = :items    # default
-# Pagy::DEFAULT[:max_items]   = 100       # default
+# See https://ddnexus.github.io/pagy/extras/limit
+# require 'pagy/extras/limit'
+# Pagy::DEFAULT[:limit_param] = :items    # default
+# Pagy::DEFAULT[:limit_max]   = 100       # default
 
 # Overflow extra: Allow for easy handling of overflowing pages
 # See https://ddnexus.github.io/pagy/extras/overflow
@@ -104,7 +104,7 @@ require 'pagy/extras/bootstrap'
 
 # Instance variables
 # See https://ddnexus.github.io/pagy/api/pagy#instance-variables
-# Pagy::DEFAULT[:items] = 20                                   # default
+# Pagy::DEFAULT[:limit] = 20                                   # default
 
 # Other Variables
 # See https://ddnexus.github.io/pagy/api/pagy#other-variables
@@ -117,7 +117,7 @@ require 'pagy/extras/bootstrap'
 # Rails
 
 # Rails: extras assets path required by the helpers that use javascript
-# (pagy*_nav_js, pagy*_combo_nav_js, and pagy_items_selector_js)
+# (pagy*_nav_js, pagy*_combo_nav_js, and pagy_limit_selector_js)
 # See https://ddnexus.github.io/pagy/extras#javascript
 # Rails.application.config.assets.paths << Pagy.root.join('javascripts')
 
