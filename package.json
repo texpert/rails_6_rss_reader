@@ -29,7 +29,7 @@
     "mini-css-extract-plugin": "^2.9.0",
     "rails-erb-loader": "github:moonproject/rails-erb-loader#master",
     "sass": "^1.77.4",
-    "sass-loader": "^14.2.1",
+    "sass-loader": "^15.0.0",
     "shakapacker": "^8.0.1",
     "terser-webpack-plugin": "5",
     "turbolinks": "^5.2.0",
