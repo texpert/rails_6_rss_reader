@@ -31,12 +31,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new webpack.ProvidePlugin({ $: 'jquery/src/jquery',
-                                jQuery: 'jquery/src/jquery',
-                                'window.jQuery': 'jquery/src/jquery',
-                                'window.$': 'jquery/src/jquery' })
-  ],
 }
 
 module.exports = merge(envSpecificConfig, webpackConfig, customConfig)

@@ -19,10 +19,6 @@ import Rails from "@rails/ujs"
 Rails.start()
 require("turbolinks").start()
 
-import $ from 'jquery/src/jquery'
-window.jQuery = $
-window.$ = $
-
 import '../src/js/bootstrap_custom.js'
 import '../src/js/pagy.js.erb'
 import fileUpload from '../src/js/fileUpload.js'

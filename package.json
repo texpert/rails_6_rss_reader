@@ -25,7 +25,6 @@
     "compression-webpack-plugin": "11",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
-    "jquery": "^3.7.1",
     "mini-css-extract-plugin": "^2.9.0",
     "rails-erb-loader": "github:moonproject/rails-erb-loader#master",
     "sass": "^1.77.4",
