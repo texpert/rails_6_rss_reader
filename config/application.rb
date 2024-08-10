@@ -1,20 +1,19 @@
 # frozen_string_literal: true
 
-require_relative 'boot'
+require_relative "boot"
 
 # require "rails"
 # Pick the frameworks you want:
-require 'active_model/railtie'
-require 'active_job/railtie'
-require 'active_record/railtie'
+require "active_model/railtie"
+require "active_job/railtie"
+require "active_record/railtie"
 # require "active_storage/engine"
-require 'action_controller/railtie'
-require 'action_mailer/railtie'
+require "action_controller/railtie"
+require "action_mailer/railtie"
 # require "action_mailbox/engine"
 # require "action_text/engine"
-require 'action_view/railtie'
+require "action_view/railtie"
 # require "action_cable/engine"
-require 'sprockets/railtie'
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -22,11 +21,10 @@ require 'sprockets/railtie'
 Bundler.require(*Rails.groups)
 
 Dotenv::Rails.load
-
 module Rails6RssReader
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.1
+    config.load_defaults 7.2
     config.active_record.schema_format = :sql
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
@@ -44,8 +42,6 @@ module Rails6RssReader
 
     # Don't generate system test files.
     config.generators.system_tests = nil
-
-    config.active_support.cache_format_version = 7.1
   end
 end
 

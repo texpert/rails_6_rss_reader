@@ -88,8 +88,17 @@ RSpec/MultipleExpectations:
 RSpec/NestedGroups:
   Max: 7
 
+Style/GlobalStdStream:
+  Enabled: true
+  Exclude:
+    - 'config/environments/production.rb'
+
 Style/StringLiterals:
   ConsistentQuotesInMultiline: true
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'node_modules/**/*'
 
 Capybara:
   Enabled: true
