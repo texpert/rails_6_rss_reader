@@ -258,7 +258,7 @@ GEM
       io-console (~> 0.5)
     rexml (3.3.5)
       strscan
-    roda (3.82.0)
+    roda (3.83.0)
       rack
     rspec-core (3.13.0)
       rspec-support (~> 3.13.0)
