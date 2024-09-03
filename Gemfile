@@ -34,7 +34,7 @@ gem 'twingly-url'
 group :development, :test do
   gem 'dotenv'
   # It needs to be in both groups to expose generators and rake tasks without having to type RAILS_ENV=test
-  gem 'rspec-rails', '~> 6.1'
+  gem 'rspec-rails', '~> 7.0'
   gem 'rubocop', require: false
   gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
