@@ -33,6 +33,8 @@ gem 'twingly-url'
 
 group :development, :test do
   gem 'dotenv'
+  gem 'pg_query'
+  gem 'prosopite'
   # It needs to be in both groups to expose generators and rake tasks without having to type RAILS_ENV=test
   gem 'rspec-rails', '~> 7.0'
   gem 'rubocop', require: false
