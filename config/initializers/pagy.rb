@@ -104,7 +104,7 @@ require 'pagy/extras/bootstrap'
 
 # Instance variables
 # See https://ddnexus.github.io/pagy/api/pagy#instance-variables
-# Pagy::DEFAULT[:limit] = 20                                   # default
+Pagy::DEFAULT[:limit] = 15
 
 # Other Variables
 # See https://ddnexus.github.io/pagy/api/pagy#other-variables
