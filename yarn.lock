@@ -2917,7 +2917,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.6.0":
+"chokidar@npm:^3.6.0":
   version: 3.6.0
   resolution: "chokidar@npm:3.6.0"
   dependencies:
@@ -2933,6 +2933,15 @@ __metadata:
     fsevents:
       optional: true
   checksum: 10c0/8361dcd013f2ddbe260eacb1f3cb2f2c6f2b0ad118708a343a5ed8158941a39cb8fb1d272e0f389712e74ee90ce8ba864eece9e0e62b9705cb468a2f6d917462
+  languageName: node
+  linkType: hard
+
+"chokidar@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "chokidar@npm:4.0.0"
+  dependencies:
+    readdirp: "npm:^4.0.1"
+  checksum: 10c0/42d03c53b0ad200689e4fae7763133561480561cab8ba5304e8f2298ff45ff84bf0f6065c3f02b9e557b74b156813734439a1a2ff19a1ea6b35692395cd92738
   languageName: node
   linkType: hard
 
@@ -3552,9 +3561,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.4":
-  version: 1.5.24
-  resolution: "electron-to-chromium@npm:1.5.24"
-  checksum: 10c0/c20a6fc69145c0b470778ee0a952226d3480d611949bea00c9f8ed3bac0a205e5cd8ba76cfa99034d9ee717482741cf1c7e41eb151ccffc933e1eefe501d3bc7
+  version: 1.5.25
+  resolution: "electron-to-chromium@npm:1.5.25"
+  checksum: 10c0/2ea818d22592754b902df70d48b82c5d9e3cc2a221d3d0c39d7a7967780601a5cebd5fa10628c6d0ba918582c268a20392279e8bee93edba2e499681056ae143
   languageName: node
   linkType: hard
 
@@ -5066,14 +5075,14 @@ __metadata:
   linkType: hard
 
 "memfs@npm:^4.6.0":
-  version: 4.11.1
-  resolution: "memfs@npm:4.11.1"
+  version: 4.11.2
+  resolution: "memfs@npm:4.11.2"
   dependencies:
     "@jsonjoy.com/json-pack": "npm:^1.0.3"
     "@jsonjoy.com/util": "npm:^1.3.0"
     tree-dump: "npm:^1.0.1"
     tslib: "npm:^2.0.0"
-  checksum: 10c0/738f3ba7204d7f0a5bc09ae9f62d4151e0bbb14b5f5c2bb39c59e93d1b6da1bfc0c94240f23f450538578a331d1458da995b4976aee889da0fac2219322e8377
+  checksum: 10c0/c5844065a0b2f721e9962151670a3b7474861dc499538a3c000cce1cab7c2e89910f692520dd06db4dbfbe2034703fb948fc1468b9dfa56524e9da1233b4bc43
   languageName: node
   linkType: hard
 
@@ -6278,6 +6287,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"readdirp@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "readdirp@npm:4.0.1"
+  checksum: 10c0/e5a0b547015f68ecc918f115b62b75b2b840611480a9240cb3317090a0ddac01bb9b40315a8fa08acdf52a43eea17b808c89b645263cba3ab64dc557d7f801f1
+  languageName: node
+  linkType: hard
+
 "readdirp@npm:~3.6.0":
   version: 3.6.0
   resolution: "readdirp@npm:3.6.0"
@@ -6501,15 +6517,15 @@ __metadata:
   linkType: hard
 
 "sass@npm:^1.77.4":
-  version: 1.78.0
-  resolution: "sass@npm:1.78.0"
+  version: 1.79.1
+  resolution: "sass@npm:1.79.1"
   dependencies:
-    chokidar: "npm:>=3.0.0 <4.0.0"
+    chokidar: "npm:^4.0.0"
     immutable: "npm:^4.0.0"
     source-map-js: "npm:>=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 10c0/6577a87c00b03a5a50f3a11b4b6592f28abce34e61812e381535a3b712151bd94db3ca06467d20395431e0f38a23f99e616d6859d771fb6d4617c359f590c48c
+  checksum: 10c0/187bc885bad2e81e5414a146c9e14a28f622b5aba5c1425f4dd6d8ef2045b66c69de93689503886a8d2cc55d6bcce97b05ee87b074628fefd03e762789f931d0
   languageName: node
   linkType: hard
 
@@ -7159,8 +7175,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.26.0":
-  version: 5.32.0
-  resolution: "terser@npm:5.32.0"
+  version: 5.33.0
+  resolution: "terser@npm:5.33.0"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.8.2"
@@ -7168,7 +7184,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10c0/94daae4881258eb7d09abd46378e23d11ee46caa507b2fb26c5595c7e490914be734e0de38c50041dc38fae5fca24de11badf042dfbbfc1d336ed117335c420a
+  checksum: 10c0/18a1cd33366dcd8fee7d6eef78c9c417cbe688e5153841e6a574f9d4937066dc40f67b1e96305f73f25bc6f2c458dbe442a056092c99619d4dbee8ad9fae4a3e
   languageName: node
   linkType: hard
 
