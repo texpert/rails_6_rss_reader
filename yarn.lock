@@ -1582,106 +1582,114 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/watcher-android-arm64@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-android-arm64@npm:2.4.1"
+"@parcel/watcher-android-arm64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-android-arm64@npm:2.5.0"
   conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-darwin-arm64@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-darwin-arm64@npm:2.4.1"
+"@parcel/watcher-darwin-arm64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-darwin-arm64@npm:2.5.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-darwin-x64@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-darwin-x64@npm:2.4.1"
+"@parcel/watcher-darwin-x64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-darwin-x64@npm:2.5.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-freebsd-x64@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-freebsd-x64@npm:2.4.1"
+"@parcel/watcher-freebsd-x64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-freebsd-x64@npm:2.5.0"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-arm-glibc@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-linux-arm-glibc@npm:2.4.1"
+"@parcel/watcher-linux-arm-glibc@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-arm-glibc@npm:2.5.0"
   conditions: os=linux & cpu=arm & libc=glibc
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-arm64-glibc@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-linux-arm64-glibc@npm:2.4.1"
+"@parcel/watcher-linux-arm-musl@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-arm-musl@npm:2.5.0"
+  conditions: os=linux & cpu=arm & libc=musl
+  languageName: node
+  linkType: hard
+
+"@parcel/watcher-linux-arm64-glibc@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-arm64-glibc@npm:2.5.0"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-arm64-musl@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-linux-arm64-musl@npm:2.4.1"
+"@parcel/watcher-linux-arm64-musl@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-arm64-musl@npm:2.5.0"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-x64-glibc@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-linux-x64-glibc@npm:2.4.1"
+"@parcel/watcher-linux-x64-glibc@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-x64-glibc@npm:2.5.0"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@parcel/watcher-linux-x64-musl@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-linux-x64-musl@npm:2.4.1"
+"@parcel/watcher-linux-x64-musl@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-linux-x64-musl@npm:2.5.0"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@parcel/watcher-win32-arm64@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-win32-arm64@npm:2.4.1"
+"@parcel/watcher-win32-arm64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-win32-arm64@npm:2.5.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@parcel/watcher-win32-ia32@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-win32-ia32@npm:2.4.1"
+"@parcel/watcher-win32-ia32@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-win32-ia32@npm:2.5.0"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@parcel/watcher-win32-x64@npm:2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher-win32-x64@npm:2.4.1"
+"@parcel/watcher-win32-x64@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@parcel/watcher-win32-x64@npm:2.5.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
 "@parcel/watcher@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@parcel/watcher@npm:2.4.1"
+  version: 2.5.0
+  resolution: "@parcel/watcher@npm:2.5.0"
   dependencies:
-    "@parcel/watcher-android-arm64": "npm:2.4.1"
-    "@parcel/watcher-darwin-arm64": "npm:2.4.1"
-    "@parcel/watcher-darwin-x64": "npm:2.4.1"
-    "@parcel/watcher-freebsd-x64": "npm:2.4.1"
-    "@parcel/watcher-linux-arm-glibc": "npm:2.4.1"
-    "@parcel/watcher-linux-arm64-glibc": "npm:2.4.1"
-    "@parcel/watcher-linux-arm64-musl": "npm:2.4.1"
-    "@parcel/watcher-linux-x64-glibc": "npm:2.4.1"
-    "@parcel/watcher-linux-x64-musl": "npm:2.4.1"
-    "@parcel/watcher-win32-arm64": "npm:2.4.1"
-    "@parcel/watcher-win32-ia32": "npm:2.4.1"
-    "@parcel/watcher-win32-x64": "npm:2.4.1"
+    "@parcel/watcher-android-arm64": "npm:2.5.0"
+    "@parcel/watcher-darwin-arm64": "npm:2.5.0"
+    "@parcel/watcher-darwin-x64": "npm:2.5.0"
+    "@parcel/watcher-freebsd-x64": "npm:2.5.0"
+    "@parcel/watcher-linux-arm-glibc": "npm:2.5.0"
+    "@parcel/watcher-linux-arm-musl": "npm:2.5.0"
+    "@parcel/watcher-linux-arm64-glibc": "npm:2.5.0"
+    "@parcel/watcher-linux-arm64-musl": "npm:2.5.0"
+    "@parcel/watcher-linux-x64-glibc": "npm:2.5.0"
+    "@parcel/watcher-linux-x64-musl": "npm:2.5.0"
+    "@parcel/watcher-win32-arm64": "npm:2.5.0"
+    "@parcel/watcher-win32-ia32": "npm:2.5.0"
+    "@parcel/watcher-win32-x64": "npm:2.5.0"
     detect-libc: "npm:^1.0.3"
     is-glob: "npm:^4.0.3"
     micromatch: "npm:^4.0.5"
@@ -1698,6 +1706,8 @@ __metadata:
       optional: true
     "@parcel/watcher-linux-arm-glibc":
       optional: true
+    "@parcel/watcher-linux-arm-musl":
+      optional: true
     "@parcel/watcher-linux-arm64-glibc":
       optional: true
     "@parcel/watcher-linux-arm64-musl":
@@ -1712,7 +1722,7 @@ __metadata:
       optional: true
     "@parcel/watcher-win32-x64":
       optional: true
-  checksum: 10c0/33b7112094b9eb46c234d824953967435b628d3d93a0553255e9910829b84cab3da870153c3a870c31db186dc58f3b2db81382fcaee3451438aeec4d786a6211
+  checksum: 10c0/9bad727d8b11e5d150ec47459254544c583adaa47d047b8ef65e1c74aede1a0767dc7fc6b8997649dae07318d6ef39caba6a1c405d306398d5bcd47074ec5d29
   languageName: node
   linkType: hard
 
@@ -2045,136 +2055,109 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uppy/aws-s3-multipart@npm:^3.10.2":
-  version: 3.12.0
-  resolution: "@uppy/aws-s3-multipart@npm:3.12.0"
+"@uppy/aws-s3@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@uppy/aws-s3@npm:4.1.1"
   dependencies:
-    "@uppy/companion-client": "npm:^3.8.1"
-    "@uppy/utils": "npm:^5.9.0"
+    "@uppy/companion-client": "npm:^4.1.1"
+    "@uppy/utils": "npm:^6.0.4"
   peerDependencies:
-    "@uppy/core": ^3.12.0
-  checksum: 10c0/e5950268a286cc77c5208f78d36d193f14fa688631f780a479c1a9d1d647bffef800e3ad72b00e7308a4e35f441f8345ffef4ef2cc7b5e2dc9939650e22e138b
+    "@uppy/core": ^4.2.3
+  checksum: 10c0/745920a0470b5890158193405e3f1b9a3eff0aab7f46a36d29ed7a6a3a8895835971aeed905adaf930bcbeeec308bd05c0c1b15c1c05919278f185c7bf496cc7
   languageName: node
   linkType: hard
 
-"@uppy/aws-s3@npm:^3.6.2":
-  version: 3.6.2
-  resolution: "@uppy/aws-s3@npm:3.6.2"
+"@uppy/companion-client@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@uppy/companion-client@npm:4.1.1"
   dependencies:
-    "@uppy/aws-s3-multipart": "npm:^3.10.2"
-    "@uppy/companion-client": "npm:^3.7.2"
-    "@uppy/utils": "npm:^5.7.2"
-    "@uppy/xhr-upload": "npm:^3.6.2"
-    nanoid: "npm:^4.0.0"
-  peerDependencies:
-    "@uppy/core": ^3.9.1
-  checksum: 10c0/5f96a2cda420831881d9ff4ed63fd8205f8ae26019885f58cb3b274891e3b93cb82ba103211bbbe8d099c27bc070144b1084c2f61a710928393ac91fb7b729ff
-  languageName: node
-  linkType: hard
-
-"@uppy/companion-client@npm:^3.7.2, @uppy/companion-client@npm:^3.8.1":
-  version: 3.8.1
-  resolution: "@uppy/companion-client@npm:3.8.1"
-  dependencies:
-    "@uppy/utils": "npm:^5.9.0"
+    "@uppy/utils": "npm:^6.0.4"
     namespace-emitter: "npm:^2.0.1"
     p-retry: "npm:^6.1.0"
   peerDependencies:
-    "@uppy/core": ^3.11.0
-  checksum: 10c0/2e4182cff3e389b69c341241136e54cb9635c425bdf3f7ff5ccc68515e2544a7d46a5532060a8059b09da4fb06fd191e6410708e29197cf7a06f39c6d9fc538b
+    "@uppy/core": ^4.2.3
+  checksum: 10c0/c281f6d8ff37fa9b360eb64d7c849d737bd57137a3b381c69adcea51eb2ec1bf15e0d68cbc3062ecf76fb68b505de7aa4222501ac059e8f2b048291b3c1cc1a7
   languageName: node
   linkType: hard
 
-"@uppy/core@npm:^3.13.1":
-  version: 3.13.1
-  resolution: "@uppy/core@npm:3.13.1"
+"@uppy/core@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "@uppy/core@npm:4.2.3"
   dependencies:
     "@transloadit/prettier-bytes": "npm:^0.3.4"
-    "@uppy/store-default": "npm:^3.2.2"
-    "@uppy/utils": "npm:^5.9.0"
+    "@uppy/store-default": "npm:^4.1.1"
+    "@uppy/utils": "npm:^6.0.4"
     lodash: "npm:^4.17.21"
     mime-match: "npm:^1.0.2"
     namespace-emitter: "npm:^2.0.1"
-    nanoid: "npm:^4.0.0"
+    nanoid: "npm:^5.0.0"
     preact: "npm:^10.5.13"
-  checksum: 10c0/5af8ada79595b3362cb69560cff8f51806e3c878bd7243a3e1bc66ef6dbfa6a98bf3d8b297d64fb7fb48937bb827b2a8a33001ea81fbb9b8b8efb01ba7715dee
+  checksum: 10c0/d98307717c9be1f620c3649183901497f4854cbd68c7c62bd8330cb6c6aeb9d86eb4371d4398f9a3674224d383c0d02e04067412abd217ebfd448301a2fcadd1
   languageName: node
   linkType: hard
 
-"@uppy/file-input@npm:^3.1.2":
-  version: 3.1.2
-  resolution: "@uppy/file-input@npm:3.1.2"
+"@uppy/file-input@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "@uppy/file-input@npm:4.0.3"
   dependencies:
-    "@uppy/utils": "npm:^5.9.0"
-    preact: "npm:^10.5.13"
-  peerDependencies:
-    "@uppy/core": ^3.11.0
-  checksum: 10c0/03a3bcaa3bd3488c1e79bcaabae87083f8700e267af7d8da92c469034700e9ddbb927e6f9a0fa55348edd53733a7f6dc2e90e56da30a03dc7522ac3d277d39c3
-  languageName: node
-  linkType: hard
-
-"@uppy/informer@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@uppy/informer@npm:3.1.0"
-  dependencies:
-    "@uppy/utils": "npm:^5.7.4"
+    "@uppy/utils": "npm:^6.0.4"
     preact: "npm:^10.5.13"
   peerDependencies:
-    "@uppy/core": ^3.9.3
-  checksum: 10c0/b636dfe9b26ef63f16a7989628bb85d42910a91839158a4179335451b0aad254e1ad9d8c35fe8595b96c70a60c267d27faebe3c04d0b2d9642171cd74d86aab3
+    "@uppy/core": ^4.2.3
+  checksum: 10c0/6769e4fda271a1a8f17cb96302cfa1ec9f74593cd53e344611f1985bd5a9e1a8c0da2ff097666faf15577d7f37238e9de8a620524e646e7e96e85f495185a2bb
   languageName: node
   linkType: hard
 
-"@uppy/progress-bar@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "@uppy/progress-bar@npm:3.1.1"
+"@uppy/informer@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@uppy/informer@npm:4.1.1"
   dependencies:
-    "@uppy/utils": "npm:^5.7.5"
+    "@uppy/utils": "npm:^6.0.4"
     preact: "npm:^10.5.13"
   peerDependencies:
-    "@uppy/core": ^3.10.0
-  checksum: 10c0/11b51e1c0efb37ccc00e27c2437b09f917b090d4f6bdadf223a07dc304a59ae5e0f240f75a99076fd779367d8fe21b76b5b9f6b527fdcd9834bcb41f77bb63d3
+    "@uppy/core": ^4.2.3
+  checksum: 10c0/c8fe8835079d5da70ec752200623a8d801d736c0571f326542ae05a2f68046b1a78118b3866b862d7a7cc72e75e0adbaf875a39fa7d3fcec557aa87317981a91
   languageName: node
   linkType: hard
 
-"@uppy/store-default@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "@uppy/store-default@npm:3.2.2"
-  checksum: 10c0/8cb00d6b7af5fa04235f03641b69866c428a22aa64d23129ee2b6f854c559b180bd919f553ade426ce96ffd73327171628276b899ff047487458ca2a066e4d29
-  languageName: node
-  linkType: hard
-
-"@uppy/thumbnail-generator@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "@uppy/thumbnail-generator@npm:3.1.0"
+"@uppy/progress-bar@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@uppy/progress-bar@npm:4.0.1"
   dependencies:
-    "@uppy/utils": "npm:^5.7.5"
+    "@uppy/utils": "npm:^6.0.4"
+    preact: "npm:^10.5.13"
+  peerDependencies:
+    "@uppy/core": ^4.2.3
+  checksum: 10c0/02af685d9bdd83a02e2875e5f4725d5e09e4497f68159ae2f242b6af25ac646ff1b87016860c78dfa0a4469f4201daac98c1c343f2cdb9de9ebbfc4fa94a0666
+  languageName: node
+  linkType: hard
+
+"@uppy/store-default@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "@uppy/store-default@npm:4.1.1"
+  checksum: 10c0/a3e22546df74f035bf7123a511fc7e37d5195af6468f3786b72e1b0cd47e7821b0a9063f83b0047ced185c62e14d2083ee21838235405a2896f537b605f8eda2
+  languageName: node
+  linkType: hard
+
+"@uppy/thumbnail-generator@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "@uppy/thumbnail-generator@npm:4.0.1"
+  dependencies:
+    "@uppy/utils": "npm:^6.0.4"
     exifr: "npm:^7.0.0"
   peerDependencies:
-    "@uppy/core": ^3.10.0
-  checksum: 10c0/7b59b26be912c3a0d06cbad98afd104ddbd5dfbb1ea27d080708af5d44d81a13caf59bc3a7fa5ca8d4e8e1855cebdee729c419526fabf81ad7c2677d5d859cf1
+    "@uppy/core": ^4.2.3
+  checksum: 10c0/0cbd66035639cb90b6bbb667412657f75c968c135f0331eac014aa0d243708140338480816e7aa50e24b0a5cbef7af376fdd38e71bab9fabbbcb679d92e07cf5
   languageName: node
   linkType: hard
 
-"@uppy/utils@npm:^5.7.2, @uppy/utils@npm:^5.7.4, @uppy/utils@npm:^5.7.5, @uppy/utils@npm:^5.9.0":
-  version: 5.9.0
-  resolution: "@uppy/utils@npm:5.9.0"
+"@uppy/utils@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "@uppy/utils@npm:6.0.4"
   dependencies:
     lodash: "npm:^4.17.21"
     preact: "npm:^10.5.13"
-  checksum: 10c0/857c8fa11814816f0a1d97ce78f86cac8c9f4e46267d2d64631f7cce8d3b8caf3796cccdd4cecdfe110862ebbed5a76896522a965f09b0940f0979b91f04c793
-  languageName: node
-  linkType: hard
-
-"@uppy/xhr-upload@npm:^3.6.2":
-  version: 3.6.8
-  resolution: "@uppy/xhr-upload@npm:3.6.8"
-  dependencies:
-    "@uppy/companion-client": "npm:^3.8.1"
-    "@uppy/utils": "npm:^5.9.0"
-  peerDependencies:
-    "@uppy/core": ^3.13.0
-  checksum: 10c0/fbb61d5d553b354d4642ba453d06f519eda583f1be7b958a4ee88ebd90433bd0334ef3617c930b241bf2101221edcc01d114a82896ea8ac0ddd653739cecd526
+  checksum: 10c0/a708d45d69fc8a379e5c5ed7e76980c194804ac86954a83b8bd55b61e58bdf5169ef509cc31ec20d33f918cb51a1c7bbd25948ff0ad0cd2269fff1cb20da5456
   languageName: node
   linkType: hard
 
@@ -3477,9 +3460,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.41":
-  version: 1.5.50
-  resolution: "electron-to-chromium@npm:1.5.50"
-  checksum: 10c0/8b77b18ae833bfe2173e346ac33b8d66b5b5acf0cf5de65df9799f4d482334c938aa0950e4d01391d5fab8994f46c0e9059f4517843e7b8d861f9b0c49eb4c5d
+  version: 1.5.51
+  resolution: "electron-to-chromium@npm:1.5.51"
+  checksum: 10c0/1903552a918bfc0568a3af568b14c9ac35bcf1ec8cba33a1c50304d93195c825aaa9b82ae463fcb19805600add4c302e7d2db4d762c36e5ae6547f72ad21afdd
   languageName: node
   linkType: hard
 
@@ -5242,12 +5225,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^4.0.0":
-  version: 4.0.2
-  resolution: "nanoid@npm:4.0.2"
+"nanoid@npm:^5.0.0":
+  version: 5.0.8
+  resolution: "nanoid@npm:5.0.8"
   bin:
     nanoid: bin/nanoid.js
-  checksum: 10c0/3fec62f422bc4727918eda0e7aa43e9cbb2e759be72813a0587b9dac99727d3c7ad972efce7f4f1d4cb5c7c554136a1ec3b1043d1d91d28d818d6acbe98200e5
+  checksum: 10c0/0281d3cc0f3d03fb3010b479f28e8ddedfafb9b5d60e54315589ef0a54a0e9cfcb0bf382dd3b620fdad6b72b8c1f5b89a15d55c6b6a9134b58b16eb230b3a3d7
   languageName: node
   linkType: hard
 
@@ -6102,12 +6085,12 @@ __metadata:
     "@babel/runtime": "npm:7"
     "@popperjs/core": "npm:^2.11.8"
     "@rails/ujs": "npm:7.1.3-4"
-    "@uppy/aws-s3": "npm:^3.6.2"
-    "@uppy/core": "npm:^3.13.1"
-    "@uppy/file-input": "npm:^3.1.2"
-    "@uppy/informer": "npm:^3.1.0"
-    "@uppy/progress-bar": "npm:^3.1.1"
-    "@uppy/thumbnail-generator": "npm:^3.1.0"
+    "@uppy/aws-s3": "npm:^4.1.1"
+    "@uppy/core": "npm:^4.2.3"
+    "@uppy/file-input": "npm:^4.0.3"
+    "@uppy/informer": "npm:^4.1.1"
+    "@uppy/progress-bar": "npm:^4.0.1"
+    "@uppy/thumbnail-generator": "npm:^4.0.1"
     babel-loader: "npm:9"
     bootstrap: "npm:^5.3.3"
     compression-webpack-plugin: "npm:11"
