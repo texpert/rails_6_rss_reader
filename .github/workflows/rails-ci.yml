@@ -20,7 +20,7 @@ jobs:
           POSTGRES_PASSWORD: rails_6_rss_reader_pass
     env:
       RAILS_ENV: test
-      DATABASE_URL: "postgres://rails:password@localhost:5432/rails_test"
+      DATABASE_URL: "postgres://rails_6_rss_reader_dev:rails_6_rss_reader_passd@localhost:5432/rails_6_rss_reader_test"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
