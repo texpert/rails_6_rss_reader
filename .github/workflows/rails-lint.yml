@@ -5,7 +5,7 @@
 # This workflow will download a prebuilt Ruby version, install dependencies, and  run linters
 name: Rails linters
 
-on: [push, pull_request]
+on: [push]
 jobs:
   lint:
     # deployed on debian 10, which is an older release, like ubuntu 18
@@ -24,6 +24,6 @@ jobs:
       - name: Security audit dependencies
         run: bin/bundler-audit --update
       - name: Security audit application code
-        run: bin/brakeman -q -w2
+        run: bin/brakeman
       - name: Lint Ruby files
         run: bin/rubocop --parallel
