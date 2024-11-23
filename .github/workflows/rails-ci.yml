@@ -20,7 +20,7 @@ jobs:
           POSTGRES_PASSWORD: rails_6_rss_reader_pass
     env:
       RAILS_ENV: test
-      DATABASE_URL: "postgres://rails_6_rss_reader_dev:rails_6_rss_reader_passd@localhost:5432/rails_6_rss_reader_test"
+      DATABASE_URL: "postgres://rails_6_rss_reader_dev:rails_6_rss_reader_pass@localhost:5432/rails_6_rss_reader_test"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -32,7 +32,7 @@ jobs:
           bundler-cache: true
       # Add or replace database setup steps here
       - name: Set up database schema
-        run: bin/rails db:schema:load
+        run: bin/rails db:create db:schema:load
       # Add or replace test runners here
       - name: Run tests
         run: bin/rspec
