@@ -21,3 +21,6 @@ Style/Documentation:
 
 Style/FetchEnvVar:
   Enabled: false
+
+Style/SafeNavigationChainLength:
+  Enabled: false

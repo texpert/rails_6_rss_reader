@@ -32,6 +32,8 @@ gem 'twingly-url'
 # gem 'image_processing', '~> 1.2'
 
 group :development, :test do
+  gem 'brakeman'
+  gem 'bundler-audit'
   gem 'dotenv'
   gem 'pg_query'
   gem 'prosopite'
@@ -42,6 +44,7 @@ group :development, :test do
   gem 'rubocop-factory_bot', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
+  gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-rspec_rails', require: false
 end

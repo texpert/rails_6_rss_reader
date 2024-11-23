@@ -6,6 +6,7 @@ require:
   - rubocop-factory_bot
   - rubocop-performance
   - rubocop-rails
+  - rubocop-rake
   - rubocop-rspec
   - rubocop-rspec_rails
 
@@ -18,6 +19,7 @@ AllCops:
     - 'bin/**/*'
     - 'db/**/*'
     - 'node_modules/**/*'
+    - 'vendor/**/*'
   # Default formatter will be used if no -f/--format option is given.
   DisplayCopNames: true
   # Style guide URLs are not displayed in offense messages by default. Change
