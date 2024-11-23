@@ -19,7 +19,7 @@ jobs:
       - uses: reviewdog/action-rubocop@v2
         with:
           reporter: github-pr-check
-          rubocop_extensions: rubocop-capybara:gemfile rubocop-factory_bot:gemfile rubocop-performance:gemfile rubocop-rails:gemfile rubocop-rspec:gemfile rubocop-rspec_rails:gemfile
+          rubocop_extensions: rubocop-capybara:gemfile rubocop-factory_bot:gemfile rubocop-performance:gemfile rubocop-rails:gemfile rubocop-rake:gemfile rubocop-rspec:gemfile rubocop-rspec_rails:gemfile
           rubocop_version: gemfile
           skip_install: false
           use_bundler: true
