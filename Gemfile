@@ -32,6 +32,8 @@ gem 'twingly-url'
 # gem 'image_processing', '~> 1.2'
 
 group :development, :test do
+  gem 'brakeman'
+  gem 'bundler-audit'
   gem 'dotenv'
   gem 'pg_query'
   gem 'prosopite'
