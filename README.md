@@ -7,9 +7,11 @@ Things you may want to cover:
 
 * Ruby version: 3.3.5 with YJIT enabled
 
-* Rails version: 7.2.2
+* Rails version: 8.0.0
 
 * Node.js version 22.10.0
+
+* Yarn version: 4.5.1
 
 * Running `yarn dev` will start `shakapacker` via `webpack-dashboard`
 
