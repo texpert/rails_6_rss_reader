@@ -44,8 +44,7 @@ jobs:
       # Add or replace test runners here
       - name: Run tests
         run: bin/rspec
-  lint:
-    # deployed on debian 10, which is an older release, like ubuntu 18
+  security:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -56,11 +55,22 @@ jobs:
           ruby-version: '3.3.5'
           bundler-cache: true
       - name: Generate binstubs
-        run: bundle binstubs bundler-audit brakeman rubocop
-      # Add or replace any other lints here
+        run: bundle binstubs bundler-audit brakeman
       - name: Security audit dependencies
         run: bin/bundler-audit --update
       - name: Security audit application code
         run: bin/brakeman
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.5'
+          bundler-cache: true
+      - name: Generate binstubs
+        run: bundle binstubs rubocop
       - name: Lint Ruby files
         run: bin/rubocop --parallel
