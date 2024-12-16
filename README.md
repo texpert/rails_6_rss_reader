@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version: 3.3.6 with YJIT enabled
 
-* Rails version: 8.0.0.1
+* Rails version: 8.0.1
 
 * Node.js version 22.10.0
 
