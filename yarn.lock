@@ -2317,36 +2317,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@webpack-cli/configtest@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@webpack-cli/configtest@npm:3.0.0"
+"@webpack-cli/configtest@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@webpack-cli/configtest@npm:3.0.1"
   peerDependencies:
-    webpack: 5.x.x
-    webpack-cli: 5.x.x
-  checksum: 10c0/1a4b90289cb275bbdb21afcbba3f7958448b2d391f68a75e07d7f2f96ed0a4dbe29292ccea391a6cb7a19b67b1885f50a910848ec38e22001c5c2d6b6a11012d
+    webpack: ^5.82.0
+    webpack-cli: 6.x.x
+  checksum: 10c0/edd24ecfc429298fe86446f7d7daedfe82d72e7f6236c81420605484fdadade5d59c6bcef3d76bd724e11d9727f74e75de183223ae62d3a568b2d54199688cbe
   languageName: node
   linkType: hard
 
-"@webpack-cli/info@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@webpack-cli/info@npm:3.0.0"
+"@webpack-cli/info@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@webpack-cli/info@npm:3.0.1"
   peerDependencies:
-    webpack: 5.x.x
-    webpack-cli: 5.x.x
-  checksum: 10c0/f69d77368ae0aed12dacaa8cd08dee7b46421c3f9c970407271186978f9deeeea06a2762b3cc54c8958a7f16a2514458ce35d6965306915d57150e649c9231e8
+    webpack: ^5.82.0
+    webpack-cli: 6.x.x
+  checksum: 10c0/b23b94e7dc8c93e79248f20d5f1bd0fbb7b9ba4b012803e2fdc5440b8f2ee1f3eca7f4933bbca346c8168673bf572b1858169a3cb2c17d9b8bcd833d480c2170
   languageName: node
   linkType: hard
 
-"@webpack-cli/serve@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@webpack-cli/serve@npm:3.0.0"
+"@webpack-cli/serve@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@webpack-cli/serve@npm:3.0.1"
   peerDependencies:
-    webpack: 5.x.x
-    webpack-cli: 5.x.x
+    webpack: ^5.82.0
+    webpack-cli: 6.x.x
   peerDependenciesMeta:
     webpack-dev-server:
       optional: true
-  checksum: 10c0/d116ddd4a1eb1da63b9bd573d7326197e5d510dbc4a87682733c670f854d1c8f87a3b8b5751c17b80f34cb486f81b2d55f4be1ed9968545127b7c5534800b013
+  checksum: 10c0/65245e45bfa35e11a5b30631b99cfed0c1b39b2cc8320fa2d2a4185264535618827d349ec032c58af4201d6236cbc43bec894fcb840fdd06314611537a80e210
   languageName: node
   linkType: hard
 
@@ -3548,12 +3548,12 @@ __metadata:
   linkType: hard
 
 "enhanced-resolve@npm:^5.17.1":
-  version: 5.17.1
-  resolution: "enhanced-resolve@npm:5.17.1"
+  version: 5.18.0
+  resolution: "enhanced-resolve@npm:5.18.0"
   dependencies:
     graceful-fs: "npm:^4.2.4"
     tapable: "npm:^2.2.0"
-  checksum: 10c0/81a0515675eca17efdba2cf5bad87abc91a528fc1191aad50e275e74f045b41506167d420099022da7181c8d787170ea41e4a11a0b10b7a16f6237daecb15370
+  checksum: 10c0/5fcc264a6040754ab5b349628cac2bb5f89cee475cbe340804e657a5b9565f70e6aafb338d5895554eb0ced9f66c50f38a255274a0591dcb64ee17c549c459ce
   languageName: node
   linkType: hard
 
@@ -4438,11 +4438,11 @@ __metadata:
   linkType: hard
 
 "is-core-module@npm:^2.16.0":
-  version: 2.16.0
-  resolution: "is-core-module@npm:2.16.0"
+  version: 2.16.1
+  resolution: "is-core-module@npm:2.16.1"
   dependencies:
     hasown: "npm:^2.0.2"
-  checksum: 10c0/57e3b4bf3503a5ace3e61ef030a2eefa03d27827647b22968456e3e4befffed7c7aa849eea2e029f4f74a119a2d53cc391d5bad59c9352ecc9b79be3fd2acf79
+  checksum: 10c0/898443c14780a577e807618aaae2b6f745c8538eca5c7bc11388a3f2dc6de82b9902bcc7eb74f07be672b11bbe82dd6a6edded44a00cb3d8f933d0459905eedd
   languageName: node
   linkType: hard
 
@@ -4934,14 +4934,14 @@ __metadata:
   linkType: hard
 
 "memfs@npm:^4.6.0":
-  version: 4.15.0
-  resolution: "memfs@npm:4.15.0"
+  version: 4.15.1
+  resolution: "memfs@npm:4.15.1"
   dependencies:
     "@jsonjoy.com/json-pack": "npm:^1.0.3"
     "@jsonjoy.com/util": "npm:^1.3.0"
     tree-dump: "npm:^1.0.1"
     tslib: "npm:^2.0.0"
-  checksum: 10c0/be161036983ad517b8a6cb5e4493e6e0f1cc44024bc2135d51d9b28e823bb6a68bb00233900a1e9b93e942e8f581747f432b2224eb26c0045d97f8c84d25bd27
+  checksum: 10c0/9afcf2c491374ffcd12f57aaf4773d40b0372806824eed260280db2404987d949ce81887ec2ae1346b8e11b613f6553ceef57ef2f5eaf91f0762670ec43ee0de
   languageName: node
   linkType: hard
 
@@ -5467,9 +5467,9 @@ __metadata:
   linkType: hard
 
 "package-manager-detector@npm:^0.2.0":
-  version: 0.2.7
-  resolution: "package-manager-detector@npm:0.2.7"
-  checksum: 10c0/0ea19abf11e251c3bffe2698450a4a2a5658528b88151943eff01c5f4b9bdc848abc96588c1fe5f01618887cf1154d6e72eb28edb263e46178397aa6ebd58ff0
+  version: 0.2.8
+  resolution: "package-manager-detector@npm:0.2.8"
+  checksum: 10c0/2d24dd6e50a196a0b1e3ce7bf6db8aff403bdbe333cf81383bec54fa441dac958ec87a7e6865cf86e614704f349c7effaf8d0c2474a6a50a164e6218689f02db
   languageName: node
   linkType: hard
 
@@ -7322,13 +7322,13 @@ __metadata:
   linkType: hard
 
 "webpack-cli@npm:6":
-  version: 6.0.0
-  resolution: "webpack-cli@npm:6.0.0"
+  version: 6.0.1
+  resolution: "webpack-cli@npm:6.0.1"
   dependencies:
     "@discoveryjs/json-ext": "npm:^0.6.1"
-    "@webpack-cli/configtest": "npm:^3.0.0"
-    "@webpack-cli/info": "npm:^3.0.0"
-    "@webpack-cli/serve": "npm:^3.0.0"
+    "@webpack-cli/configtest": "npm:^3.0.1"
+    "@webpack-cli/info": "npm:^3.0.1"
+    "@webpack-cli/serve": "npm:^3.0.1"
     colorette: "npm:^2.0.14"
     commander: "npm:^12.1.0"
     cross-spawn: "npm:^7.0.3"
@@ -7347,7 +7347,7 @@ __metadata:
       optional: true
   bin:
     webpack-cli: ./bin/cli.js
-  checksum: 10c0/5cb65526f91ed895976cc8ba18b465367d9459d6ec1498c72edecf0b9c387049cd11044778401224dbf9d201290d8b42adce146e91cd5ad78edd4792b76c0c02
+  checksum: 10c0/2aaca78e277427f03f528602abd707d224696048fb46286ea636c7975592409c4381ca94d68bbbb3900f195ca97f256e619583e8feb34a80da531461323bf3e2
   languageName: node
   linkType: hard
 
