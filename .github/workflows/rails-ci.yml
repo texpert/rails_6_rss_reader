@@ -36,6 +36,8 @@ jobs:
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@v1
         with:
+          rubygems: 3.6.2
+          bundler: 2.6.2
           bundler-cache: true
       # Add or replace database setup steps here
       - name: Set up database schema
@@ -51,6 +53,8 @@ jobs:
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
+          rubygems: 3.6.2
+          bundler: 2.6.2
           bundler-cache: true
       - name: Generate binstubs
         run: bundle binstubs bundler-audit brakeman
@@ -66,6 +70,8 @@ jobs:
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
+          rubygems: 3.6.2
+          bundler: 2.6.2
           bundler-cache: true
       - name: Generate binstubs
         run: bundle binstubs rubocop
