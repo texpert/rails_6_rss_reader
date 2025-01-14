@@ -709,13 +709,13 @@ __metadata:
   linkType: hard
 
 "@babel/plugin-transform-nullish-coalescing-operator@npm:^7.25.9":
-  version: 7.26.5
-  resolution: "@babel/plugin-transform-nullish-coalescing-operator@npm:7.26.5"
+  version: 7.26.6
+  resolution: "@babel/plugin-transform-nullish-coalescing-operator@npm:7.26.6"
   dependencies:
     "@babel/helper-plugin-utils": "npm:^7.26.5"
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 10c0/2e4b84745f9e8c40caf3e611641de4d6c7da6f96c2925b7fe568e3b031ed1864e325b9dffc9cda4e442fc40be43ffabb088782e980d411e0562bd5222df547ec
+  checksum: 10c0/574d6db7cbc5c092db5d1dece8ce26195e642b9c40dbfeaf3082058a78ad7959c1c333471cdd45f38b784ec488850548075d527b178c5010ee9bff7aa527cc7a
   languageName: node
   linkType: hard
 
@@ -1949,9 +1949,9 @@ __metadata:
   linkType: hard
 
 "@types/qs@npm:*":
-  version: 6.9.17
-  resolution: "@types/qs@npm:6.9.17"
-  checksum: 10c0/a183fa0b3464267f8f421e2d66d960815080e8aab12b9aadab60479ba84183b1cdba8f4eff3c06f76675a8e42fe6a3b1313ea76c74f2885c3e25d32499c17d1b
+  version: 6.9.18
+  resolution: "@types/qs@npm:6.9.18"
+  checksum: 10c0/790b9091348e06dde2c8e4118b5771ab386a8c22a952139a2eb0675360a2070d0b155663bf6f75b23f258fd0a1f7ffc0ba0f059d99a719332c03c40d9e9cd63b
   languageName: node
   linkType: hard
 
@@ -5209,7 +5209,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.7":
+"nanoid@npm:^3.3.8":
   version: 3.3.8
   resolution: "nanoid@npm:3.3.8"
   bin:
@@ -5974,13 +5974,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.4.33, postcss@npm:^8.4.38":
-  version: 8.4.49
-  resolution: "postcss@npm:8.4.49"
+  version: 8.5.0
+  resolution: "postcss@npm:8.5.0"
   dependencies:
-    nanoid: "npm:^3.3.7"
+    nanoid: "npm:^3.3.8"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10c0/f1b3f17aaf36d136f59ec373459f18129908235e65dbdc3aee5eef8eba0756106f52de5ec4682e29a2eab53eb25170e7e871b3e4b52a8f1de3d344a514306be3
+  checksum: 10c0/ce4fb520808a932566a0fd97be905b43e219b55a3752fc8daa944082a35848fa8aff300b89b77dc52c8c3bb5cd53e77182ddb37addc6cacf586f1ef42a34ef45
   languageName: node
   linkType: hard
 
@@ -6412,8 +6412,8 @@ __metadata:
   linkType: hard
 
 "sass@npm:^1.82.0":
-  version: 1.83.1
-  resolution: "sass@npm:1.83.1"
+  version: 1.83.4
+  resolution: "sass@npm:1.83.4"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -6424,7 +6424,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10c0/9772506cd8290df7b5e800055098e91a8a65100840fd9e90c660deb74b248b3ddbbd1a274b8f7f09777d472d2c873575357bd87939a40fb5a80bdf654985486f
+  checksum: 10c0/6f27f0eebfeb50222b14baaeef548ef58a05daf8abd9797e6c499334ed7ad40541767056c8693780d06ca83d8836348ea7396a923d3be439b133507993ca78be
   languageName: node
   linkType: hard
 
