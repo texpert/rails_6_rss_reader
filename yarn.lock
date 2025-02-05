@@ -2803,9 +2803,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001688":
-  version: 1.0.30001696
-  resolution: "caniuse-lite@npm:1.0.30001696"
-  checksum: 10c0/8060584c612b2bc232995a6e31153432de7946b5417d3b3505a3ab76e632e5568ccc7bae38f1a977f21d4fc214f9e64be829213f810694172c9109e258cb5be8
+  version: 1.0.30001697
+  resolution: "caniuse-lite@npm:1.0.30001697"
+  checksum: 10c0/c114045be1bb5e610ca14c619157472910401bf59cc4d3050cc64ecd6887345ae8f685a5474c126755fabbd6e02f899b3b743218ab46dcbd5b6880607b67e18e
   languageName: node
   linkType: hard
 
@@ -3452,9 +3452,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.90
-  resolution: "electron-to-chromium@npm:1.5.90"
-  checksum: 10c0/864715adfebb5932a78f776c99f28a50942884302b42ee6de0ab64ca135891a5a43af3a7c719a7335687c0ee201561011e37d4994558a795f67b9e44f20fc6ee
+  version: 1.5.92
+  resolution: "electron-to-chromium@npm:1.5.92"
+  checksum: 10c0/336a3f5fea79cef2463c7e485e17d6c30e94155675cfb5b99478503c51c2603f7af79fe3969e72f5630d87b9097100690a0fb03b0d49a67b8a5e7aba03d79180
   languageName: node
   linkType: hard
 
@@ -3540,12 +3540,12 @@ __metadata:
   linkType: hard
 
 "enhanced-resolve@npm:^5.17.1":
-  version: 5.18.0
-  resolution: "enhanced-resolve@npm:5.18.0"
+  version: 5.18.1
+  resolution: "enhanced-resolve@npm:5.18.1"
   dependencies:
     graceful-fs: "npm:^4.2.4"
     tapable: "npm:^2.2.0"
-  checksum: 10c0/5fcc264a6040754ab5b349628cac2bb5f89cee475cbe340804e657a5b9565f70e6aafb338d5895554eb0ced9f66c50f38a255274a0591dcb64ee17c549c459ce
+  checksum: 10c0/4cffd9b125225184e2abed9fdf0ed3dbd2224c873b165d0838fd066cde32e0918626cba2f1f4bf6860762f13a7e2364fd89a82b99566be2873d813573ac71846
   languageName: node
   linkType: hard
 
@@ -5327,9 +5327,9 @@ __metadata:
   linkType: hard
 
 "object-inspect@npm:^1.13.3":
-  version: 1.13.3
-  resolution: "object-inspect@npm:1.13.3"
-  checksum: 10c0/cc3f15213406be89ffdc54b525e115156086796a515410a8d390215915db9f23c8eab485a06f1297402f440a33715fe8f71a528c1dcbad6e1a3bcaf5a46921d4
+  version: 1.13.4
+  resolution: "object-inspect@npm:1.13.4"
+  checksum: 10c0/d7f8711e803b96ea3191c745d6f8056ce1f2496e530e6a19a0e92d89b0fa3c76d910c31f0aa270432db6bd3b2f85500a376a83aaba849a8d518c8845b3211692
   languageName: node
   linkType: hard
 
@@ -5588,14 +5588,14 @@ __metadata:
   linkType: hard
 
 "postcss-calc@npm:^10.0.2":
-  version: 10.1.0
-  resolution: "postcss-calc@npm:10.1.0"
+  version: 10.1.1
+  resolution: "postcss-calc@npm:10.1.1"
   dependencies:
     postcss-selector-parser: "npm:^7.0.0"
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     postcss: ^8.4.38
-  checksum: 10c0/63f8f77f2b5f2987f0ae6b731a1034fabbb777fbec3f778662351b6c9ae006d431daca1e3e2c315acfa3aa94b3e4c1b71c4e76c6b9a8d5321398814e84446415
+  checksum: 10c0/616d3b7b15a524fa86ff1b2be7d9f2369c7794fd44c946f117380e519b064e9ac8d1414ea29de0238b130f2b2a5eb2fb59758cc5478af40b04a012992fb1075b
   languageName: node
   linkType: hard
 
