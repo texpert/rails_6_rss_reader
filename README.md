@@ -9,9 +9,9 @@ Things you may want to cover:
 
 * Rails version: 8.0.1
 
-* Node.js version 22.12.0
+* Node.js version 22.14.0
 
-* Yarn version: 4.6.0
+* Yarn version: 4.7.0
 
 * Running `yarn dev` will start `shakapacker` via `webpack-dashboard`
 
