@@ -151,22 +151,22 @@ GEM
     ffi (1.17.1-x86_64-linux-musl)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (4.29.3)
+    google-protobuf (4.30.0)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.29.3-aarch64-linux)
+    google-protobuf (4.30.0-aarch64-linux)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.29.3-arm64-darwin)
+    google-protobuf (4.30.0-arm64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.29.3-x86-linux)
+    google-protobuf (4.30.0-x86-linux)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.29.3-x86_64-darwin)
+    google-protobuf (4.30.0-x86_64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.29.3-x86_64-linux)
+    google-protobuf (4.30.0-x86_64-linux)
       bigdecimal
       rake (>= 13)
     http-2 (1.0.2)
@@ -245,7 +245,7 @@ GEM
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
-    prosopite (2.0.0)
+    prosopite (2.1.0)
     psych (5.2.3)
       date
       stringio
@@ -254,7 +254,7 @@ GEM
       nio4r (~> 2.0)
     que (2.4.1)
     racc (1.8.1)
-    rack (3.1.10)
+    rack (3.1.11)
     rack-proxy (0.7.7)
       rack
     rack-session (2.1.0)
@@ -320,7 +320,7 @@ GEM
       rspec-mocks (~> 3.13)
       rspec-support (~> 3.13)
     rspec-support (3.13.2)
-    rubocop (1.73.0)
+    rubocop (1.73.2)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -341,7 +341,7 @@ GEM
       lint_roller (~> 1.1)
       rubocop (>= 1.72.1, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
-    rubocop-rails (2.30.2)
+    rubocop-rails (2.30.3)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
       rack (>= 1.1)
