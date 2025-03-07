@@ -3131,13 +3131,13 @@ __metadata:
   linkType: hard
 
 "css-minimizer-webpack-plugin@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "css-minimizer-webpack-plugin@npm:7.0.0"
+  version: 7.0.2
+  resolution: "css-minimizer-webpack-plugin@npm:7.0.2"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.25"
-    cssnano: "npm:^7.0.1"
+    cssnano: "npm:^7.0.4"
     jest-worker: "npm:^29.7.0"
-    postcss: "npm:^8.4.38"
+    postcss: "npm:^8.4.40"
     schema-utils: "npm:^4.2.0"
     serialize-javascript: "npm:^6.0.2"
   peerDependencies:
@@ -3155,7 +3155,7 @@ __metadata:
       optional: true
     lightningcss:
       optional: true
-  checksum: 10c0/607258ea16b753b42cbcf88b0b20c99406d7f162ad3a4da50ec3e23d1fb652d1304815c0d0c577944256c76dff3df64e1708e5c5e255318694ba8aaba7820ca3
+  checksum: 10c0/da12f3214220cec8240af7206477f1d1a0036943b704ae36c75617bda8f1905b4d0f71869eda70dfbb184d3e200be541fc5b8b65781294bde71ede1660406a5b
   languageName: node
   linkType: hard
 
@@ -3257,7 +3257,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cssnano@npm:^7.0.1":
+"cssnano@npm:^7.0.4":
   version: 7.0.6
   resolution: "cssnano@npm:7.0.6"
   dependencies:
@@ -3456,9 +3456,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.112
-  resolution: "electron-to-chromium@npm:1.5.112"
-  checksum: 10c0/fc597268d6d3d7458b55141c436802a6c51078855f021823cdb380b80ad1a69e1c2899fdfc9cffa501d47feb3791ea6a75893fe802a608c7845e979a48f5ac25
+  version: 1.5.113
+  resolution: "electron-to-chromium@npm:1.5.113"
+  checksum: 10c0/837fe2fd26adbc4f3ad8e758d14067a14f636f9c2923b5ded8adb93426bbe3fdc83b48ddf9f2cf03be31b5becb0c31144db19c823b696fd52a7bc4583f4bde00
   languageName: node
   linkType: hard
 
@@ -5947,7 +5947,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.33, postcss@npm:^8.4.38":
+"postcss@npm:^8.4.33, postcss@npm:^8.4.40":
   version: 8.5.3
   resolution: "postcss@npm:8.5.3"
   dependencies:
@@ -7042,8 +7042,8 @@ __metadata:
   linkType: hard
 
 "terser-webpack-plugin@npm:5, terser-webpack-plugin@npm:^5.3.11":
-  version: 5.3.13
-  resolution: "terser-webpack-plugin@npm:5.3.13"
+  version: 5.3.14
+  resolution: "terser-webpack-plugin@npm:5.3.14"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.25"
     jest-worker: "npm:^27.4.5"
@@ -7059,7 +7059,7 @@ __metadata:
       optional: true
     uglify-js:
       optional: true
-  checksum: 10c0/87e3f0d1202c7bd6b62aa596ac373541a451cd0bfa0c622797c17be30d2399c791b7719571b39b23252d75460608e2d1ea30071c31e758fea9800cb2e172b744
+  checksum: 10c0/9b060947241af43bd6fd728456f60e646186aef492163672a35ad49be6fbc7f63b54a7356c3f6ff40a8f83f00a977edc26f044b8e106cc611c053c8c0eaf8569
   languageName: node
   linkType: hard
 
