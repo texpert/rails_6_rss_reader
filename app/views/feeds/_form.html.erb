@@ -24,6 +24,13 @@
   </div>
 <% end %>
 
-<div class="upload-preview">
-  <%= image_tag(@feed.logo&.[](:size270_180)&.url || @feed.logo_url.to_s, height: "300") %>
+<div class="row">
+  <div class="col-4">
+    <div class="upload-preview">
+      <%= image_tag(@feed.logo&.[](:size270_180)&.url || @feed.logo_url.to_s, height: "300") %>
+    </div>
+  </div>
+  <div class="col-8 text-truncate">
+      <%= "Image URL: #{@feed.logo&.[](:size270_180)&.url}" %>
+  </div>
 </div>
