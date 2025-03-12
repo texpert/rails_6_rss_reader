@@ -9,7 +9,7 @@ class FeedsController < ApplicationController
 
   # GET /feeds
   def index
-    @pagy, @feeds = pagy(Feed.all)
+    @pagy, @feeds = pagy(Feed.all.order(:title))
   end
 
   # GET /feeds/1
