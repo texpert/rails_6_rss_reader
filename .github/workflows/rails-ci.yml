@@ -25,7 +25,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       # Add or replace dependency steps here
-      - run: corepack enable && corepack prepare yarn@4.7.0
+      - run: corepack enable && corepack prepare yarn@4.8.1
       - name: setup node
         uses: actions/setup-node@v4
         with:
