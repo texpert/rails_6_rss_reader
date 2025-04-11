@@ -11,7 +11,7 @@ Things you may want to cover:
 
 * Node.js version 22.14.0
 
-* Yarn version: 4.9.0
+* Yarn version: 4.9.1
 
 * Running `yarn dev` will start `shakapacker` via `webpack-dashboard`
 
