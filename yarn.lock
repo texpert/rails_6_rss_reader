@@ -2685,7 +2685,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap@npm:^5.3.4":
+"bootstrap@npm:^5.3.5":
   version: 5.3.5
   resolution: "bootstrap@npm:5.3.5"
   peerDependencies:
@@ -6057,7 +6057,7 @@ __metadata:
     "@uppy/progress-bar": "npm:^3.1.1"
     "@uppy/thumbnail-generator": "npm:^3.1.0"
     babel-loader: "npm:^10"
-    bootstrap: "npm:^5.3.4"
+    bootstrap: "npm:^5.3.5"
     compression-webpack-plugin: "npm:11"
     css-loader: "npm:^7.1.2"
     css-minimizer-webpack-plugin: "npm:^7.0.0"
