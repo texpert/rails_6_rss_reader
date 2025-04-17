@@ -21,7 +21,7 @@
     "@uppy/progress-bar": "^3.1.1",
     "@uppy/thumbnail-generator": "^3.1.0",
     "babel-loader": "^10",
-    "bootstrap": "^5.3.4",
+    "bootstrap": "^5.3.5",
     "compression-webpack-plugin": "11",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
