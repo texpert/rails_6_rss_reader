@@ -3444,9 +3444,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.139
-  resolution: "electron-to-chromium@npm:1.5.139"
-  checksum: 10c0/1b468c0c02a38322261b50b12ed090ff792a0d2ea24f299368babd484d5b81829528540463158572a3524fd835014d877d6c4bf097509bdb13ca696609b04aca
+  version: 1.5.140
+  resolution: "electron-to-chromium@npm:1.5.140"
+  checksum: 10c0/cd0c5a3e0624592494e03b1ae28e04b0d4f8dec0e2ff8fc0f38dc8622fdf795811ef8abe41167f03380f969515c2f4f23297f6e1372ff36aad01c78446565e6d
   languageName: node
   linkType: hard
 
@@ -6063,13 +6063,13 @@ __metadata:
     css-minimizer-webpack-plugin: "npm:^7.0.0"
     mini-css-extract-plugin: "npm:^2.9.0"
     rails-erb-loader: "github:moonproject/rails-erb-loader#master"
-    sass: "npm:^1.82.0"
+    sass: "npm:^1.87.0"
     sass-loader: "npm:^16.0.4"
     shakapacker: "npm:^8.0.2"
     style-loader: "npm:^4.0.0"
     terser-webpack-plugin: "npm:5"
     turbolinks: "npm:^5.2.0"
-    webpack: "npm:^5.97.0"
+    webpack: "npm:^5.99.0"
     webpack-assets-manifest: "npm:5"
     webpack-cli: "npm:6"
     webpack-dashboard: "npm:^3.3.8"
@@ -6380,9 +6380,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.82.0":
-  version: 1.86.3
-  resolution: "sass@npm:1.86.3"
+"sass@npm:^1.87.0":
+  version: 1.87.0
+  resolution: "sass@npm:1.87.0"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -6393,7 +6393,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10c0/ba819a0828f732adf7a94cd8ca017bce92bc299ffb878836ed1da80a30612bfbbf56a5e42d6dff3ad80d919c2025afb42948fc7b54a7bc61a9a2d58e1e0c558a
+  checksum: 10c0/bd245faf14e4783dc547765350cf05817edaac0d6d6f6e4da8ab751f3eb3cc3873afd563c0ce416a24aa6c9c4e9023b05096447fc006660a01f76adffb54fbc6
   languageName: node
   linkType: hard
 
@@ -7434,7 +7434,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.97.0":
+"webpack@npm:^5.99.0":
   version: 5.99.6
   resolution: "webpack@npm:5.99.6"
   dependencies:
