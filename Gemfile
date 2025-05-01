@@ -39,7 +39,7 @@ group :development, :test do
   gem 'pg_query'
   gem 'prosopite'
   # It needs to be in both groups to expose generators and rake tasks without having to type RAILS_ENV=test
-  gem 'rspec-rails', '~> 7.1'
+  gem 'rspec-rails', '~> 8.0'
   gem 'rubocop', require: false
   gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
