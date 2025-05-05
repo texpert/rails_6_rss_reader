@@ -2677,16 +2677,16 @@ __metadata:
   linkType: hard
 
 "browserslist@npm:^4.0.0, browserslist@npm:^4.23.3, browserslist@npm:^4.24.0, browserslist@npm:^4.24.4":
-  version: 4.24.4
-  resolution: "browserslist@npm:4.24.4"
+  version: 4.24.5
+  resolution: "browserslist@npm:4.24.5"
   dependencies:
-    caniuse-lite: "npm:^1.0.30001688"
-    electron-to-chromium: "npm:^1.5.73"
+    caniuse-lite: "npm:^1.0.30001716"
+    electron-to-chromium: "npm:^1.5.149"
     node-releases: "npm:^2.0.19"
-    update-browserslist-db: "npm:^1.1.1"
+    update-browserslist-db: "npm:^1.1.3"
   bin:
     browserslist: cli.js
-  checksum: 10c0/db7ebc1733cf471e0b490b4f47e3e2ea2947ce417192c9246644e92c667dd56a71406cc58f62ca7587caf828364892e9952904a02b7aead752bc65b62a37cfe9
+  checksum: 10c0/f4c1ce1a7d8fdfab5e5b88bb6e93d09e8a883c393f86801537a252da0362dbdcde4dbd97b318246c5d84c6607b2f6b47af732c1b000d6a8a881ee024bad29204
   languageName: node
   linkType: hard
 
@@ -2765,10 +2765,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001688":
-  version: 1.0.30001716
-  resolution: "caniuse-lite@npm:1.0.30001716"
-  checksum: 10c0/5cca5089f7ee214a346ea38ecbd114c1a675c94254675150e535aa0766fe2c446961990637f25f65dc29ce9c543aed12006d679dd797d2e6159c46aa518da0cb
+"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001716":
+  version: 1.0.30001717
+  resolution: "caniuse-lite@npm:1.0.30001717"
+  checksum: 10c0/6c0bb1e5182fd578ebe97ee2203250849754a4e17d985839fab527ad27e125a4c4ffce3ece5505217fedf30ea0bbc17ac9f93e9ac525c0389ccba61c6e8345dc
   languageName: node
   linkType: hard
 
@@ -3407,10 +3407,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.5.73":
-  version: 1.5.148
-  resolution: "electron-to-chromium@npm:1.5.148"
-  checksum: 10c0/e6de6bf2f632775ef426d346f0453ff9551c321a5d0e0a336e6c646e43b723ec0d2ce95199f3f3ab5ccb8a9c1996a409eaae056954366c491113928c66f60173
+"electron-to-chromium@npm:^1.5.149":
+  version: 1.5.149
+  resolution: "electron-to-chromium@npm:1.5.149"
+  checksum: 10c0/dc9fe63d1ffb034a5c91133291b09d877b4b200b01b1235090e94aed7f75f4413637c7b4e3a783b03f03c06bee8f45bbd5f44ddb397bc35528ac8a838eb6a66d
   languageName: node
   linkType: hard
 
@@ -4863,14 +4863,14 @@ __metadata:
   linkType: hard
 
 "memfs@npm:^4.6.0":
-  version: 4.17.0
-  resolution: "memfs@npm:4.17.0"
+  version: 4.17.1
+  resolution: "memfs@npm:4.17.1"
   dependencies:
     "@jsonjoy.com/json-pack": "npm:^1.0.3"
     "@jsonjoy.com/util": "npm:^1.3.0"
     tree-dump: "npm:^1.0.1"
     tslib: "npm:^2.0.0"
-  checksum: 10c0/2901f69e80e1fbefa8aafe994a253fff6f34eb176d8b80d57476311611e516a11ab4dd93f852c8739fe04f2b57d6a4ca7a1828fa0bd401ce631bcac214b3d58b
+  checksum: 10c0/f3e7931697e268b24506abe56ef5729cebddf8568cac76c7bd1b07e9964a26f16e6281c52a22333b9a42f1275f80b8c7f6d61b9f7a92e24401066ca2a0809100
   languageName: node
   linkType: hard
 
@@ -5284,14 +5284,14 @@ __metadata:
   linkType: hard
 
 "open@npm:^10.0.3":
-  version: 10.1.1
-  resolution: "open@npm:10.1.1"
+  version: 10.1.2
+  resolution: "open@npm:10.1.2"
   dependencies:
     default-browser: "npm:^5.2.1"
     define-lazy-prop: "npm:^3.0.0"
     is-inside-container: "npm:^1.0.0"
     is-wsl: "npm:^3.1.0"
-  checksum: 10c0/27706de0a8015fcfa9454394984f726f47aba10f33b1a16eda8d7d3604a01c39b2372638b068401dffd9826dca689947480062742b116ff76e0970c39a5e25c6
+  checksum: 10c0/1bee796f06e549ce764f693272100323fbc04da8fa3c5b0402d6c2d11b3d76fa0aac0be7535e710015ff035326638e3b9a563f3b0e7ac3266473ed5663caae6d
   languageName: node
   linkType: hard
 
@@ -7108,7 +7108,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-browserslist-db@npm:^1.1.1":
+"update-browserslist-db@npm:^1.1.3":
   version: 1.1.3
   resolution: "update-browserslist-db@npm:1.1.3"
   dependencies:
