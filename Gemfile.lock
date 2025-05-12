@@ -122,7 +122,7 @@ GEM
     content_disposition (1.0.0)
     crass (1.0.6)
     date (3.4.1)
-    diff-lcs (1.6.1)
+    diff-lcs (1.6.2)
     docile (1.4.1)
     dotenv (3.1.8)
     down (5.4.2)
