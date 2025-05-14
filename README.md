@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version: 3.4.2 (YJIT enabled by default from Ruby 3.3.0)
+* Ruby version: 3.4.3 (YJIT enabled by default from Ruby 3.3.0)
 
 * Rails version: 8.0.2
 
