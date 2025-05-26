@@ -3432,9 +3432,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.149":
-  version: 1.5.155
-  resolution: "electron-to-chromium@npm:1.5.155"
-  checksum: 10c0/aee32a0b03282e488352370f6a910de37788b814031020a0e244943450e844e8a41f741d6e5ec70d553dfa4382ef80088034ddc400b48f45de95de331b9ec178
+  version: 1.5.157
+  resolution: "electron-to-chromium@npm:1.5.157"
+  checksum: 10c0/d22dc2603bdfb0d89c8e199bcc29a34995cc6e37261b5029b4e635ea536b843ed00dfc3b1dd2f69e1852031daee0c7cf3fb63cc70abf5312908328075b35e9af
   languageName: node
   linkType: hard
 
@@ -5904,9 +5904,9 @@ __metadata:
   linkType: hard
 
 "preact@npm:^10.5.13":
-  version: 10.26.6
-  resolution: "preact@npm:10.26.6"
-  checksum: 10c0/af07817a24b76c48f0eb49895d2ab49d6e43097355b6f75271a4cab5c2886999968e9eab9331a48f0b7e3477bc16153b08cd1d6a24ebf1acea4016b7054daf29
+  version: 10.26.7
+  resolution: "preact@npm:10.26.7"
+  checksum: 10c0/781db5c0171a85f31902506b1db66317254510db74070e0f24393e3f8e0bd3c7096c77da788effa39e10c063d7fdf281493e4a1ac9de287c136185943576bc2c
   languageName: node
   linkType: hard
 
@@ -7327,9 +7327,9 @@ __metadata:
   linkType: hard
 
 "webpack-sources@npm:^3.2.3":
-  version: 3.2.3
-  resolution: "webpack-sources@npm:3.2.3"
-  checksum: 10c0/2ef63d77c4fad39de4a6db17323d75eb92897b32674e97d76f0a1e87c003882fc038571266ad0ef581ac734cbe20952912aaa26155f1905e96ce251adbb1eb4e
+  version: 3.3.0
+  resolution: "webpack-sources@npm:3.3.0"
+  checksum: 10c0/d9366eef6db95dffe154b6ffb50424c34f42d51ba3441efe9134642d13b0ccdf43897bdc7742f9f58eb4e834378f7ff67596137d3fca21ce34fe7cee8796e97a
   languageName: node
   linkType: hard
 
