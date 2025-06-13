@@ -84,7 +84,7 @@ GEM
       base64
       jmespath (~> 1, >= 1.6.1)
       logger
-    aws-sdk-kms (1.104.0)
+    aws-sdk-kms (1.105.0)
       aws-sdk-core (~> 3, >= 3.225.0)
       aws-sigv4 (~> 1.5)
     aws-sdk-lambda (1.152.0)
@@ -314,7 +314,7 @@ GEM
     reline (0.6.1)
       io-console (~> 0.5)
     rexml (3.4.1)
-    roda (3.92.0)
+    roda (3.93.0)
       rack
     rspec-core (3.13.4)
       rspec-support (~> 3.13.0)
