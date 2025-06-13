@@ -25,11 +25,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       # Add or replace dependency steps here
-      - run: corepack enable && corepack prepare yarn@4.9.1
+      - run: corepack enable && corepack prepare yarn@4.9.2
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 22.14.0
+          node-version: 22.16.0
           cache: 'yarn'
       - name: install app dependencies
         run: yarn install --frozen-lockfile
