@@ -49,7 +49,7 @@ RSpec.describe 'Home page', type: :feature do
       end
 
       context 'when there a number of feeds defined, more than Pagy::DEFAULT[:limit]' do
-        let(:feeds_number) { rand(Pagy::DEFAULT[:limit] + 1..Pagy::DEFAULT[:limit] + 5) }
+        let(:feeds_number) { rand((Pagy::DEFAULT[:limit] + 1)..(Pagy::DEFAULT[:limit] + 5)) }
         let(:feed_list_number) { Pagy::DEFAULT[:limit] }
         let!(:feed_list) { create_list(:feed, feeds_number) } # rubocop:disable RSpec/LetSetup
 
