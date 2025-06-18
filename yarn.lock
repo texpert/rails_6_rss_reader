@@ -2674,11 +2674,11 @@ __metadata:
   linkType: hard
 
 "bootstrap@npm:^5.3.6":
-  version: 5.3.6
-  resolution: "bootstrap@npm:5.3.6"
+  version: 5.3.7
+  resolution: "bootstrap@npm:5.3.7"
   peerDependencies:
     "@popperjs/core": ^2.11.8
-  checksum: 10c0/1b3f8f4f265463b3cd6aece84135b521ff55f3225a5c16c6981fdd8fb2bfb53b35b0815bff63382e5c83f6d537c017ae8392afe34366d5d547e4fd507d086e1c
+  checksum: 10c0/019f0d683aec843b9fc0592ae78560cfe286bc8e31e706d40d8c15d390dcca7ab2ffa193a489a74f65ed5596800b9b79da867545ce3bbafca945b630fe0055af
   languageName: node
   linkType: hard
 
@@ -2790,9 +2790,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001718":
-  version: 1.0.30001722
-  resolution: "caniuse-lite@npm:1.0.30001722"
-  checksum: 10c0/a1e344c392e0b138f0b215525108877d725665217a5e8e7504897e30379a5a9b858bc44799ccc0e19f4a64bf1e05c15b4a58eb1c9032293f894aa24e8d9f470f
+  version: 1.0.30001723
+  resolution: "caniuse-lite@npm:1.0.30001723"
+  checksum: 10c0/e019503061759b96017c4d27ddd7ca1b48533eabcd0431b51d2e3156f99f6b031075e46c279c0db63424cdfc874bba992caec2db51b922a0f945e686246886f6
   languageName: node
   linkType: hard
 
@@ -3432,9 +3432,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.160":
-  version: 1.5.166
-  resolution: "electron-to-chromium@npm:1.5.166"
-  checksum: 10c0/0244c09799f492035af63bb87857561aa034670a742cd80a78de5a88a0d536b0945fb078a636777d064d2451401c5d8302dfa8da7c996afe7476bf277b2dea63
+  version: 1.5.169
+  resolution: "electron-to-chromium@npm:1.5.169"
+  checksum: 10c0/942b0fe95e05df8ae6c4a76e36a94788659927a9f7d4d718defbfff34153b98e9f9d8e028f424535a578a9775029442c1832ec681a4c0a85fdf76f3fa0360d75
   languageName: node
   linkType: hard
 
@@ -5893,13 +5893,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.4.33, postcss@npm:^8.4.40":
-  version: 8.5.5
-  resolution: "postcss@npm:8.5.5"
+  version: 8.5.6
+  resolution: "postcss@npm:8.5.6"
   dependencies:
     nanoid: "npm:^3.3.11"
     picocolors: "npm:^1.1.1"
     source-map-js: "npm:^1.2.1"
-  checksum: 10c0/6415873fab84de05c2d8fd18f72ea6654bca437bb4b9f02ca819c438501e4b3a450023e575e17587c6eaa5bedddaaa4dad3af210f5cf166e30cec09cac58baf8
+  checksum: 10c0/5127cc7c91ed7a133a1b7318012d8bfa112da9ef092dddf369ae699a1f10ebbd89b1b9f25f3228795b84585c72aabd5ced5fc11f2ba467eedf7b081a66fad024
   languageName: node
   linkType: hard
 
@@ -6963,8 +6963,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.31.1":
-  version: 5.42.0
-  resolution: "terser@npm:5.42.0"
+  version: 5.43.0
+  resolution: "terser@npm:5.43.0"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.14.0"
@@ -6972,7 +6972,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10c0/f89d5f8c9ccfcd4f6e9a0ecd9569677e2784a876b5cd916e4bc3d19e057ddae3416391df8e40746b29285bdafd48bb3a4230df1453ad8ec8caa7dd67f48f6dc0
+  checksum: 10c0/9bc6ef2ad20a6f12328b28b4a75f58095ba726a586f22036a27899178eebb7640a281559546a9efddb31a7020287996006d18897b2bd254398b8c3a1cf24969b
   languageName: node
   linkType: hard
 
