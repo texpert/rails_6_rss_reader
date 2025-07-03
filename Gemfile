@@ -21,7 +21,7 @@ gem 'sassc-rails'
 gem 'shakapacker', '8.3.0'
 gem 'shrine', '~> 3.6'
 gem 'shrine-aws-lambda', '~> 0.2.1'
-gem 'turbolinks', '~> 5'
+gem 'turbo-rails'
 gem 'twingly-url'
 
 # Use Redis adapter to run Action Cable in production
