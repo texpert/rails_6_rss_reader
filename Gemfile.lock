@@ -314,7 +314,7 @@ GEM
     reline (0.6.1)
       io-console (~> 0.5)
     rexml (3.4.1)
-    roda (3.93.0)
+    roda (3.94.0)
       rack
     rspec-core (3.13.5)
       rspec-support (~> 3.13.0)
