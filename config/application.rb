@@ -45,9 +45,6 @@ module Rails6RssReader
   end
 end
 
-Oj.default_options = { mode: :custom, cache_keys: true, cache_str: 5 }
-Oj.optimize_rails
-
 NGROK_ENABLED = Rails.env.development? &&
                 (Rails.const_defined?(:Server) || ($PROGRAM_NAME.include?('puma') && Puma.const_defined?(:Server))) &&
                 ENV['NGROK_TUNNEL'] == 'true'

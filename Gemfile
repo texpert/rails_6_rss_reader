@@ -6,9 +6,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby file: '.tool-versions'
 
 gem 'bootsnap', '>= 1.8.1', require: false
+gem 'dartsass-sprockets'
 gem 'feedjira'
 gem 'httpx'
-gem 'oj'
 gem 'pagy'
 gem 'pg'
 gem 'public_suffix'
@@ -17,7 +17,6 @@ gem 'que', '>= 2.3.0'
 gem 'rails', '~> 8.0'
 gem 'rails-html-sanitizer', '>= 1.6.1'
 gem 'roda'
-gem 'sassc-rails'
 gem 'shakapacker', '8.3.0'
 gem 'shrine', '~> 3.6'
 gem 'shrine-aws-lambda', '~> 0.2.1'
