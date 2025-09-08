@@ -162,12 +162,6 @@ GEM
     google-protobuf (4.32.0-arm64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.32.0-x86-linux-gnu)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.32.0-x86-linux-musl)
-      bigdecimal
-      rake (>= 13)
     google-protobuf (4.32.0-x86_64-darwin)
       bigdecimal
       rake (>= 13)
@@ -204,7 +198,6 @@ GEM
     marcel (1.0.4)
     matrix (0.4.3)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.9)
     minitest (5.25.5)
     msgpack (1.8.0)
     net-imap (0.5.10)
@@ -218,9 +211,6 @@ GEM
       net-protocol
     ngrok-wrapper (0.3.1)
     nio4r (2.7.4)
-    nokogiri (1.18.9)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.18.9-aarch64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.18.9-aarch64-linux-musl)
@@ -261,7 +251,7 @@ GEM
       date
       stringio
     public_suffix (5.1.1)
-    puma (7.0.0)
+    puma (7.0.1)
       nio4r (~> 2.0)
     que (2.4.1)
     racc (1.8.1)
@@ -374,7 +364,21 @@ GEM
       rubocop-rspec (~> 3.5)
     ruby-progressbar (1.13.0)
     rubyzip (3.0.2)
-    sass-embedded (1.91.0-x86_64-darwin)
+    sass-embedded (1.92.1-aarch64-linux-gnu)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.92.1-aarch64-linux-musl)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.92.1-arm-linux-gnueabihf)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.92.1-arm-linux-musleabihf)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.92.1-arm64-darwin)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.92.1-x86_64-darwin)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.92.1-x86_64-linux-gnu)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.92.1-x86_64-linux-musl)
       google-protobuf (~> 4.31)
     sassc-embedded (1.80.5)
       sass-embedded (~> 1.80)
@@ -455,10 +459,6 @@ PLATFORMS
   arm-linux-gnu
   arm-linux-musl
   arm64-darwin
-  ruby
-  x86-linux
-  x86-linux-gnu
-  x86-linux-musl
   x86_64-darwin
   x86_64-linux
   x86_64-linux-gnu
