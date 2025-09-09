@@ -29,7 +29,7 @@
     "rails-erb-loader": "github:moonproject/rails-erb-loader#master",
     "sass": "^1.89",
     "sass-loader": "^16.0",
-    "shakapacker": "^8.3",
+    "shakapacker": "^8.4",
     "terser-webpack-plugin": "^5",
     "webpack": "^5.99",
     "webpack-assets-manifest": "^6",
