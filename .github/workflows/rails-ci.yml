@@ -36,7 +36,7 @@ jobs:
       - name: install app dependencies
         run: yarn install --frozen-lockfile
       - name: Install Ruby and gems
-        uses: ruby/setup-ruby@44511735964dcb71245e7e55f72539531f7bc0eb
+        uses: ruby/setup-ruby@3fee6763234110473bd57dd4595c5199fce2c510
         with:
           bundler-cache: true
       # Add or replace database setup steps here
@@ -51,7 +51,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
       - name: Setup Ruby and install gems
-        uses: ruby/setup-ruby@44511735964dcb71245e7e55f72539531f7bc0eb
+        uses: ruby/setup-ruby@3fee6763234110473bd57dd4595c5199fce2c510
         with:
           bundler-cache: true
       - name: Generate binstubs
@@ -66,7 +66,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
       - name: Setup Ruby and install gems
-        uses: ruby/setup-ruby@44511735964dcb71245e7e55f72539531f7bc0eb
+        uses: ruby/setup-ruby@3fee6763234110473bd57dd4595c5199fce2c510
         with:
           bundler-cache: true
       - name: Generate binstubs
