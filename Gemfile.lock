@@ -227,6 +227,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.10-x86_64-linux-musl)
       racc (~> 1.4)
+    openssl (3.3.1)
     package_json (0.1.0)
     pagy (9.4.0)
     parallel (1.27.0)
@@ -482,6 +483,7 @@ DEPENDENCIES
   httpx
   localhost
   ngrok-wrapper
+  openssl
   pagy
   pg
   pg_query
