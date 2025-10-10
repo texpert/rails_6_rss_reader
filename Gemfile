@@ -35,9 +35,11 @@ gem 'twingly-url'
 group :development, :test do
   gem 'brakeman'
   gem 'bundler-audit'
+  gem 'debug'
   gem 'dotenv'
   gem 'pg_query'
   gem 'prosopite'
+  gem 'rdbg'
   # It needs to be in both groups to expose generators and rake tasks without having to type RAILS_ENV=test
   gem 'rspec-rails', '~> 8.0'
   gem 'rubocop', require: false
