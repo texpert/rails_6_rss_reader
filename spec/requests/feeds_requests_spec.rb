@@ -7,9 +7,7 @@ RSpec.describe 'Feeds' do
   let!(:feed2) { create(:feed, title: 'Feed #2') }
 
   describe 'GET #index' do
-    before do
-      get feeds_path
-    end
+    before { get feeds_path }
 
     it 'returns a successful response' do
       expect(response).to be_successful
