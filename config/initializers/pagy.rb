@@ -6,13 +6,11 @@
 ############ Global Options ################################################################
 # See https://ddnexus.github.io/pagy/toolbox/options/ for details.
 # Add your global options below. They will be applied globally.
-# For example:
-#
-Pagy.options[:limit] = 15               # Limit the items per page
-# Pagy.options[:client_max_limit] = 100   # The client can request a limit up to 100
-# Pagy.options[:max_pages] = 200          # Allow only 200 pages
-# Pagy.options[:jsonapi] = true           # Use JSON:API compliant URLs
 
+Pagy.options[:limit] = 15 # Limit the items per page
+# Pagy.options[:client_max_limit] = 100 # The client can request a limit up to 100
+# Pagy.options[:max_pages] = 200 # Allow only 200 pages
+# Pagy.options[:jsonapi] = true # Use JSON:API compliant URLs
 
 ############ JavaScript ####################################################################
 # See https://ddnexus.github.io/pagy/resources/javascript/ for details.
@@ -24,7 +22,6 @@ Pagy.options[:limit] = 15               # Limit the items per page
 javascript_dir = Rails.root.join('app/javascript')
 Pagy.sync_javascript(javascript_dir, 'pagy.mjs') if Rails.env.development?
 
-
 ############# Overriding Pagy::I18n Lookup #################################################
 # Refer to https://ddnexus.github.io/pagy/resources/i18n/ for details.
 # Override the dictionary lookup for customization by dropping your customized
@@ -32,12 +29,10 @@ Pagy.sync_javascript(javascript_dir, 'pagy.mjs') if Rails.env.development?
 #
 # Pagy::I18n.pathnames << Rails.root.join('config/locales')
 
-
 ############# I18n Gem Translation #########################################################
 # See https://ddnexus.github.io/pagy/resources/i18n/ for details.
 #
 # Pagy.translate_with_the_slower_i18n_gem!
-
 
 ############# Calendar Localization for non-en locales ####################################
 # See https://ddnexus.github.io/pagy/toolbox/paginators/calendar#localization for details.
