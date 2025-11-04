@@ -1,159 +1,48 @@
 # frozen_string_literal: true
 
-# Pagy initializer file (3.5.1)
-# Customize only what you really need and notice that Pagy works also without any of the following lines.
-# Should you just cherry pick part of this file, please maintain the require-order of the extras
+# Pagy initializer file (43.0.0.rc4)
+# See https://ddnexus.github.io/pagy/resources/initializer/
 
-# Extras
-# See https://ddnexus.github.io/pagy/extras
-
-# Backend Extras
-
-# Array extra: Paginate arrays efficiently, avoiding expensive array-wrapping and without overriding
-# See https://ddnexus.github.io/pagy/extras/array
-require 'pagy/extras/array'
-
-# Countless extra: Paginate without any count, saving one query per rendering
-# See https://ddnexus.github.io/pagy/extras/countless
-# require 'pagy/extras/countless'
-# Pagy::DEFAULT[:cycle] = false    # default
-
-# Elasticsearch Rails extra: Paginate `ElasticsearchRails::Results` objects
-# See https://ddnexus.github.io/pagy/extras/elasticsearch_rails
-# require 'pagy/extras/elasticsearch_rails'
-
-# Searchkick extra: Paginate `Searchkick::Results` objects
-# See https://ddnexus.github.io/pagy/extras/searchkick
-# require 'pagy/extras/searchkick'
-
-# Frontend Extras
-
-# Bootstrap extra: Add nav, nav_js and combo_nav_js helpers and templates for Bootstrap pagination
-# See https://ddnexus.github.io/pagy/extras/bootstrap
-require 'pagy/extras/bootstrap'
-
-# Bulma extra: Add nav, nav_js and combo_nav_js helpers and templates for Bulma pagination
-# See https://ddnexus.github.io/pagy/extras/bulma
-# require 'pagy/extras/bulma'
-
-# Foundation extra: Add nav, nav_js and combo_nav_js helpers and templates for Foundation pagination
-# See https://ddnexus.github.io/pagy/extras/foundation
-# require 'pagy/extras/foundation'
-
-# Materialize extra: Add nav, nav_js and combo_nav_js helpers for Materialize pagination
-# See https://ddnexus.github.io/pagy/extras/materialize
-# require 'pagy/extras/materialize'
-
-# Navs extra: Add nav_js and combo_nav_js javascript helpers
-# Notice: the other frontend extras add their own framework-styled versions,
-# so require this extra only if you need the unstyled version
-# See https://ddnexus.github.io/pagy/extras/navs
-# require 'pagy/extras/navs'
-
-# Semantic extra: Add nav, nav_js and combo_nav_js helpers for Semantic UI pagination
-# See https://ddnexus.github.io/pagy/extras/semantic
-# require 'pagy/extras/semantic'
-
-# UIkit extra: Add nav helper and templates for UIkit pagination
-# See https://ddnexus.github.io/pagy/extras/uikit
-# require 'pagy/extras/uikit'
-
-# Multi size var used by the *_nav_js helpers
-# See https://ddnexus.github.io/pagy/extras/navs#steps
-# Pagy::DEFAULT[:steps] = { 0 => [2,3,3,2], 540 => [3,5,5,3], 720 => [5,7,7,5] }   # example
-
-# Feature Extras
-
-# Headers extra: http response headers (and other helpers) useful for API pagination
-# See http://ddnexus.github.io/pagy/extras/headers
-# require 'pagy/extras/headers'
-# default:
-# Pagy::DEFAULT[:headers] = { page: 'Current-Page', items: 'Page-Items', count: 'Total-Count', pages: 'Total-Pages' }
-
-# Support extra: Extra support for features like: incremental, infinite, auto-scroll pagination
-# See https://ddnexus.github.io/pagy/extras/support
-# require 'pagy/extras/support'
-
-# Items extra: Allow the client to request a custom number of items per page with an optional selector UI
-# See https://ddnexus.github.io/pagy/extras/limit
-# require 'pagy/extras/limit'
-# Pagy::DEFAULT[:limit_param] = :items    # default
-# Pagy::DEFAULT[:limit_max]   = 100       # default
-
-# Overflow extra: Allow for easy handling of overflowing pages
-# See https://ddnexus.github.io/pagy/extras/overflow
-# require 'pagy/extras/overflow'
-# Pagy::DEFAULT[:overflow] = :empty_page    # default  (other options: :last_page and :exception)
-
-# Metadata extra: Provides the pagination metadata to Javascript frameworks like Vue.js, react.js, etc.
-# See https://ddnexus.github.io/pagy/extras/metadata
-# you must require the shared internal extra (BEFORE the metadata extra) ONLY if you need also the :sequels
-# require 'pagy/extras/shared'
-# require 'pagy/extras/metadata'
-# For performance reason, you should explicitly set ONLY the metadata you use in the frontend
-# Pagy::DEFAULT[:metadata] = [:scaffold_url, :count, :page, :prev, :next, :last]    # example
-
-# Trim extra: Remove the page=1 param from links
-# See https://ddnexus.github.io/pagy/extras/trim
-# require 'pagy/extras/trim'
-
-# Pagy Variables
-# See https://ddnexus.github.io/pagy/api/pagy#variables
-# All the Pagy::DEFAULT are set for all the Pagy instances but can be overridden
-# per instance by just passing them to Pagy.new or the #pagy controller method
-
-# Instance variables
-# See https://ddnexus.github.io/pagy/api/pagy#instance-variables
-Pagy::DEFAULT[:limit] = 15
-
-# Other Variables
-# See https://ddnexus.github.io/pagy/api/pagy#other-variables
-# Pagy::DEFAULT[:size]       = [1,4,4,1]                       # default
-# Pagy::DEFAULT[:page_param] = :page                           # default
-# Pagy::DEFAULT[:params]     = {}                              # default
-# Pagy::DEFAULT[:fragment]   = '#fragment'                     # example
-# Pagy::DEFAULT[:link_extra] = 'data-remote="true"'            # example
-
-# Rails
-
-# Rails: extras assets path required by the helpers that use javascript
-# (pagy*_nav_js, pagy*_combo_nav_js, and pagy_limit_selector_js)
-# See https://ddnexus.github.io/pagy/extras#javascript
-# Rails.application.config.assets.paths << Pagy.root.join('javascripts')
-
-# I18n
-
-# Pagy internal I18n: ~18x faster using ~10x less memory than the i18n gem
-# See https://ddnexus.github.io/pagy/api/frontend#i18n
-# Notice: No need to configure anything in this section if your app uses only "en"
-# or if you use the i18n extra below
+############ Global Options ################################################################
+# See https://ddnexus.github.io/pagy/toolbox/options/ for details.
+# Add your global options below. They will be applied globally.
+# For example:
 #
-# Examples:
-# load the "de" built-in locale:
-# Pagy::I18n.load(locale: 'de')
-#
-# load the "de" locale defined in the custom file at :filepath:
-# Pagy::I18n.load(locale: 'de', filepath: 'path/to/pagy-de.yml')
-#
-# load the "de", "en" and "es" built-in locales:
-# (the first passed :locale will be used also as the default_locale)
-# Pagy::I18n.load({locale: 'de'},
-#                 {locale: 'en'},
-#                 {locale: 'es'})
-#
-# load the "en" built-in locale, a custom "es" locale,
-# and a totally custom locale complete with a custom :pluralize proc:
-# (the first passed :locale will be used also as the default_locale)
-# Pagy::I18n.load({locale: 'en'},
-#                 {locale: 'es', filepath: 'path/to/pagy-es.yml'},
-#                 {locale: 'xyz',  # not built-in
-#                  filepath: 'path/to/pagy-xyz.yml',
-#                  pluralize: lambda{|count| ... } )
+Pagy.options[:limit] = 15               # Limit the items per page
+# Pagy.options[:client_max_limit] = 100   # The client can request a limit up to 100
+# Pagy.options[:max_pages] = 200          # Allow only 200 pages
+# Pagy.options[:jsonapi] = true           # Use JSON:API compliant URLs
 
-# I18n extra: uses the standard i18n gem which is ~18x slower using ~10x more memory
-# than the default pagy internal i18n (see above)
-# See https://ddnexus.github.io/pagy/extras/i18n
-# require 'pagy/extras/i18n'
 
-# Default i18n key
-# Pagy::DEFAULT[:i18n_key] = 'pagy.item_name'   # default
+############ JavaScript ####################################################################
+# See https://ddnexus.github.io/pagy/resources/javascript/ for details.
+# Examples for Rails:
+# For apps with an assets pipeline
+# Rails.application.config.assets.paths << Pagy::ROOT.join('javascripts')
+#
+# For apps with a javascript builder (e.g. esbuild, webpack, etc.)
+javascript_dir = Rails.root.join('app/javascript')
+Pagy.sync_javascript(javascript_dir, 'pagy.mjs') if Rails.env.development?
+
+
+############# Overriding Pagy::I18n Lookup #################################################
+# Refer to https://ddnexus.github.io/pagy/resources/i18n/ for details.
+# Override the dictionary lookup for customization by dropping your customized
+# Example for Rails:
+#
+# Pagy::I18n.pathnames << Rails.root.join('config/locales')
+
+
+############# I18n Gem Translation #########################################################
+# See https://ddnexus.github.io/pagy/resources/i18n/ for details.
+#
+# Pagy.translate_with_the_slower_i18n_gem!
+
+
+############# Calendar Localization for non-en locales ####################################
+# See https://ddnexus.github.io/pagy/toolbox/paginators/calendar#localization for details.
+# Add your desired locales to the list and uncomment the following line to enable them,
+# regardless of whether you use the I18n gem for translations or not, whether with
+# Rails or not.
+#
+# Pagy::Calendar.localize_with_rails_i18n_gem(*your_locales)

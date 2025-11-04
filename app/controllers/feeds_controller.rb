@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
 class FeedsController < ApplicationController
-  include Pagy::Backend
-
-  helper Pagy::Frontend
+  include Pagy::Method
 
   before_action :set_feed, only: %i[show edit update destroy]
 
