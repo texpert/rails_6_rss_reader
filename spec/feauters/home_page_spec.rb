@@ -18,13 +18,13 @@ RSpec.describe 'Home page', type: :feature do
         it 'has no pagination widget, and a `New Feed` link' do
           within('body') do
             expect(page).to have_link('New Feed', exact: true)
-            expect(page).to have_no_css('.pagy-bootstrap-nav')
+            expect(page).to have_no_css('.pagy-bootstrap')
           end
         end
       end
 
-      context 'when there a number of feeds defined, but less than Pagy::DEFAULT[:limit]' do
-        let(:feeds_number) { rand(1..Pagy::DEFAULT[:limit]) }
+      context 'when there a number of feeds defined, but less than Pagy.options[:limit]' do
+        let(:feeds_number) { rand(1..Pagy.options[:limit]) }
         let(:feed_list_number) { feeds_number }
         let!(:feed_list) { create_list(:feed, feeds_number) } # rubocop:disable RSpec/LetSetup
 
@@ -43,14 +43,14 @@ RSpec.describe 'Home page', type: :feature do
 
         it 'has no pagination widget' do
           within('body') do
-            expect(has_no_css?('.pagy-bootstrap-nav')).to be true
+            expect(has_no_css?('.pagy-bootstrap')).to be true
           end
         end
       end
 
-      context 'when there a number of feeds defined, more than Pagy::DEFAULT[:limit]' do
-        let(:feeds_number) { rand((Pagy::DEFAULT[:limit] + 1)..(Pagy::DEFAULT[:limit] + 5)) }
-        let(:feed_list_number) { Pagy::DEFAULT[:limit] }
+      context 'when there a number of feeds defined, more than Pagy.options[:limit]' do
+        let(:feeds_number) { rand((Pagy.options[:limit] + 1)..(Pagy.options[:limit] + 5)) }
+        let(:feed_list_number) { Pagy.options[:limit] }
         let!(:feed_list) { create_list(:feed, feeds_number) } # rubocop:disable RSpec/LetSetup
 
         before { visit '/' }
@@ -61,7 +61,7 @@ RSpec.describe 'Home page', type: :feature do
         it 'has a pagination widget, and a `New Feed` link' do
           within('body') do
             expect(page).to have_link('New Feed', exact: true)
-            expect(page).to have_css('.pagy-bootstrap.nav')
+            expect(page).to have_css('.pagy-bootstrap.series-nav')
           end
         end
       end

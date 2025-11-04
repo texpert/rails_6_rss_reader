@@ -3,9 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'feeds/index' do
-  include Pagy::Backend
-
-  helper Pagy::Frontend
+  include Pagy::Method
 
   let!(:feed1) { create(:feed, title: 'Title') }
   let!(:feed2) { create(:feed, title: 'Title1') }
