@@ -235,7 +235,7 @@ GEM
       racc (~> 1.4)
     openssl (3.3.2)
     package_json (0.2.0)
-    pagy (43.1.4)
+    pagy (43.1.6)
       json
       yaml
     parallel (1.27.0)
