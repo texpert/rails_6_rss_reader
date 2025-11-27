@@ -3547,9 +3547,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.249":
-  version: 1.5.260
-  resolution: "electron-to-chromium@npm:1.5.260"
-  checksum: 10c0/5be308adbe7f9b370f628eb3ae35528bccc8e8592ee4848f9dfa308af658deaa87e915dd6929b6993e712929e7e6828f40434814506476ae11051381ee423fdf
+  version: 1.5.262
+  resolution: "electron-to-chromium@npm:1.5.262"
+  checksum: 10c0/4e4e3a307f662991145fd0bbd9045e17af547987a9dc33c30239b1a7b60874989f9b71c636b6c7d2b9052777344d4358a7cf76924203873a392ea1568bf88e5d
   languageName: node
   linkType: hard
 
@@ -3669,11 +3669,11 @@ __metadata:
   linkType: hard
 
 "envinfo@npm:^7.14.0":
-  version: 7.20.0
-  resolution: "envinfo@npm:7.20.0"
+  version: 7.21.0
+  resolution: "envinfo@npm:7.21.0"
   bin:
     envinfo: dist/cli.js
-  checksum: 10c0/2afa8085f9952d3afe6893098ef9cadc991aa38ed5ed5a0fd953ddb72a7543f425fbf46e8c02c4fa0ecad3c03a93381b0a212f799c2a8db8dc8886d8d7d5dc05
+  checksum: 10c0/4170127ca72dbf85be2c114f85558bd08178e8a43b394951ba9fd72d067c6fea3374df45a7b040e39e4e7b30bdd268e5bdf8661d99ae28302c2a88dedb41b5e6
   languageName: node
   linkType: hard
 
