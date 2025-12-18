@@ -5,13 +5,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version: 3.4.5 (YJIT enabled by default from Ruby 3.3.0)
+* Ruby version: 3.4.7 (YJIT enabled by default from Ruby 3.3.0)
 
 * Rails version: 8.1.1
 
-* Node.js version 24.11.0
+* Node.js version 24.12.0
 
-* Yarn version: 4.10.3
+* Yarn version: 4.12.0
 
 * Running `yarn dev` will start `shakapacker` via `webpack-dashboard`
 
