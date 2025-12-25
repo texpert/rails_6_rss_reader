@@ -177,7 +177,7 @@ GEM
       bigdecimal
       rake (>= 13)
     http-2 (1.1.1)
-    httpx (1.6.3)
+    httpx (1.7.0)
       http-2 (>= 1.0.0)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
@@ -309,7 +309,7 @@ GEM
     rake (13.3.1)
     rdbg (0.1.0)
       debug (>= 1.2.2)
-    rdoc (7.0.2)
+    rdoc (7.0.3)
       erb
       psych (>= 4.0.0)
       tsort
