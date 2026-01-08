@@ -30,7 +30,7 @@
     "regenerator-runtime": "^0.14.1",
     "sass": "^1.89",
     "sass-loader": "^16.0",
-    "shakapacker": "^9.0",
+    "shakapacker": "^9.5",
     "terser-webpack-plugin": "^5",
     "webpack": "^5.99",
     "webpack-assets-manifest": "^6",
