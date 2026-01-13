@@ -49,7 +49,7 @@
   "devDependencies": {
     "style-loader": "^4.0.0",
     "webpack-dashboard": "^3.3.8",
-    "webpack-dev-server": "^5.2.2"
+    "webpack-dev-server": "^5.2.3"
   },
   "packageManager": "yarn@4.12.0"
 }
