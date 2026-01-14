@@ -103,7 +103,7 @@ GEM
     base64 (0.3.0)
     bigdecimal (4.0.1)
     bindex (0.8.1)
-    bootsnap (1.20.1)
+    bootsnap (1.21.0)
       msgpack (~> 1.2)
     brakeman (7.1.2)
       racc
@@ -236,7 +236,7 @@ GEM
       racc (~> 1.4)
     openssl (4.0.0)
     package_json (0.2.0)
-    pagy (43.2.3)
+    pagy (43.2.4)
       json
       yaml
     parallel (1.27.0)
@@ -309,7 +309,7 @@ GEM
     rake (13.3.1)
     rdbg (0.1.0)
       debug (>= 1.2.2)
-    rdoc (7.0.3)
+    rdoc (7.1.0)
       erb
       psych (>= 4.0.0)
       tsort
