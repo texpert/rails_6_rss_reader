@@ -147,7 +147,7 @@ GEM
     factory_bot_rails (6.5.1)
       factory_bot (~> 6.5)
       railties (>= 6.1.0)
-    faker (3.5.3)
+    faker (3.6.0)
       i18n (>= 1.8.11, < 2)
     feedjira (4.0.1)
       logger (>= 1.0, < 2)
@@ -250,7 +250,7 @@ GEM
     pg (1.6.3-x86_64-darwin)
     pg (1.6.3-x86_64-linux)
     pg (1.6.3-x86_64-linux-musl)
-    pg_query (6.1.0)
+    pg_query (6.2.1)
       google-protobuf (>= 3.25.3)
     pp (0.6.3)
       prettyprint
