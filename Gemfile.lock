@@ -177,7 +177,7 @@ GEM
       bigdecimal
       rake (>= 13)
     http-2 (1.1.1)
-    httpx (1.7.1)
+    httpx (1.7.2)
       http-2 (>= 1.0.0)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
