@@ -22,5 +22,8 @@ Style/Documentation:
 Style/FetchEnvVar:
   Enabled: false
 
+Style/HashAsLastArrayItem:
+  Enabled: false
+
 Style/SafeNavigationChainLength:
   Enabled: false
