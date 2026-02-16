@@ -208,7 +208,7 @@ GEM
     minitest (6.0.1)
       prism (~> 1.5)
     msgpack (1.8.0)
-    net-imap (0.6.2)
+    net-imap (0.6.3)
       date
       net-protocol
     net-pop (0.1.2)
@@ -318,7 +318,7 @@ GEM
     reline (0.6.3)
       io-console (~> 0.5)
     rexml (3.4.4)
-    roda (3.100.0)
+    roda (3.101.0)
       rack
     rspec-core (3.13.6)
       rspec-support (~> 3.13.0)
