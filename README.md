@@ -9,7 +9,7 @@ Things you may want to cover:
 
 * Rails version: 8.1.2
 
-* Node.js version 24.12.0
+* Node.js version 24.14.0
 
 * Yarn version: 4.12.0
 
