@@ -1,6 +1,7 @@
 # Note: You must restart bin/shakapacker-dev-server for changes to take effect
 
 default: &default
+  sass_api: modern
   source_path: app/javascript
 
   # You can have a subdirectory of the source_path, like 'packs' (recommended).
