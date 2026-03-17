@@ -20,7 +20,7 @@ Pagy.options[:limit] = 15 # Limit the items per page
 #
 # For apps with a javascript builder (e.g. esbuild, webpack, etc.)
 javascript_dir = Rails.root.join('app/javascript')
-Pagy.sync_javascript(javascript_dir, 'pagy.mjs') if Rails.env.development?
+Pagy.sync(:javascript, javascript_dir, 'pagy.mjs') if Rails.env.development?
 
 ############# Overriding Pagy::I18n Lookup #################################################
 # Refer to https://ddnexus.github.io/pagy/resources/i18n/ for details.
