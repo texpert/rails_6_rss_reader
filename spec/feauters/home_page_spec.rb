@@ -23,8 +23,8 @@ RSpec.describe 'Home page', type: :feature do
         end
       end
 
-      context 'when there a number of feeds defined, but less than Pagy.options[:limit]' do
-        let(:feeds_number) { rand(1..Pagy.options[:limit]) }
+      context 'when there a number of feeds defined, but less than Pagy::OPTIONS[:limit]' do
+        let(:feeds_number) { rand(1..Pagy::OPTIONS[:limit]) }
         let(:feed_list_number) { feeds_number }
         let!(:feed_list) { create_list(:feed, feeds_number) } # rubocop:disable RSpec/LetSetup
 
@@ -48,9 +48,9 @@ RSpec.describe 'Home page', type: :feature do
         end
       end
 
-      context 'when there a number of feeds defined, more than Pagy.options[:limit]' do
-        let(:feeds_number) { rand((Pagy.options[:limit] + 1)..(Pagy.options[:limit] + 5)) }
-        let(:feed_list_number) { Pagy.options[:limit] }
+      context 'when there a number of feeds defined, more than Pagy::OPTIONS[:limit]' do
+        let(:feeds_number) { rand((Pagy::OPTIONS[:limit] + 1)..(Pagy::OPTIONS[:limit] + 5)) }
+        let(:feed_list_number) { Pagy::OPTIONS[:limit] }
         let!(:feed_list) { create_list(:feed, feeds_number) } # rubocop:disable RSpec/LetSetup
 
         before { visit '/' }
