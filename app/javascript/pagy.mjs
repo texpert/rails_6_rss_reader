@@ -18,20 +18,26 @@ export default (() => {
       }
     });
   }
-  const rjsObserver = new ResizeObserver((entries) => entries.forEach((e) => {
-    e.target.querySelectorAll(".pagy-rjs").forEach((el) => el.render());
-  }));
+  const rjsObserver = new ResizeObserver((entries) => {
+    entries.forEach((e) => {
+      e.target.querySelectorAll(".pagy-rjs").forEach((el) => {
+        el.render();
+      });
+    });
+  });
   const B64SafeEncode = (unicode) => btoa(String.fromCharCode(...new TextEncoder().encode(unicode))).replace(/[+/=]/g, (m) => m == "+" ? "-" : m == "/" ? "_" : ""), B64Decode = (base64) => new TextDecoder().decode(Uint8Array.from(atob(base64), (c) => c.charCodeAt(0)));
   const randKey = () => Math.floor(Math.random() * 36 ** 3).toString(36);
   const augmentKeynav = async (nav, [storageKey, rootKey, pageKey, last, spliceArgs]) => {
     let augmentPage;
     const browserKey = document.cookie.split(/;\s+/).find((row) => row.startsWith(pagy + "="))?.split("=")[1] ?? randKey();
-    document.cookie = pagy + "=" + browserKey;
+    document.cookie = `${pagy}=${browserKey}`;
     if (storageKey && !(storageKey in storage)) {
       sync.postMessage({ from: tabId, key: storageKey });
-      await new Promise((resolve) => setTimeout(() => resolve(""), 100));
+      await new Promise((resolve) => setTimeout(() => {
+        resolve("");
+      }, 100));
       if (!(storageKey in storage)) {
-        augmentPage = (page) => page + "+" + last;
+        augmentPage = (page) => `${page}+${String(last)}`;
       }
     }
     if (!augmentPage) {
@@ -60,7 +66,7 @@ export default (() => {
     const search = rootKey ? `${rootKey}%5B${pageKey}%5D` : pageKey;
     const re = new RegExp(`(?<=\\?.*)(\\b${search}=)(\\d+)`);
     for (const a of nav.querySelectorAll("a[href]")) {
-      a.href = a.href.replace(re, (_match, prefix, digit) => `${prefix}${augmentPage(digit)}`);
+      a.href = a.href.replace(re, (_match, prefix, digit) => `${String(prefix)}${augmentPage(digit)}`);
     }
     return augmentPage;
   };
@@ -79,7 +85,7 @@ export default (() => {
       }
       let html = before;
       series[index].forEach((item, i) => {
-        html += item == "gap" ? gap : (typeof item == "number" ? anchor.replace(pageToken, item) : current).replace("L<", labels?.[index][i] ?? item + "<");
+        html += item == "gap" ? gap : (typeof item == "number" ? anchor.replace(pageToken, item) : current).replace("L<", labels?.[index][i] ?? `${String(item)}<`);
       });
       html += after;
       nav.innerHTML = "";
@@ -119,7 +125,9 @@ export default (() => {
       link.href = getUrl(input.value);
       link.click();
     };
-    input.addEventListener("focus", () => input.select());
+    input.addEventListener("focus", () => {
+      input.select();
+    });
     input.addEventListener("focusout", action);
     input.addEventListener("keypress", (e) => {
       if (e.key == "Enter") {
@@ -128,7 +136,7 @@ export default (() => {
     });
   };
   return {
-    version: "43.4.4",
+    version: "43.5.0",
     init(arg) {
       const target = arg instanceof HTMLElement ? arg : document, elements = target.querySelectorAll("[data-pagy]");
       for (const element of elements) {
