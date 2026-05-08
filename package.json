@@ -24,7 +24,6 @@
     "bootstrap": "^5.3.8",
     "compression-webpack-plugin": "^12",
     "css-loader": "^7.1.2",
-    "css-minimizer-webpack-plugin": "^8",
     "mini-css-extract-plugin": "^2.9",
     "rails-erb-loader": "github:moonproject/rails-erb-loader#master",
     "regenerator-runtime": "^0.14.1",
@@ -47,6 +46,7 @@
     "defaults"
   ],
   "devDependencies": {
+    "minimizer-webpack-plugin": "^5.6.0",
     "style-loader": "^4.0.0",
     "webpack-dashboard": "^3.3.8",
     "webpack-dev-server": "^5.2.3"
