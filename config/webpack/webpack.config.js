@@ -1,6 +1,7 @@
 const { env, generateWebpackConfig, merge } = require('shakapacker')
 const { existsSync } = require('fs')
 const { resolve } = require('path')
+const MinimizerPlugin = require("minimizer-webpack-plugin");
 
 const webpackConfig = generateWebpackConfig()
 
@@ -30,6 +31,10 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimize: true,
+    minimizer: [new MinimizerPlugin()],
+  }
 }
 
 module.exports = merge(envSpecificConfig, webpackConfig, customConfig)
