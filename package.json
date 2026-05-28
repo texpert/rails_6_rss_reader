@@ -28,7 +28,7 @@
     "rails-erb-loader": "github:moonproject/rails-erb-loader#master",
     "regenerator-runtime": "^0.14.1",
     "sass": "^1.89",
-    "sass-loader": "^16.0",
+    "sass-loader": "^17.0",
     "shakapacker": "^10.0",
     "webpack": "^5.99",
     "webpack-assets-manifest": "^6",
