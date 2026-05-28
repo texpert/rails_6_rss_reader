@@ -4933,9 +4933,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimizer-webpack-plugin@npm:^5.6.0":
-  version: 5.6.0
-  resolution: "minimizer-webpack-plugin@npm:5.6.0"
+"minimizer-webpack-plugin@npm:^5.6.1":
+  version: 5.6.1
+  resolution: "minimizer-webpack-plugin@npm:5.6.1"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.25"
     jest-worker: "npm:^27.4.5"
@@ -4968,7 +4968,7 @@ __metadata:
       optional: true
     uglify-js:
       optional: true
-  checksum: 10c0/3b1882514678fbe0336b5a3cbeeb934cf4dc4c88dd891a28bd13ce590bb60e3d6b387e00a0e8a9eb1d5c13a5b9818ceffb5fb73b8c6c1cf15a36e9064f67d5d3
+  checksum: 10c0/4bf4e8bc2827e3724a53e04465493ee4b52f2a4a18e89e23c72905462557107bc9f5396035841fb5e4f86630c8a783eb4f13c26a3b1544f621b75ea8bedca3f2
   languageName: node
   linkType: hard
 
@@ -5683,7 +5683,7 @@ __metadata:
     compression-webpack-plugin: "npm:^12"
     css-loader: "npm:^7.1.2"
     mini-css-extract-plugin: "npm:^2.9"
-    minimizer-webpack-plugin: "npm:^5.6.0"
+    minimizer-webpack-plugin: "npm:^5.6.1"
     rails-erb-loader: "github:moonproject/rails-erb-loader#master"
     regenerator-runtime: "npm:^0.14.1"
     sass: "npm:^1.89"
