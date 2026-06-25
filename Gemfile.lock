@@ -432,7 +432,7 @@ GEM
       semantic_range (>= 2.3.0)
     shoulda-matchers (8.0.1)
       activesupport (>= 7.2)
-    shrine (3.7.1)
+    shrine (3.8.0)
       content_disposition (~> 1.0)
       down (~> 5.1)
     shrine-aws-lambda (0.2.1)
@@ -536,7 +536,7 @@ DEPENDENCIES
   selenium-webdriver
   shakapacker (= 10.1.0)
   shoulda-matchers
-  shrine (~> 3.7)
+  shrine (~> 3.8)
   shrine-aws-lambda (~> 0.2.1)
   simplecov
   turbo-rails
