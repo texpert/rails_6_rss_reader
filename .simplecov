@@ -1,16 +1,15 @@
 # frozen_string_literal: true
 
-SimpleCov.start 'rails' do
-  enable_coverage :branch
-  primary_coverage :branch
-  add_filter '/bin/'
-  add_filter '/config/'
-  add_filter '/db/'
-  add_filter '/log/'
-  add_filter '/node_modules/'
-  add_filter '/public/'
-  add_filter '/spec/'
-  add_filter '/storage/'
-  add_filter '/tmp/'
-  add_filter '/vendor/'
-end
+SimpleCov.load_profile 'rails'
+SimpleCov.enable_coverage :branch
+SimpleCov.primary_coverage :branch
+SimpleCov.skip '/bin/'
+SimpleCov.skip '/config/'
+SimpleCov.skip '/db/'
+SimpleCov.skip '/log/'
+SimpleCov.skip '/node_modules/'
+SimpleCov.skip '/public/'
+SimpleCov.skip '/spec/'
+SimpleCov.skip '/storage/'
+SimpleCov.skip '/tmp/'
+SimpleCov.skip '/vendor/'
