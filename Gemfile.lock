@@ -147,7 +147,7 @@ GEM
       addressable (~> 2.8)
       base64 (~> 0.3)
     drb (2.2.3)
-    erb (6.0.5)
+    erb (6.0.6)
     erubi (1.13.1)
     factory_bot (6.6.0)
       activesupport (>= 6.1.0)
