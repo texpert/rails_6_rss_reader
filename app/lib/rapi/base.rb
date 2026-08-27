@@ -11,11 +11,11 @@ module Rapi
     plugin :request_headers
     plugin :static_routing
 
-    static_get '/healthcheck' do
+    static_get '/healthcheck' do |_r|
       Rapi::HealthChecker.run
     end
 
-    static_put '/lambda' do
+    static_put '/lambda' do |_r|
       auth_result = Shrine::Attacher.lambda_authorize(request.headers, request.body.read)
       if !auth_result
         response.status = 403
