@@ -2,7 +2,6 @@
   "name": "rails_6_rss_reader",
   "private": true,
   "license": "MIT",
-  "scripts": {},
   "dependencies": {
     "@babel/core": "^8.0.1",
     "@babel/plugin-transform-destructuring": "^8.0.1",
