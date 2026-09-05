@@ -14,7 +14,7 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import 'regenerator-runtime/runtime'
+import 'core-js/stable';
 import "@hotwired/turbo-rails";
 
 import '../src/js/bootstrap_custom.js'

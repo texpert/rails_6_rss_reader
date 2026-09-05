@@ -13,8 +13,6 @@ Things you may want to cover:
 
 * Yarn version: 4.17.0
 
-* Running `yarn dev` will start `shakapacker` via `webpack-dashboard`
-
 * System dependencies
 
 * Configuration
