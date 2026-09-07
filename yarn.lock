@@ -3868,7 +3868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimizer-webpack-plugin@npm:^5.7.0":
+"minimizer-webpack-plugin@npm:^5.7.0, minimizer-webpack-plugin@npm:^5.9.0":
   version: 5.9.0
   resolution: "minimizer-webpack-plugin@npm:5.9.0"
   dependencies:
@@ -3912,45 +3912,6 @@ __metadata:
     uglify-js:
       optional: true
   checksum: 10c0/56623474eeb539ceb1f234fcc019532d0d1486ec884b322ebbc145144bdc52d26ab2cf9780ec357e72a571247e7ec60a5d411f6fe3061a4f27a2672270159add
-  languageName: node
-  linkType: hard
-
-"minimizer-webpack-plugin@npm:^5.8.0":
-  version: 5.8.0
-  resolution: "minimizer-webpack-plugin@npm:5.8.0"
-  dependencies:
-    "@jridgewell/trace-mapping": "npm:^0.3.31"
-    jest-worker: "npm:^27.4.5"
-    schema-utils: "npm:^4.3.3"
-    terser: "npm:^5.51.0"
-  peerDependencies:
-    webpack: ^5.1.0
-  peerDependenciesMeta:
-    "@minify-html/node":
-      optional: true
-    "@swc/core":
-      optional: true
-    "@swc/css":
-      optional: true
-    "@swc/html":
-      optional: true
-    clean-css:
-      optional: true
-    cssnano:
-      optional: true
-    csso:
-      optional: true
-    esbuild:
-      optional: true
-    html-minifier-terser:
-      optional: true
-    lightningcss:
-      optional: true
-    postcss:
-      optional: true
-    uglify-js:
-      optional: true
-  checksum: 10c0/f7dfc6e02ff9b0579661abf91ac2fac0a146f251f6df6b8ea1411185ae7945bb98b14f8c21094d0babd14f5def1500437f77da96410b29ece806c4fdadd73662
   languageName: node
   linkType: hard
 
@@ -4600,7 +4561,7 @@ __metadata:
     core-js: "npm:3"
     css-loader: "npm:^7.1.2"
     mini-css-extract-plugin: "npm:^2.9"
-    minimizer-webpack-plugin: "npm:^5.8.0"
+    minimizer-webpack-plugin: "npm:^5.9.0"
     rails-erb-loader: "github:moonproject/rails-erb-loader#master"
     sass: "npm:^1.89"
     sass-loader: "npm:^17.0"
