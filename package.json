@@ -42,7 +42,7 @@
   ],
   "devDependencies": {
     "babel-plugin-polyfill-corejs3": "^1.0.0",
-    "minimizer-webpack-plugin": "^5.9.0",
+    "minimizer-webpack-plugin": "^5.10.0",
     "style-loader": "^4.0.0",
     "webpack-dev-server": "^6.0.0"
   },
