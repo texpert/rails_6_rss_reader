@@ -200,7 +200,7 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jmespath (1.6.2)
-    json (3.0.2)
+    json (2.21.2)
     language_server-protocol (3.17.0.6)
     lint_roller (1.1.0)
     localhost (1.8.0)
@@ -506,6 +506,7 @@ DEPENDENCIES
   faker
   feedjira
   httpx
+  json (< 3.0.0)
   localhost
   ngrok-wrapper
   openssl

@@ -9,6 +9,7 @@ gem 'bootsnap', '>= 1.8.1', require: false
 gem 'dartsass-sprockets'
 gem 'feedjira'
 gem 'httpx'
+gem 'json', '< 3.0.0'
 gem 'openssl'
 gem 'pagy'
 gem 'pg'
