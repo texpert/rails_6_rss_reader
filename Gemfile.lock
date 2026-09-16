@@ -441,7 +441,7 @@ GEM
       aws-sdk-lambda (~> 1.0)
       aws-sdk-s3 (~> 1.2)
       shrine (~> 3.4)
-    simplecov (1.2.0)
+    simplecov (1.3.0)
     sprockets (4.4.1)
       concurrent-ruby (~> 1.1)
       logger
