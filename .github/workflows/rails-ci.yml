@@ -36,7 +36,7 @@ jobs:
       - name: install app dependencies
         run: yarn install --frozen-lockfile
       - name: Install Ruby and gems
-        uses: ruby/setup-ruby@a0102e0972be65f351c307e2d64b9314a57c8073
+        uses: ruby/setup-ruby@e8944e80fb94b20106697132f8c20c665fab29e9
         with:
           rubygems: 4.0.19
           bundler-cache: true
@@ -52,7 +52,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
       - name: Setup Ruby and install gems
-        uses: ruby/setup-ruby@a0102e0972be65f351c307e2d64b9314a57c8073
+        uses: ruby/setup-ruby@e8944e80fb94b20106697132f8c20c665fab29e9
         with:
           rubygems: 4.0.19
           bundler-cache: true
@@ -68,7 +68,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7
       - name: Setup Ruby and install gems
-        uses: ruby/setup-ruby@a0102e0972be65f351c307e2d64b9314a57c8073
+        uses: ruby/setup-ruby@e8944e80fb94b20106697132f8c20c665fab29e9
         with:
           rubygems: 4.0.19
           bundler-cache: true
