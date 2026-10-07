@@ -1673,7 +1673,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@peculiar/asn1-rsa@npm:^2.10.0":
+"@peculiar/asn1-rsa@npm:^2.10.0, @peculiar/asn1-rsa@npm:^2.6.0":
   version: 2.10.0
   resolution: "@peculiar/asn1-rsa@npm:2.10.0"
   dependencies:
@@ -1685,19 +1685,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@peculiar/asn1-rsa@npm:^2.6.0":
-  version: 2.9.4
-  resolution: "@peculiar/asn1-rsa@npm:2.9.4"
-  dependencies:
-    "@peculiar/asn1-schema": "npm:^2.9.4"
-    "@peculiar/asn1-x509": "npm:^2.9.4"
-    asn1js: "npm:^3.0.10"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/bd26e357cb7deb63575fa28bf4713f3aa3abe68335b6a4e0c0884b96406391c76120ff86d8384277481d63676cde919e9e979e91fba95e7bb7c6d408e8660504
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-schema@npm:^2.10.0":
+"@peculiar/asn1-schema@npm:^2.10.0, @peculiar/asn1-schema@npm:^2.6.0":
   version: 2.10.0
   resolution: "@peculiar/asn1-schema@npm:2.10.0"
   dependencies:
@@ -1705,17 +1693,6 @@ __metadata:
     asn1js: "npm:^3.0.10"
     tslib: "npm:^2.8.1"
   checksum: 10c0/3cad8ff856b6d168dca76c6c15ff15b621b5c2b42a7bc0e0d3f4793382b1546cbf4660df485c7097f2ebde72fcef6e8cbdf01e5ee88bae9bbf13332977bcde7f
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-schema@npm:^2.6.0, @peculiar/asn1-schema@npm:^2.9.4":
-  version: 2.9.4
-  resolution: "@peculiar/asn1-schema@npm:2.9.4"
-  dependencies:
-    "@peculiar/utils": "npm:^2.0.2"
-    asn1js: "npm:^3.0.10"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/f77f76b2117bf3b97238460d0b7e865e3954f8f24beefc07339e644b2f4fbbd85a624bc2231abc04bcdb572a0be42975c00c32bb51f2c2fdbf491d9373c4d0c4
   languageName: node
   linkType: hard
 
@@ -1731,7 +1708,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@peculiar/asn1-x509@npm:^2.10.0":
+"@peculiar/asn1-x509@npm:^2.10.0, @peculiar/asn1-x509@npm:^2.6.0":
   version: 2.10.0
   resolution: "@peculiar/asn1-x509@npm:2.10.0"
   dependencies:
@@ -1740,18 +1717,6 @@ __metadata:
     asn1js: "npm:^3.0.10"
     tslib: "npm:^2.8.1"
   checksum: 10c0/0e425e3aaa6070e0832323bf4ce50b02aa4ec80e00b5e0510e8fc5de47a07f0a970a9ed84b0b392116af7ac31bab6d4c1dce1ea8cac50b264d83d58e20949901
-  languageName: node
-  linkType: hard
-
-"@peculiar/asn1-x509@npm:^2.6.0, @peculiar/asn1-x509@npm:^2.9.4":
-  version: 2.9.4
-  resolution: "@peculiar/asn1-x509@npm:2.9.4"
-  dependencies:
-    "@peculiar/asn1-schema": "npm:^2.9.4"
-    "@peculiar/utils": "npm:^2.0.2"
-    asn1js: "npm:^3.0.10"
-    tslib: "npm:^2.8.1"
-  checksum: 10c0/82a1c4d87c5b53da6c826eb7a9e290a900383891ad59c91421e35c8d5080e9973a9151cb7a2ef1e035958a0fce75c70bdf130b12d2afdf9ef913a1ae29ecfd42
   languageName: node
   linkType: hard
 
