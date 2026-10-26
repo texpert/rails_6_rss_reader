@@ -38,7 +38,7 @@ jobs:
       - name: Install Ruby and gems
         uses: ruby/setup-ruby@26e5b7d197ebf60545ee9667bcbace0be11ccaec
         with:
-          rubygems: 4.0.19
+          rubygems: 4.0.23
           bundler-cache: true
       # Add or replace database setup steps here
       - name: Set up database schema
@@ -54,7 +54,7 @@ jobs:
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@26e5b7d197ebf60545ee9667bcbace0be11ccaec
         with:
-          rubygems: 4.0.19
+          rubygems: 4.0.23
           bundler-cache: true
       - name: Update bundle-audit ruby-advisory-db
         run: bin/bundle-audit --update
@@ -70,7 +70,7 @@ jobs:
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@26e5b7d197ebf60545ee9667bcbace0be11ccaec
         with:
-          rubygems: 4.0.19
+          rubygems: 4.0.23
           bundler-cache: true
       - name: Lint Ruby files
         run: bin/rubocop
