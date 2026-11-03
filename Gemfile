@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby file: '.tool-versions'
 
-gem 'bootsnap', '>= 1.8.1', require: false
+gem 'bootsnap', '>= 1.26.1', require: false
 gem 'dartsass-sprockets'
 gem 'feedjira'
 gem 'httpx'
@@ -17,7 +17,7 @@ gem 'public_suffix'
 gem 'puma', '~> 8.0'
 gem 'que', '>= 2.3.0'
 gem 'rails', '~> 8.1'
-gem 'rails-html-sanitizer', '>= 1.6.1'
+gem 'rails-html-sanitizer', '>= 1.7.2'
 gem 'roda'
 gem 'shakapacker', '10.3.2'
 gem 'shrine', '~> 3.10'
@@ -60,7 +60,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '>= 2.15'
+  gem 'capybara', '>= 3.40'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'selenium-webdriver'
