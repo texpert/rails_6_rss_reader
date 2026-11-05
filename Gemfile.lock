@@ -144,7 +144,7 @@ GEM
       reline (>= 0.3.8)
     diff-lcs (1.6.2)
     dotenv (3.2.0)
-    down (5.6.1)
+    down (5.6.2)
       addressable (~> 2.8)
       base64 (~> 0.3)
     drb (2.2.3)
