@@ -288,7 +288,7 @@ GEM
       activerecord (>= 6.1)
       railties (>= 6.1)
     public_suffix (7.0.5)
-    puma (8.0.3)
+    puma (8.1.0)
       nio4r (~> 2.0)
     que (2.4.1)
     racc (1.8.1)
@@ -531,7 +531,7 @@ DEPENDENCIES
   pg_query
   prosopite
   public_suffix
-  puma (~> 8.0)
+  puma (~> 8.1)
   que (>= 2.3.0)
   rails (~> 8.1)
   rails-html-sanitizer (>= 1.7.2)
