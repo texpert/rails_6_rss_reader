@@ -7,11 +7,11 @@ Things you may want to cover:
 
 * Ruby version: 3.4.13 (YJIT enabled by default from Ruby 3.3.0)
 
-* Rails version: 8.1.3
+* Rails version: 8.1.4.1
 
-* Node.js version 26.4.0
+* Node.js version 26.13.1
 
-* Yarn version: 4.17.0
+* Yarn version: 4.19.0
 
 * System dependencies
 
