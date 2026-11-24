@@ -3904,6 +3904,52 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimizer-webpack-plugin@npm:^5.14.1":
+  version: 5.14.1
+  resolution: "minimizer-webpack-plugin@npm:5.14.1"
+  dependencies:
+    jest-worker: "npm:^27.4.5"
+    schema-utils: "npm:^4.8.5"
+    terser: "npm:^5.51.0"
+  peerDependencies:
+    webpack: ^5.1.0
+  peerDependenciesMeta:
+    "@minify-html/node":
+      optional: true
+    "@napi-rs/image":
+      optional: true
+    "@swc/core":
+      optional: true
+    "@swc/css":
+      optional: true
+    "@swc/html":
+      optional: true
+    clean-css:
+      optional: true
+    cssnano:
+      optional: true
+    csso:
+      optional: true
+    esbuild:
+      optional: true
+    html-minifier-terser:
+      optional: true
+    imagemin:
+      optional: true
+    lightningcss:
+      optional: true
+    postcss:
+      optional: true
+    sharp:
+      optional: true
+    svgo:
+      optional: true
+    uglify-js:
+      optional: true
+  checksum: 10c0/5effe05ea9cd1d17b0532c1abd550bba2be533f5e185cd91d5c3f62dbf566b5bedca043f35a3d401dd7c329e044c2a48e5352f2a2736a322b37589ccbdc963b0
+  languageName: node
+  linkType: hard
+
 "minipass-collect@npm:^2.0.1":
   version: 2.0.1
   resolution: "minipass-collect@npm:2.0.1"
@@ -4473,7 +4519,7 @@ __metadata:
     core-js: "npm:^3.51.0"
     css-loader: "npm:^7.1.5"
     mini-css-extract-plugin: "npm:^2.10.2"
-    minimizer-webpack-plugin: "npm:^5.14.0"
+    minimizer-webpack-plugin: "npm:^5.14.1"
     rails-erb-loader: "github:moonproject/rails-erb-loader#master"
     sass: "npm:^1.108.2"
     sass-loader: "npm:^17.1.0"
@@ -4675,7 +4721,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"schema-utils@npm:^4.0.0, schema-utils@npm:^4.2.0, schema-utils@npm:^4.3.3, schema-utils@npm:^4.6.0, schema-utils@npm:^4.8.2, schema-utils@npm:^4.8.3":
+"schema-utils@npm:^4.0.0, schema-utils@npm:^4.2.0, schema-utils@npm:^4.3.3, schema-utils@npm:^4.6.0, schema-utils@npm:^4.8.2, schema-utils@npm:^4.8.3, schema-utils@npm:^4.8.5":
   version: 4.8.5
   resolution: "schema-utils@npm:4.8.5"
   dependencies:
